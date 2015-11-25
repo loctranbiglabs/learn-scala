@@ -1,7 +1,8 @@
 [0m[[0minfo[0m] [0mRunning WordCount [0m
 [0m[[0mdebug[0m] [0mWaiting for threads to exit or System.exit to be called.[0m
+[0m[[0mdebug[0m] [0mWaiting for thread run-main-0 to terminate.[0m
 [0m[[0mdebug[0m] [0m  Classpath:[0m
-[0m[[0mdebug[0m] [0m	/home/loc/Documents/SimpleSparkProject/target/scala-2.10/classes[0m
+[0m[[0mdebug[0m] [0m	/home/loc/Documents/learn-scala/SimpleSparkProject/target/scala-2.10/classes[0m
 [0m[[0mdebug[0m] [0m	/home/loc/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.10.4.jar[0m
 [0m[[0mdebug[0m] [0m	/home/loc/.ivy2/cache/org.apache.spark/spark-core_2.10/jars/spark-core_2.10-1.5.2.jar[0m
 [0m[[0mdebug[0m] [0m	/home/loc/.ivy2/cache/org.apache.avro/avro-mapred/jars/avro-mapred-1.7.7-hadoop2.jar[0m
@@ -133,207 +134,101 @@
 [0m[[0mdebug[0m] [0m	/home/loc/.ivy2/cache/org.apache.parquet/parquet-jackson/jars/parquet-jackson-1.7.0.jar[0m
 [0m[[0mdebug[0m] [0m	/home/loc/.ivy2/cache/org.postgresql/postgresql/jars/postgresql-9.4-1201-jdbc41.jar[0m
 [0m[[0mdebug[0m] [0m	/home/loc/.ivy2/cache/net.liftweb/lift-json_2.10/jars/lift-json_2.10-2.5.1.jar[0m
-[0m[[0mdebug[0m] [0mWaiting for thread run-main-0 to terminate.[0m
-[0m[[31merror[0m] [0m(run-main-0) net.liftweb.json.MappingException: No usable value for product[0m
-[0m[[31merror[0m] [0mDo not know how to convert JObject(List(JField(productID,JInt(10005)), JField(category,JString(321)), JField(sportCategories,JArray(List(JString(32)))), JField(name,JString(Men sport pants)), JField(gender,JString(Men)), JField(sport,JString(Running)), JField(retailPrice,JDouble(279.0)), JField(sellPrice,JDouble(279.0)), JField(sellQuantity,JInt(0)), JField(taxablePrice,JDouble(0.0)), JField(origin,JString(361� Sports)), JField(stockQuantity,JInt(1000)), JField(subTotal,JDouble(0.0)), JField(recommendAlgorithms,JString()), JField(recommendInCookies,JArray(List())))) into class java.lang.String[0m
-net.liftweb.json.MappingException: No usable value for product
-Do not know how to convert JObject(List(JField(productID,JInt(10005)), JField(category,JString(321)), JField(sportCategories,JArray(List(JString(32)))), JField(name,JString(Men sport pants)), JField(gender,JString(Men)), JField(sport,JString(Running)), JField(retailPrice,JDouble(279.0)), JField(sellPrice,JDouble(279.0)), JField(sellQuantity,JInt(0)), JField(taxablePrice,JDouble(0.0)), JField(origin,JString(361� Sports)), JField(stockQuantity,JInt(1000)), JField(subTotal,JDouble(0.0)), JField(recommendAlgorithms,JString()), JField(recommendInCookies,JArray(List())))) into class java.lang.String
-	at net.liftweb.json.Meta$.fail(Meta.scala:191)
-	at net.liftweb.json.Extraction$.mkValue$1(Extraction.scala:357)
-	at net.liftweb.json.Extraction$.net$liftweb$json$Extraction$$build$1(Extraction.scala:317)
-	at net.liftweb.json.Extraction$$anonfun$13.apply(Extraction.scala:253)
-	at net.liftweb.json.Extraction$$anonfun$13.apply(Extraction.scala:253)
-	at scala.collection.TraversableLike$$anonfun$map$1.apply(TraversableLike.scala:244)
-	at scala.collection.TraversableLike$$anonfun$map$1.apply(TraversableLike.scala:244)
-	at scala.collection.immutable.List.foreach(List.scala:318)
-	at scala.collection.TraversableLike$class.map(TraversableLike.scala:244)
-	at scala.collection.AbstractTraversable.map(Traversable.scala:105)
-	at net.liftweb.json.Extraction$.instantiate$1(Extraction.scala:253)
-	at net.liftweb.json.Extraction$.newInstance$1(Extraction.scala:286)
-	at net.liftweb.json.Extraction$.net$liftweb$json$Extraction$$build$1(Extraction.scala:315)
-	at net.liftweb.json.Extraction$.net$liftweb$json$Extraction$$extract0(Extraction.scala:366)
-	at net.liftweb.json.Extraction$.net$liftweb$json$Extraction$$extract0(Extraction.scala:199)
-	at net.liftweb.json.Extraction$.extract(Extraction.scala:43)
-	at net.liftweb.json.JsonAST$JValue.extract(JsonAST.scala:300)
-	at WordCount$$anonfun$main$1.apply(ConnectSQL.scala:35)
-	at WordCount$$anonfun$main$1.apply(ConnectSQL.scala:30)
-	at scala.collection.IndexedSeqOptimized$class.foreach(IndexedSeqOptimized.scala:33)
-	at scala.collection.mutable.ArrayOps$ofRef.foreach(ArrayOps.scala:108)
-	at WordCount$.main(ConnectSQL.scala:30)
-	at WordCount.main(ConnectSQL.scala)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:606)
-	at sbt.Run.invokeMain(Run.scala:67)
-	at sbt.Run.run0(Run.scala:61)
-	at sbt.Run.sbt$Run$$execute$1(Run.scala:51)
-	at sbt.Run$$anonfun$run$1.apply$mcV$sp(Run.scala:55)
-	at sbt.Run$$anonfun$run$1.apply(Run.scala:55)
-	at sbt.Run$$anonfun$run$1.apply(Run.scala:55)
-	at sbt.Logger$$anon$4.apply(Logger.scala:85)
-	at sbt.TrapExit$App.run(TrapExit.scala:248)
-	at java.lang.Thread.run(Thread.java:745)
-Caused by: net.liftweb.json.MappingException: Do not know how to convert JObject(List(JField(productID,JInt(10005)), JField(category,JString(321)), JField(sportCategories,JArray(List(JString(32)))), JField(name,JString(Men sport pants)), JField(gender,JString(Men)), JField(sport,JString(Running)), JField(retailPrice,JDouble(279.0)), JField(sellPrice,JDouble(279.0)), JField(sellQuantity,JInt(0)), JField(taxablePrice,JDouble(0.0)), JField(origin,JString(361� Sports)), JField(stockQuantity,JInt(1000)), JField(subTotal,JDouble(0.0)), JField(recommendAlgorithms,JString()), JField(recommendInCookies,JArray(List())))) into class java.lang.String
-	at net.liftweb.json.Meta$.fail(Meta.scala:191)
-	at net.liftweb.json.Extraction$.convert(Extraction.scala:409)
-	at net.liftweb.json.Extraction$.net$liftweb$json$Extraction$$build$1(Extraction.scala:314)
-	at net.liftweb.json.Extraction$.mkValue$1(Extraction.scala:351)
-	at net.liftweb.json.Extraction$.net$liftweb$json$Extraction$$build$1(Extraction.scala:317)
-	at net.liftweb.json.Extraction$$anonfun$13.apply(Extraction.scala:253)
-	at net.liftweb.json.Extraction$$anonfun$13.apply(Extraction.scala:253)
-	at scala.collection.TraversableLike$$anonfun$map$1.apply(TraversableLike.scala:244)
-	at scala.collection.TraversableLike$$anonfun$map$1.apply(TraversableLike.scala:244)
-	at scala.collection.immutable.List.foreach(List.scala:318)
-	at scala.collection.TraversableLike$class.map(TraversableLike.scala:244)
-	at scala.collection.AbstractTraversable.map(Traversable.scala:105)
-	at net.liftweb.json.Extraction$.instantiate$1(Extraction.scala:253)
-	at net.liftweb.json.Extraction$.newInstance$1(Extraction.scala:286)
-	at net.liftweb.json.Extraction$.net$liftweb$json$Extraction$$build$1(Extraction.scala:315)
-	at net.liftweb.json.Extraction$.net$liftweb$json$Extraction$$extract0(Extraction.scala:366)
-	at net.liftweb.json.Extraction$.net$liftweb$json$Extraction$$extract0(Extraction.scala:199)
-	at net.liftweb.json.Extraction$.extract(Extraction.scala:43)
-	at net.liftweb.json.JsonAST$JValue.extract(JsonAST.scala:300)
-	at WordCount$$anonfun$main$1.apply(ConnectSQL.scala:35)
-	at WordCount$$anonfun$main$1.apply(ConnectSQL.scala:30)
-	at scala.collection.IndexedSeqOptimized$class.foreach(IndexedSeqOptimized.scala:33)
-	at scala.collection.mutable.ArrayOps$ofRef.foreach(ArrayOps.scala:108)
-	at WordCount$.main(ConnectSQL.scala:30)
-	at WordCount.main(ConnectSQL.scala)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:606)
-	at sbt.Run.invokeMain(Run.scala:67)
-	at sbt.Run.run0(Run.scala:61)
-	at sbt.Run.sbt$Run$$execute$1(Run.scala:51)
-	at sbt.Run$$anonfun$run$1.apply$mcV$sp(Run.scala:55)
-	at sbt.Run$$anonfun$run$1.apply(Run.scala:55)
-	at sbt.Run$$anonfun$run$1.apply(Run.scala:55)
-	at sbt.Logger$$anon$4.apply(Logger.scala:85)
-	at sbt.TrapExit$App.run(TrapExit.scala:248)
-	at java.lang.Thread.run(Thread.java:745)
 [0m[[0mdebug[0m] [0m	Thread run-main-0 exited.[0m
 [0m[[0mdebug[0m] [0mInterrupting remaining threads (should be all daemons).[0m
-[0m[[0mdebug[0m] [0mInterrupting thread qtp1286303204-48[0m
-[0m[[0mdebug[0m] [0m	Interrupted qtp1286303204-48[0m
-[0m[[0mdebug[0m] [0mInterrupting thread SparkListenerBus[0m
-[0m[[0mdebug[0m] [0m	Interrupted SparkListenerBus[0m
-[0m[[0mdebug[0m] [0mInterrupting thread qtp1372282361-54[0m
-[0m[[0mdebug[0m] [0m	Interrupted qtp1372282361-54[0m
-[0m[[0mdebug[0m] [0mInterrupting thread sparkDriver-akka.remote.default-remote-dispatcher-14[0m
-[0m[[0mdebug[0m] [0m	Interrupted sparkDriver-akka.remote.default-remote-dispatcher-14[0m
-[0m[[0mdebug[0m] [0mInterrupting thread Thread-3[0m
-[0m[[0mdebug[0m] [0m	Interrupted Thread-3[0m
-[0m[[0mdebug[0m] [0mInterrupting thread qtp1372282361-56[0m
-[0m[[0mdebug[0m] [0m	Interrupted qtp1372282361-56[0m
-[0m[[0mdebug[0m] [0mInterrupting thread Timer-0[0m
-[0m[[0mdebug[0m] [0m	Interrupted Timer-0[0m
-[0m[[0mdebug[0m] [0mInterrupting thread New I/O worker #4[0m
-[0m[[0mdebug[0m] [0m	Interrupted New I/O worker #4[0m
-[0m[[0mdebug[0m] [0mInterrupting thread ShutdownMonitor[0m
-[0m[[0mdebug[0m] [0m	Interrupted ShutdownMonitor[0m
-[0m[[0mdebug[0m] [0mInterrupting thread qtp1372282361-55[0m
-[0m[[0mdebug[0m] [0m	Interrupted qtp1372282361-55[0m
-[0m[[0mdebug[0m] [0mInterrupting thread sparkDriver-scheduler-1[0m
-[0m[[0mdebug[0m] [0m	Interrupted sparkDriver-scheduler-1[0m
-[0m[[0mdebug[0m] [0mInterrupting thread sparkDriver-akka.actor.default-dispatcher-4[0m
-[0m[[0mdebug[0m] [0m	Interrupted sparkDriver-akka.actor.default-dispatcher-4[0m
-[0m[[0mdebug[0m] [0mInterrupting thread sparkDriver-akka.actor.default-dispatcher-5[0m
-[0m[[0mdebug[0m] [0m	Interrupted sparkDriver-akka.actor.default-dispatcher-5[0m
 [0m[[0mdebug[0m] [0mInterrupting thread dag-scheduler-event-loop[0m
 [0m[[0mdebug[0m] [0m	Interrupted dag-scheduler-event-loop[0m
-[0m[[0mdebug[0m] [0mInterrupting thread driver-heartbeater[0m
-[0m[[0mdebug[0m] [0m	Interrupted driver-heartbeater[0m
-[0m[[0mdebug[0m] [0mInterrupting thread shuffle-client-0[0m
-[0m[[0mdebug[0m] [0m	Interrupted shuffle-client-0[0m
-[0m[[0mdebug[0m] [0mInterrupting thread BLOCK_MANAGER cleanup timer[0m
-[0m[[0mdebug[0m] [0m	Interrupted BLOCK_MANAGER cleanup timer[0m
+[0m[[0mdebug[0m] [0mInterrupting thread qtp476556895-72[0m
+[0m[[0mdebug[0m] [0m	Interrupted qtp476556895-72[0m
 [0m[[0mdebug[0m] [0mInterrupting thread sparkDriver-akka.actor.default-dispatcher-3[0m
 [0m[[0mdebug[0m] [0m	Interrupted sparkDriver-akka.actor.default-dispatcher-3[0m
-[0m[[0mdebug[0m] [0mInterrupting thread New I/O worker #5[0m
-[0m[[0mdebug[0m] [0m	Interrupted New I/O worker #5[0m
-[0m[[0mdebug[0m] [0mInterrupting thread qtp1286303204-44[0m
-[0m[[0mdebug[0m] [0m	Interrupted qtp1286303204-44[0m
-[0m[[0mdebug[0m] [0mInterrupting thread MAP_OUTPUT_TRACKER cleanup timer[0m
-[0m[[0mdebug[0m] [0m	Interrupted MAP_OUTPUT_TRACKER cleanup timer[0m
-[0m[[0mdebug[0m] [0mInterrupting thread SPARK_CONTEXT cleanup timer[0m
-[0m[[0mdebug[0m] [0m	Interrupted SPARK_CONTEXT cleanup timer[0m
-[0m[[0mdebug[0m] [0mInterrupting thread BROADCAST_VARS cleanup timer[0m
-[0m[[0mdebug[0m] [0m	Interrupted BROADCAST_VARS cleanup timer[0m
-[0m[[0mdebug[0m] [0mInterrupting thread qtp1286303204-49[0m
-[0m[[0mdebug[0m] [0m	Interrupted qtp1286303204-49[0m
+[0m[[0mdebug[0m] [0mInterrupting thread qtp2010764512-59[0m
+[0m[[0mdebug[0m] [0m	Interrupted qtp2010764512-59[0m
+[0m[[0mdebug[0m] [0mInterrupting thread sparkDriver-akka.remote.default-remote-dispatcher-14[0m
+[0m[[0mdebug[0m] [0m	Interrupted sparkDriver-akka.remote.default-remote-dispatcher-14[0m
+[0m[[0mdebug[0m] [0mInterrupting thread qtp476556895-71[0m
+[0m[[0mdebug[0m] [0m	Interrupted qtp476556895-71[0m
 [0m[[0mdebug[0m] [0mInterrupting thread heartbeat-receiver-event-loop-thread[0m
 [0m[[0mdebug[0m] [0m	Interrupted heartbeat-receiver-event-loop-thread[0m
-[0m[[0mdebug[0m] [0mInterrupting thread qtp1372282361-59[0m
-[0m[[0mdebug[0m] [0m	Interrupted qtp1372282361-59[0m
-[0m[[0mdebug[0m] [0mInterrupting thread qtp1372282361-58[0m
-[0m[[0mdebug[0m] [0m	Interrupted qtp1372282361-58[0m
-[0m[[0mdebug[0m] [0mInterrupting thread sparkDriver-akka.actor.default-dispatcher-2[0m
-[0m[[0mdebug[0m] [0m	Interrupted sparkDriver-akka.actor.default-dispatcher-2[0m
-[0m[[0mdebug[0m] [0mInterrupting thread qtp1372282361-57[0m
-[0m[[0mdebug[0m] [0m	Interrupted qtp1372282361-57[0m
-[0m[[0mdebug[0m] [0mInterrupting thread New I/O boss #3[0m
-[0m[[0mdebug[0m] [0m	Interrupted New I/O boss #3[0m
-[0m[[0mdebug[0m] [0mInterrupting thread New I/O worker #1[0m
-[0m[[0mdebug[0m] [0m	Interrupted New I/O worker #1[0m
-[0m[[0mdebug[0m] [0mInterrupting thread sparkDriver-9[0m
-[0m[[0mdebug[0m] [0m	Interrupted sparkDriver-9[0m
-[0m[[0mdebug[0m] [0mInterrupting thread qtp1286303204-45[0m
-[0m[[0mdebug[0m] [0m	Interrupted qtp1286303204-45[0m
-[0m[[0mdebug[0m] [0mInterrupting thread Spark Context Cleaner[0m
-[0m[[0mdebug[0m] [0m	Interrupted Spark Context Cleaner[0m
-[0m[[0mdebug[0m] [0mInterrupting thread qtp1372282361-52[0m
-[0m[[0mdebug[0m] [0m	Interrupted qtp1372282361-52[0m
-[0m[[0mdebug[0m] [0mInterrupting thread qtp1286303204-43[0m
-[0m[[0mdebug[0m] [0m	Interrupted qtp1286303204-43[0m
-[0m[[0mdebug[0m] [0mInterrupting thread qtp1372282361-53[0m
-[0m[[0mdebug[0m] [0m	Interrupted qtp1372282361-53[0m
-[0m[[0mdebug[0m] [0mInterrupting thread New I/O server boss #6[0m
-[0m[[0mdebug[0m] [0m	Interrupted New I/O server boss #6[0m
-[0m[[0mdebug[0m] [0mInterrupting thread qtp1286303204-47[0m
-[0m[[0mdebug[0m] [0m	Interrupted qtp1286303204-47[0m
-[0m[[0mdebug[0m] [0mInterrupting thread task-result-getter-0[0m
-[0m[[0mdebug[0m] [0m	Interrupted task-result-getter-0[0m
+[0m[[0mdebug[0m] [0mInterrupting thread driver-heartbeater[0m
+[0m[[0mdebug[0m] [0m	Interrupted driver-heartbeater[0m
+[0m[[0mdebug[0m] [0mInterrupting thread qtp2010764512-57[0m
+[0m[[0mdebug[0m] [0m	Interrupted qtp2010764512-57[0m
+[0m[[0mdebug[0m] [0mInterrupting thread qtp2010764512-62[0m
+[0m[[0mdebug[0m] [0m	Interrupted qtp2010764512-62[0m
+[0m[[0mdebug[0m] [0mInterrupting thread sparkDriver-akka.actor.default-dispatcher-5[0m
+[0m[[0mdebug[0m] [0m	Interrupted sparkDriver-akka.actor.default-dispatcher-5[0m
+[0m[[0mdebug[0m] [0mInterrupting thread New I/O worker #4[0m
+[0m[[0mdebug[0m] [0m	Interrupted New I/O worker #4[0m
+[0m[[0mdebug[0m] [0mInterrupting thread New I/O worker #5[0m
+[0m[[0mdebug[0m] [0m	Interrupted New I/O worker #5[0m
+[0m[[0mdebug[0m] [0mInterrupting thread qtp476556895-70[0m
+[0m[[0mdebug[0m] [0m	Interrupted qtp476556895-70[0m
 [0m[[0mdebug[0m] [0mInterrupting thread Executor task launch worker-0[0m
 [0m[[0mdebug[0m] [0m	Interrupted Executor task launch worker-0[0m
+[0m[[0mdebug[0m] [0mInterrupting thread qtp2010764512-60[0m
+[0m[[0mdebug[0m] [0m	Interrupted qtp2010764512-60[0m
+[0m[[0mdebug[0m] [0mInterrupting thread qtp476556895-67[0m
+[0m[[0mdebug[0m] [0m	Interrupted qtp476556895-67[0m
+[0m[[0mdebug[0m] [0mInterrupting thread SPARK_CONTEXT cleanup timer[0m
+[0m[[0mdebug[0m] [0m	Interrupted SPARK_CONTEXT cleanup timer[0m
+[0m[[0mdebug[0m] [0mInterrupting thread qtp2010764512-64 Acceptor0 SocketConnector@0.0.0.0:43952[0m
+[0m[[0mdebug[0m] [0m	Interrupted qtp2010764512-64 Acceptor0 SocketConnector@0.0.0.0:43952[0m
+[0m[[0mdebug[0m] [0mInterrupting thread Spark Context Cleaner[0m
+[0m[[0mdebug[0m] [0m	Interrupted Spark Context Cleaner[0m
+[0m[[0mdebug[0m] [0mInterrupting thread shuffle-client-0[0m
+[0m[[0mdebug[0m] [0m	Interrupted shuffle-client-0[0m
 [0m[[0mdebug[0m] [0mInterrupting thread shuffle-server-0[0m
 [0m[[0mdebug[0m] [0m	Interrupted shuffle-server-0[0m
-[0m[[0mdebug[0m] [0mInterrupting thread qtp1286303204-46[0m
-[0m[[0mdebug[0m] [0m	Interrupted qtp1286303204-46[0m
-[0m[[0mdebug[0m] [0mInterrupting thread qtp1286303204-42 Acceptor0 SocketConnector@0.0.0.0:58137[0m
-[0m[[0mdebug[0m] [0m	Interrupted qtp1286303204-42 Acceptor0 SocketConnector@0.0.0.0:58137[0m
-[0m[[0mdebug[0m] [0mInterrupting thread Thread-1[0m
-[0m[[0mdebug[0m] [0m	Interrupted Thread-1[0m
+[0m[[0mdebug[0m] [0mInterrupting thread task-result-getter-0[0m
+[0m[[0mdebug[0m] [0m	Interrupted task-result-getter-0[0m
+[0m[[0mdebug[0m] [0mInterrupting thread MAP_OUTPUT_TRACKER cleanup timer[0m
+[0m[[0mdebug[0m] [0m	Interrupted MAP_OUTPUT_TRACKER cleanup timer[0m
+[0m[[0mdebug[0m] [0mInterrupting thread sparkDriver-akka.actor.default-dispatcher-2[0m
+[0m[[0mdebug[0m] [0m	Interrupted sparkDriver-akka.actor.default-dispatcher-2[0m
+[0m[[0mdebug[0m] [0mInterrupting thread qtp476556895-74 Selector0[0m
+[0m[[0mdebug[0m] [0m	Interrupted qtp476556895-74 Selector0[0m
+[0m[[0mdebug[0m] [0mInterrupting thread sparkDriver-scheduler-1[0m
+[0m[[0mdebug[0m] [0m	Interrupted sparkDriver-scheduler-1[0m
+[0m[[0mdebug[0m] [0mInterrupting thread New I/O server boss #6[0m
+[0m[[0mdebug[0m] [0m	Interrupted New I/O server boss #6[0m
+[0m[[0mdebug[0m] [0mInterrupting thread New I/O worker #1[0m
+[0m[[0mdebug[0m] [0m	Interrupted New I/O worker #1[0m
+[0m[[0mdebug[0m] [0mInterrupting thread qtp2010764512-58[0m
+[0m[[0mdebug[0m] [0m	Interrupted qtp2010764512-58[0m
 [0m[[0mdebug[0m] [0mInterrupting thread New I/O worker #2[0m
 [0m[[0mdebug[0m] [0m	Interrupted New I/O worker #2[0m
+[0m[[0mdebug[0m] [0mInterrupting thread sparkDriver-akka.actor.default-dispatcher-4[0m
+[0m[[0mdebug[0m] [0m	Interrupted sparkDriver-akka.actor.default-dispatcher-4[0m
+[0m[[0mdebug[0m] [0mInterrupting thread qtp476556895-69[0m
+[0m[[0mdebug[0m] [0m	Interrupted qtp476556895-69[0m
+[0m[[0mdebug[0m] [0mInterrupting thread Thread-3[0m
+[0m[[0mdebug[0m] [0m	Interrupted Thread-3[0m
+[0m[[0mdebug[0m] [0mInterrupting thread BLOCK_MANAGER cleanup timer[0m
+[0m[[0mdebug[0m] [0m	Interrupted BLOCK_MANAGER cleanup timer[0m
+[0m[[0mdebug[0m] [0mInterrupting thread Thread-1[0m
+[0m[[0mdebug[0m] [0m	Interrupted Thread-1[0m
+[0m[[0mdebug[0m] [0mInterrupting thread New I/O boss #3[0m
+[0m[[0mdebug[0m] [0m	Interrupted New I/O boss #3[0m
+[0m[[0mdebug[0m] [0mInterrupting thread BROADCAST_VARS cleanup timer[0m
+[0m[[0mdebug[0m] [0m	Interrupted BROADCAST_VARS cleanup timer[0m
+[0m[[0mdebug[0m] [0mInterrupting thread Timer-0[0m
+[0m[[0mdebug[0m] [0m	Interrupted Timer-0[0m
+[0m[[0mdebug[0m] [0mInterrupting thread qtp476556895-73[0m
+[0m[[0mdebug[0m] [0m	Interrupted qtp476556895-73[0m
+[0m[[0mdebug[0m] [0mInterrupting thread qtp2010764512-63[0m
+[0m[[0mdebug[0m] [0m	Interrupted qtp2010764512-63[0m
+[0m[[0mdebug[0m] [0mInterrupting thread qtp2010764512-61[0m
+[0m[[0mdebug[0m] [0m	Interrupted qtp2010764512-61[0m
+[0m[[0mdebug[0m] [0mInterrupting thread sparkDriver-9[0m
+[0m[[0mdebug[0m] [0m	Interrupted sparkDriver-9[0m
+[0m[[0mdebug[0m] [0mInterrupting thread qtp476556895-68 Acceptor0 SelectChannelConnector@0.0.0.0:4040[0m
+[0m[[0mdebug[0m] [0m	Interrupted qtp476556895-68 Acceptor0 SelectChannelConnector@0.0.0.0:4040[0m
+[0m[[0mdebug[0m] [0mInterrupting thread ShutdownMonitor[0m
+[0m[[0mdebug[0m] [0m	Interrupted ShutdownMonitor[0m
 [0m[[0mdebug[0m] [0mInterrupting thread sparkDriver-akka.remote.default-remote-dispatcher-6[0m
 [0m[[0mdebug[0m] [0m	Interrupted sparkDriver-akka.remote.default-remote-dispatcher-6[0m
+[0m[[0mdebug[0m] [0mInterrupting thread SparkListenerBus[0m
+[0m[[0mdebug[0m] [0m	Interrupted SparkListenerBus[0m
 [0m[[0mdebug[0m] [0mSandboxed run complete..[0m
-java.lang.RuntimeException: Nonzero exit code: 1
-	at scala.sys.package$.error(package.scala:27)
-	at sbt.BuildCommon$$anonfun$toError$1.apply(Defaults.scala:1966)
-	at sbt.BuildCommon$$anonfun$toError$1.apply(Defaults.scala:1966)
-	at scala.Option.foreach(Option.scala:236)
-	at sbt.BuildCommon$class.toError(Defaults.scala:1966)
-	at sbt.Defaults$.toError(Defaults.scala:39)
-	at sbt.Defaults$$anonfun$runTask$1$$anonfun$apply$36$$anonfun$apply$37.apply(Defaults.scala:734)
-	at sbt.Defaults$$anonfun$runTask$1$$anonfun$apply$36$$anonfun$apply$37.apply(Defaults.scala:732)
-	at scala.Function1$$anonfun$compose$1.apply(Function1.scala:47)
-	at sbt.$tilde$greater$$anonfun$$u2219$1.apply(TypeFunctions.scala:40)
-	at sbt.std.Transform$$anon$4.work(System.scala:63)
-	at sbt.Execute$$anonfun$submit$1$$anonfun$apply$1.apply(Execute.scala:226)
-	at sbt.Execute$$anonfun$submit$1$$anonfun$apply$1.apply(Execute.scala:226)
-	at sbt.ErrorHandling$.wideConvert(ErrorHandling.scala:17)
-	at sbt.Execute.work(Execute.scala:235)
-	at sbt.Execute$$anonfun$submit$1.apply(Execute.scala:226)
-	at sbt.Execute$$anonfun$submit$1.apply(Execute.scala:226)
-	at sbt.ConcurrentRestrictions$$anon$4$$anonfun$1.apply(ConcurrentRestrictions.scala:159)
-	at sbt.CompletionService$$anon$2.call(CompletionService.scala:28)
-	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
-	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
-	at java.util.concurrent.FutureTask.run(FutureTask.java:262)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
-	at java.lang.Thread.run(Thread.java:745)
-[0m[[31merror[0m] [0m(compile:[31mrun[0m) Nonzero exit code: 1[0m
+[0m[[0mdebug[0m] [0mExited with code 0[0m

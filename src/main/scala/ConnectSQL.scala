@@ -8,8 +8,7 @@ import scala.collection.mutable.ListBuffer
 
 case class Properties(data: String)
 case class Product(productID: String)
-case class OtherData(timestamp: Long, sessionId: String,action: String, listProduct: String*)
-case class RecData(timestamp: Long, sessionId: String,action: String, listProduct: String*)
+case class Data(timestamp: Long, sessionId: String,action: String, listProduct: String*)
 
 object WordCount {
 
@@ -34,7 +33,7 @@ object WordCount {
 			val jValue = parse(item)
 			val prop = jValue.extract[Properties]
 			val jData = parse(prop.data)
-			val data = jData.extract[RecData]
+			val data = jData.extract[Data]
 			lb += data
 		})
 		val listRecord = lb.toList
