@@ -1,6 +1,6 @@
 [0m[[0minfo[0m] [0mRunning WordCount [0m
 [0m[[0mdebug[0m] [0mWaiting for threads to exit or System.exit to be called.[0m
-[0m[[0mdebug[0m] [0mWaiting for thread run-main-0 to terminate.[0m
+[0m[[0mdebug[0m] [0mWaiting for thread run-main-1 to terminate.[0m
 [0m[[0mdebug[0m] [0m  Classpath:[0m
 [0m[[0mdebug[0m] [0m	/home/loc/Documents/learn-scala/SimpleSparkProject/target/scala-2.10/classes[0m
 [0m[[0mdebug[0m] [0m	/home/loc/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.10.4.jar[0m
@@ -134,103 +134,99 @@
 [0m[[0mdebug[0m] [0m	/home/loc/.ivy2/cache/org.apache.parquet/parquet-jackson/jars/parquet-jackson-1.7.0.jar[0m
 [0m[[0mdebug[0m] [0m	/home/loc/.ivy2/cache/org.postgresql/postgresql/jars/postgresql-9.4-1201-jdbc41.jar[0m
 [0m[[0mdebug[0m] [0m	/home/loc/.ivy2/cache/net.liftweb/lift-json_2.10/jars/lift-json_2.10-2.5.1.jar[0m
-[0m[[0mdebug[0m] [0m	Thread run-main-0 exited.[0m
+[0m[[0mdebug[0m] [0m	Thread run-main-1 exited.[0m
 [0m[[0mdebug[0m] [0mInterrupting remaining threads (should be all daemons).[0m
-[0m[[0mdebug[0m] [0mInterrupting thread Thread-1[0m
-[0m[[0mdebug[0m] [0m	Interrupted Thread-1[0m
-[0m[[0mdebug[0m] [0mInterrupting thread shuffle-server-0[0m
-[0m[[0mdebug[0m] [0m	Interrupted shuffle-server-0[0m
-[0m[[0mdebug[0m] [0mInterrupting thread qtp396715747-57[0m
-[0m[[0mdebug[0m] [0m	Interrupted qtp396715747-57[0m
-[0m[[0mdebug[0m] [0mInterrupting thread shuffle-client-0[0m
-[0m[[0mdebug[0m] [0m	Interrupted shuffle-client-0[0m
-[0m[[0mdebug[0m] [0mInterrupting thread qtp1891986541-44 Acceptor0 SocketConnector@0.0.0.0:45747[0m
-[0m[[0mdebug[0m] [0m	Interrupted qtp1891986541-44 Acceptor0 SocketConnector@0.0.0.0:45747[0m
-[0m[[0mdebug[0m] [0mInterrupting thread sparkDriver-akka.actor.default-dispatcher-2[0m
-[0m[[0mdebug[0m] [0m	Interrupted sparkDriver-akka.actor.default-dispatcher-2[0m
-[0m[[0mdebug[0m] [0mInterrupting thread qtp396715747-58[0m
-[0m[[0mdebug[0m] [0m	Interrupted qtp396715747-58[0m
-[0m[[0mdebug[0m] [0mInterrupting thread qtp1891986541-49[0m
-[0m[[0mdebug[0m] [0m	Interrupted qtp1891986541-49[0m
-[0m[[0mdebug[0m] [0mInterrupting thread sparkDriver-11[0m
-[0m[[0mdebug[0m] [0m	Interrupted sparkDriver-11[0m
-[0m[[0mdebug[0m] [0mInterrupting thread qtp1891986541-47[0m
-[0m[[0mdebug[0m] [0m	Interrupted qtp1891986541-47[0m
-[0m[[0mdebug[0m] [0mInterrupting thread qtp396715747-56[0m
-[0m[[0mdebug[0m] [0m	Interrupted qtp396715747-56[0m
+[0m[[0mdebug[0m] [0mInterrupting thread qtp2029085443-113 Selector0[0m
+[0m[[0mdebug[0m] [0m	Interrupted qtp2029085443-113 Selector0[0m
+[0m[[0mdebug[0m] [0mInterrupting thread qtp390461209-105[0m
+[0m[[0mdebug[0m] [0m	Interrupted qtp390461209-105[0m
 [0m[[0mdebug[0m] [0mInterrupting thread New I/O worker #4[0m
 [0m[[0mdebug[0m] [0m	Interrupted New I/O worker #4[0m
-[0m[[0mdebug[0m] [0mInterrupting thread sparkDriver-akka.actor.default-dispatcher-3[0m
-[0m[[0mdebug[0m] [0m	Interrupted sparkDriver-akka.actor.default-dispatcher-3[0m
-[0m[[0mdebug[0m] [0mInterrupting thread qtp1891986541-51[0m
-[0m[[0mdebug[0m] [0m	Interrupted qtp1891986541-51[0m
-[0m[[0mdebug[0m] [0mInterrupting thread sparkDriver-akka.remote.default-remote-dispatcher-8[0m
-[0m[[0mdebug[0m] [0m	Interrupted sparkDriver-akka.remote.default-remote-dispatcher-8[0m
-[0m[[0mdebug[0m] [0mInterrupting thread qtp396715747-61 Selector0[0m
-[0m[[0mdebug[0m] [0m	Interrupted qtp396715747-61 Selector0[0m
+[0m[[0mdebug[0m] [0mInterrupting thread sparkDriver-akka.remote.default-remote-dispatcher-15[0m
+[0m[[0mdebug[0m] [0m	Interrupted sparkDriver-akka.remote.default-remote-dispatcher-15[0m
 [0m[[0mdebug[0m] [0mInterrupting thread task-result-getter-0[0m
 [0m[[0mdebug[0m] [0m	Interrupted task-result-getter-0[0m
-[0m[[0mdebug[0m] [0mInterrupting thread SparkListenerBus[0m
-[0m[[0mdebug[0m] [0m	Interrupted SparkListenerBus[0m
-[0m[[0mdebug[0m] [0mInterrupting thread qtp1891986541-50[0m
-[0m[[0mdebug[0m] [0m	Interrupted qtp1891986541-50[0m
-[0m[[0mdebug[0m] [0mInterrupting thread New I/O worker #2[0m
-[0m[[0mdebug[0m] [0m	Interrupted New I/O worker #2[0m
-[0m[[0mdebug[0m] [0mInterrupting thread driver-heartbeater[0m
-[0m[[0mdebug[0m] [0m	Interrupted driver-heartbeater[0m
-[0m[[0mdebug[0m] [0mInterrupting thread New I/O boss #3[0m
-[0m[[0mdebug[0m] [0m	Interrupted New I/O boss #3[0m
-[0m[[0mdebug[0m] [0mInterrupting thread Thread-3[0m
-[0m[[0mdebug[0m] [0m	Interrupted Thread-3[0m
-[0m[[0mdebug[0m] [0mInterrupting thread Executor task launch worker-0[0m
-[0m[[0mdebug[0m] [0m	Interrupted Executor task launch worker-0[0m
-[0m[[0mdebug[0m] [0mInterrupting thread sparkDriver-akka.actor.default-dispatcher-5[0m
-[0m[[0mdebug[0m] [0m	Interrupted sparkDriver-akka.actor.default-dispatcher-5[0m
-[0m[[0mdebug[0m] [0mInterrupting thread qtp396715747-55 Acceptor0 SelectChannelConnector@0.0.0.0:4040[0m
-[0m[[0mdebug[0m] [0m	Interrupted qtp396715747-55[0m
-[0m[[0mdebug[0m] [0mInterrupting thread sparkDriver-akka.actor.default-dispatcher-6[0m
-[0m[[0mdebug[0m] [0m	Interrupted sparkDriver-akka.actor.default-dispatcher-6[0m
-[0m[[0mdebug[0m] [0mInterrupting thread ShutdownMonitor[0m
-[0m[[0mdebug[0m] [0m	Interrupted ShutdownMonitor[0m
-[0m[[0mdebug[0m] [0mInterrupting thread MAP_OUTPUT_TRACKER cleanup timer[0m
-[0m[[0mdebug[0m] [0m	Interrupted MAP_OUTPUT_TRACKER cleanup timer[0m
-[0m[[0mdebug[0m] [0mInterrupting thread Spark Context Cleaner[0m
-[0m[[0mdebug[0m] [0m	Interrupted Spark Context Cleaner[0m
-[0m[[0mdebug[0m] [0mInterrupting thread sparkDriver-scheduler-1[0m
-[0m[[0mdebug[0m] [0m	Interrupted sparkDriver-scheduler-1[0m
-[0m[[0mdebug[0m] [0mInterrupting thread New I/O server boss #6[0m
-[0m[[0mdebug[0m] [0m	Interrupted New I/O server boss #6[0m
-[0m[[0mdebug[0m] [0mInterrupting thread Timer-0[0m
-[0m[[0mdebug[0m] [0m	Interrupted Timer-0[0m
-[0m[[0mdebug[0m] [0mInterrupting thread dag-scheduler-event-loop[0m
-[0m[[0mdebug[0m] [0m	Interrupted dag-scheduler-event-loop[0m
+[0m[[0mdebug[0m] [0mInterrupting thread qtp2029085443-120[0m
+[0m[[0mdebug[0m] [0m	Interrupted qtp2029085443-120[0m
 [0m[[0mdebug[0m] [0mInterrupting thread heartbeat-receiver-event-loop-thread[0m
 [0m[[0mdebug[0m] [0m	Interrupted heartbeat-receiver-event-loop-thread[0m
-[0m[[0mdebug[0m] [0mInterrupting thread New I/O worker #5[0m
-[0m[[0mdebug[0m] [0m	Interrupted New I/O worker #5[0m
-[0m[[0mdebug[0m] [0mInterrupting thread qtp396715747-54[0m
-[0m[[0mdebug[0m] [0m	Interrupted qtp396715747-54[0m
-[0m[[0mdebug[0m] [0mInterrupting thread SPARK_CONTEXT cleanup timer[0m
-[0m[[0mdebug[0m] [0m	Interrupted SPARK_CONTEXT cleanup timer[0m
-[0m[[0mdebug[0m] [0mInterrupting thread qtp1891986541-48[0m
-[0m[[0mdebug[0m] [0m	Interrupted qtp1891986541-48[0m
-[0m[[0mdebug[0m] [0mInterrupting thread qtp1891986541-46[0m
-[0m[[0mdebug[0m] [0m	Interrupted qtp1891986541-46[0m
-[0m[[0mdebug[0m] [0mInterrupting thread qtp396715747-60[0m
-[0m[[0mdebug[0m] [0m	Interrupted qtp396715747-60[0m
-[0m[[0mdebug[0m] [0mInterrupting thread sparkDriver-akka.actor.default-dispatcher-4[0m
-[0m[[0mdebug[0m] [0m	Interrupted sparkDriver-akka.actor.default-dispatcher-4[0m
-[0m[[0mdebug[0m] [0mInterrupting thread qtp1891986541-45[0m
-[0m[[0mdebug[0m] [0m	Interrupted qtp1891986541-45[0m
-[0m[[0mdebug[0m] [0mInterrupting thread sparkDriver-akka.remote.default-remote-dispatcher-7[0m
-[0m[[0mdebug[0m] [0m	Interrupted sparkDriver-akka.remote.default-remote-dispatcher-7[0m
+[0m[[0mdebug[0m] [0mInterrupting thread Thread-28[0m
+[0m[[0mdebug[0m] [0m	Interrupted Thread-28[0m
+[0m[[0mdebug[0m] [0mInterrupting thread qtp2029085443-114 Acceptor0 SelectChannelConnector@0.0.0.0:4040[0m
+[0m[[0mdebug[0m] [0m	Interrupted qtp2029085443-114 Acceptor0 SelectChannelConnector@0.0.0.0:4040[0m
+[0m[[0mdebug[0m] [0mInterrupting thread sparkDriver-akka.actor.default-dispatcher-3[0m
+[0m[[0mdebug[0m] [0m	Interrupted sparkDriver-akka.actor.default-dispatcher-3[0m
 [0m[[0mdebug[0m] [0mInterrupting thread New I/O worker #1[0m
 [0m[[0mdebug[0m] [0m	Interrupted New I/O worker #1[0m
+[0m[[0mdebug[0m] [0mInterrupting thread sparkDriver-akka.actor.default-dispatcher-2[0m
+[0m[[0mdebug[0m] [0m	Interrupted sparkDriver-akka.actor.default-dispatcher-2[0m
+[0m[[0mdebug[0m] [0mInterrupting thread New I/O boss #3[0m
+[0m[[0mdebug[0m] [0m	Interrupted New I/O boss #3[0m
 [0m[[0mdebug[0m] [0mInterrupting thread BROADCAST_VARS cleanup timer[0m
 [0m[[0mdebug[0m] [0m	Interrupted BROADCAST_VARS cleanup timer[0m
+[0m[[0mdebug[0m] [0mInterrupting thread qtp390461209-110[0m
+[0m[[0mdebug[0m] [0m	Interrupted qtp390461209-110[0m
+[0m[[0mdebug[0m] [0mInterrupting thread qtp390461209-103 Acceptor0 SocketConnector@0.0.0.0:54660[0m
+[0m[[0mdebug[0m] [0m	Interrupted qtp390461209-103 Acceptor0 SocketConnector@0.0.0.0:54660[0m
+[0m[[0mdebug[0m] [0mInterrupting thread New I/O server boss #6[0m
+[0m[[0mdebug[0m] [0m	Interrupted New I/O server boss #6[0m
+[0m[[0mdebug[0m] [0mInterrupting thread qtp390461209-106[0m
+[0m[[0mdebug[0m] [0m	Interrupted qtp390461209-106[0m
+[0m[[0mdebug[0m] [0mInterrupting thread sparkDriver-akka.actor.default-dispatcher-4[0m
+[0m[[0mdebug[0m] [0m	Interrupted sparkDriver-akka.actor.default-dispatcher-4[0m
+[0m[[0mdebug[0m] [0mInterrupting thread New I/O worker #2[0m
+[0m[[0mdebug[0m] [0m	Interrupted New I/O worker #2[0m
+[0m[[0mdebug[0m] [0mInterrupting thread qtp390461209-108[0m
+[0m[[0mdebug[0m] [0m	Interrupted qtp390461209-108[0m
+[0m[[0mdebug[0m] [0mInterrupting thread qtp2029085443-118[0m
+[0m[[0mdebug[0m] [0m	Interrupted qtp2029085443-118[0m
+[0m[[0mdebug[0m] [0mInterrupting thread qtp2029085443-119[0m
+[0m[[0mdebug[0m] [0m	Interrupted qtp2029085443-119[0m
+[0m[[0mdebug[0m] [0mInterrupting thread sparkDriver-10[0m
+[0m[[0mdebug[0m] [0m	Interrupted sparkDriver-10[0m
+[0m[[0mdebug[0m] [0mInterrupting thread Timer-1[0m
+[0m[[0mdebug[0m] [0m	Interrupted Timer-1[0m
+[0m[[0mdebug[0m] [0mInterrupting thread qtp390461209-104[0m
+[0m[[0mdebug[0m] [0m	Interrupted qtp390461209-104[0m
+[0m[[0mdebug[0m] [0mInterrupting thread shuffle-client-0[0m
+[0m[[0mdebug[0m] [0m	Interrupted shuffle-client-0[0m
+[0m[[0mdebug[0m] [0mInterrupting thread sparkDriver-scheduler-1[0m
+[0m[[0mdebug[0m] [0m	Interrupted sparkDriver-scheduler-1[0m
+[0m[[0mdebug[0m] [0mInterrupting thread qtp2029085443-116[0m
+[0m[[0mdebug[0m] [0m	Interrupted qtp2029085443-116[0m
 [0m[[0mdebug[0m] [0mInterrupting thread BLOCK_MANAGER cleanup timer[0m
 [0m[[0mdebug[0m] [0m	Interrupted BLOCK_MANAGER cleanup timer[0m
-[0m[[0mdebug[0m] [0mInterrupting thread qtp396715747-59[0m
-[0m[[0mdebug[0m] [0m	Interrupted qtp396715747-59[0m
+[0m[[0mdebug[0m] [0mInterrupting thread driver-heartbeater[0m
+[0m[[0mdebug[0m] [0m	Interrupted driver-heartbeater[0m
+[0m[[0mdebug[0m] [0mInterrupting thread qtp390461209-107[0m
+[0m[[0mdebug[0m] [0m	Interrupted qtp390461209-107[0m
+[0m[[0mdebug[0m] [0mInterrupting thread SPARK_CONTEXT cleanup timer[0m
+[0m[[0mdebug[0m] [0m	Interrupted SPARK_CONTEXT cleanup timer[0m
+[0m[[0mdebug[0m] [0mInterrupting thread SparkListenerBus[0m
+[0m[[0mdebug[0m] [0m	Interrupted SparkListenerBus[0m
+[0m[[0mdebug[0m] [0mInterrupting thread MAP_OUTPUT_TRACKER cleanup timer[0m
+[0m[[0mdebug[0m] [0m	Interrupted MAP_OUTPUT_TRACKER cleanup timer[0m
+[0m[[0mdebug[0m] [0mInterrupting thread Executor task launch worker-0[0m
+[0m[[0mdebug[0m] [0m	Interrupted Executor task launch worker-0[0m
+[0m[[0mdebug[0m] [0mInterrupting thread qtp390461209-109[0m
+[0m[[0mdebug[0m] [0m	Interrupted qtp390461209-109[0m
+[0m[[0mdebug[0m] [0mInterrupting thread New I/O worker #5[0m
+[0m[[0mdebug[0m] [0m	Interrupted New I/O worker #5[0m
+[0m[[0mdebug[0m] [0mInterrupting thread sparkDriver-akka.actor.default-dispatcher-5[0m
+[0m[[0mdebug[0m] [0m	Interrupted sparkDriver-akka.actor.default-dispatcher-5[0m
+[0m[[0mdebug[0m] [0mInterrupting thread qtp2029085443-115[0m
+[0m[[0mdebug[0m] [0m	Interrupted qtp2029085443-115[0m
+[0m[[0mdebug[0m] [0mInterrupting thread ShutdownMonitor[0m
+[0m[[0mdebug[0m] [0m	Interrupted ShutdownMonitor[0m
+[0m[[0mdebug[0m] [0mInterrupting thread shuffle-server-0[0m
+[0m[[0mdebug[0m] [0m	Interrupted shuffle-server-0[0m
+[0m[[0mdebug[0m] [0mInterrupting thread qtp2029085443-117[0m
+[0m[[0mdebug[0m] [0m	Interrupted qtp2029085443-117[0m
+[0m[[0mdebug[0m] [0mInterrupting thread Spark Context Cleaner[0m
+[0m[[0mdebug[0m] [0m	Interrupted Spark Context Cleaner[0m
+[0m[[0mdebug[0m] [0mInterrupting thread sparkDriver-akka.remote.default-remote-dispatcher-7[0m
+[0m[[0mdebug[0m] [0m	Interrupted sparkDriver-akka.remote.default-remote-dispatcher-7[0m
+[0m[[0mdebug[0m] [0mInterrupting thread dag-scheduler-event-loop[0m
+[0m[[0mdebug[0m] [0m	Interrupted dag-scheduler-event-loop[0m
 [0m[[0mdebug[0m] [0mSandboxed run complete..[0m
 [0m[[0mdebug[0m] [0mExited with code 0[0m

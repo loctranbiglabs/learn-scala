@@ -5,128 +5,73 @@ import org.apache.spark.rdd.JdbcRDD
 import scala.util.parsing.json.JSON
 import net.liftweb.json._
 import scala.collection.mutable.ListBuffer
+import org.apache.spark.rdd.RDD
+import org.apache.spark.sql.Row
 
 case class Properties(data: String)
 case class Product(productID: String)
 case class Data(timestamp: Long, sessionId: String,action: String, listProduct: String*)
 
 object WordCount {
-
+	def genKey(x: Row) ={
+			implicit val formats = DefaultFormats
+			val item = x.getString(6)
+			val jValue = parse(item)
+			val prop = jValue.extract[Properties]
+			val jData = parse(prop.data)
+			val data = jData.extract[Data]
+			data.sessionId
+	}
 	def main(args: Array[String]){
 		val sc = new SparkContext("local", "Word Count", "/opt/spark", List("target/scala-2.10/simple-project_2.10-1.0.jar"))
 		val sqlContext = new SQLContext(sc)
 		import sqlContext.implicits._
 		val url = "jdbc:postgresql://192.168.1.21/?user=postgres&password=123456"
-		val commits = sqlContext.load("jdbc", Map(
+		val people = sqlContext.read.format("jdbc").options(Map(
+		 	"url" -> url,
+		 	"dbtable" -> "pio_event_1",
+		 	"driver" -> "org.postgresql.Driver")).load()
+		val lst = people.rdd
+		val rest = lst.map{
+			x => genKey(x) -> x
+		}
+		rest.foreach(p => println(">>> key=" + p._1 + ", value=" + p._2))
+		// val lst = people.rdd match {
+		// 	 case org.apache.spark.sql.Row(
+		// 		id: String,
+		// 		event: String,
+		// 		entityType: String,
+		// 		entityId: String,
+		// 		targetEntityType: String,
+		// 		targetEntityId: String,
+		// 		properties: String,
+		// 		eventTime: String,
+		// 		eventTimezone: String,
+		// 		tags: String,
+		// 		prid: String,
+		// 		createdTime: String,
+		// 		createdTimezone: String
+		// 		) => LogEntry(id,
+		// 		event,
+		// 		entityType,
+		// 		entityId,
+		// 		targetEntityType,
+		// 		targetEntityId,
+		// 		properties,
+		// 		eventTime,
+		// 		eventTimezone,
+		// 		tags,
+		// 		prid,
+		// 		createdTime,
+		// 		createdTimezone)
+		// 	}
+		// println(lst)
+/*		val commits = sqlContext.load("jdbc", Map(
 		 	"url" -> url,
 		 	"dbtable" -> "pio_event_1",
 		 	"driver" -> "org.postgresql.Driver"))
 		println("......finished....1...")
-		println(commits.flatMap{ 
-            event =>
-            val productEvent = try {
-
-                val content = parse(event.properties.get[String]("data"))
-                val productID = (for {JInt(x) <- (content \\ "productID")} yield x.toString())
-                val category = for { JString(x) <- (content \\ "category")} yield x
-                val compactProductId = compact(content \\ "productID")
-
-                (event.entityType, event.event) match {
-                    case ("USER","BUY") => {
-                        val JString(userID) = (content \\ "customerID")
-                        val result = for {
-                            index <- 0 to compactProductId.split(",").length - 1
-                        }
-                        yield ProductEvent(
-                            user = userID,
-                            item = productID(index).toString,
-                            category = category(index).toString,
-                            score = SCORE_BUY) 
-                        result
-                    }
-                    case ("USER","ADD_WISHLIST") => {
-                        val JString(userID) = (content \\ "customerID")
-                        val result = for {
-                            index <- 0 to compactProductId.split(",").length - 1
-                        }
-                        yield ProductEvent(
-                            user = userID,
-                            item = productID(index).toString,
-                            category = category(index).toString,
-                            score = SCORE_ADD_WISHLIST) 
-                        result
-                    }
-                    case ("USER", "VIEW") => {
-                        val JString(userID) = (content \\ "customerID")
-                        val result = for {
-                            index <- 0 to compactProductId.split(",").length - 1
-                        }
-                        yield ProductEvent(
-                            user = userID,
-                            item = productID(index).toString,
-                            category = category(index).toString,
-                            score = SCORE_VIEW) 
-                        result
-                    }
-                    case ("USER", "ADD_CART") => {
-                        val JString(userID) = (content \\ "customerID")
-                        val result = for {
-                            index <- 0 to compactProductId.split(",").length - 1
-                        }
-                        yield ProductEvent(
-                            user = userID,
-                            item = productID(index).toString,
-                            category = category(index).toString,
-                            score = SCORE_ADDCART) 
-                        result
-                    }
-                    case ("GUEST", "VIEW") => {
-                        val JString(sessionID) = (content \\ "sessionId")
-                        val result = for {
-                            index <- 0 to compactProductId.split(",").length - 1
-                        }
-                        yield ProductEvent(
-                            user = sessionID,
-                            item = productID(index).toString,
-                            category = category(index).toString,
-                            score = SCORE_VIEW) 
-                        result
-                    }
-                    case ("GUEST", "ADD_CART") => {
-                        val JString(sessionID) = (content \\ "sessionId")
-                        val result = for {
-                            index <- 0 to compactProductId.split(",").length - 1
-                        }
-                        yield ProductEvent(
-                            user = sessionID,
-                            item = productID(index).toString,
-                            category = category(index).toString,
-                            score = SCORE_ADDCART) 
-                        result
-                    }
-                    case ("GUEST", "BUY") => {
-                        val JString(emailAddress) = (content \\ "emailAddress")
-                        val result = for {
-                            index <- 0 to compactProductId.split(",").length - 1
-                        }
-                        yield ProductEvent(
-                            user = emailAddress,
-                            item = productID(index).toString,
-                            category = category(index).toString,
-                            score = SCORE_BUY) 
-                        result
-                    }
-                    case _ => throw new Exception(s"Unexpected event ${event} is read.")
-                }
-                
-            } catch {
-                case e: Exception => {
-                    logger.error(s"Cannot convert ${event} to ProductEvent." + s" Exception: ${e}.")
-                    throw e
-                }
-            }
-            productEvent
-        })
+		println()
 
 		// val a = commits.filter("event = \"REC\"").select("properties")
 		val a = commits.select("properties")
@@ -161,5 +106,6 @@ object WordCount {
   //                       2,//number of partitions
   //                       r =>
   //                         r.getString("event") + ", " + r.getString("entitytype"))
+*/
 	}
 }
