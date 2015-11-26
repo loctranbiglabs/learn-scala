@@ -1,0 +1,1 @@
+case class LogEntry(timestamp: Long, sessionId: String,action: String, listProduct: String*)

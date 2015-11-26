@@ -22,6 +22,7 @@ object WordCount {
 		 	"dbtable" -> "pio_event_1",
 		 	"driver" -> "org.postgresql.Driver"))
 		println("......finished....1...")
+		println(commits.map())
 
 		// val a = commits.filter("event = \"REC\"").select("properties")
 		val a = commits.select("properties")
@@ -37,7 +38,7 @@ object WordCount {
 			lb += data
 		})
 		val listRecord = lb.toList
-		lb.foreach(println)
+	//	lb.foreach(println)
 		// for( item <- a){
 		// 	val listProduct = JSON.parseFull(item.getString(0)) match {
 		// 		case Some(x) => {
