@@ -43,32 +43,25 @@ object WordCount {
 			try{
 				val data2 = jData.extract[OtherData]
 				val product = data2.product
-				println("data2: "+ data2)
-					productId = product.productID
+				productId = product.productID
 			}catch{
-				case e => println("error2 " + prop)
+				case e => Nil//println("error2 " + prop)
 			}
 			val timestamp = data.timestamp
 			
 			var listProduct = List("")
-			println(event)
 			if(event == "REC"){
 				try{
 					val data3 = jData.extract[RecData]
 					listProduct = data3.listProduct
-					println("data3: "+ data3)
+					//println("data3.listProduct: "+ data3.listProduct)
 				}catch{
-					case e => println("error3" + prop)
+					case e => Nil
 				}
 			}else{
-				println(data)			
-				// println(data)
-				//val product = data.product
-				//productId = data.productId
+				
 			}
 			var properties = new Properties("");
-			println(productId)
-			println(listProduct)
 			lazy val entry = RawLogEntry(event,
 				entityType,
 				timestamp,
