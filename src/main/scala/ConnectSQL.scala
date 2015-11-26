@@ -9,8 +9,10 @@ import org.apache.spark.rdd.RDD
 import org.apache.spark.sql.Row
 
 case class Properties(data: String)
-case class Product(productID: String)
-case class Data(timestamp: Long, sessionId: String,action: String, listProduct: String*)
+case class Product(productId: String)
+case class Data(timestamp: Long, sessionId: String,action: String)
+case class OtherData(timestamp: Long, sessionId: String,action: String, product:Product)
+case class RecData(timestamp: Long, sessionId: String,action: String, listProduct:List[String])
 
 object WordCount {
 	def genKey(x: Row) ={
@@ -21,6 +23,58 @@ object WordCount {
 			val jData = parse(prop.data)
 			val data = jData.extract[Data]
 			data.sessionId
+	}
+	def genValue(x: Row) ={
+		//can tinh:
+		//so lan moi san pham duoc recommended
+		//so lan moi san pham duoc VIEW sau lan recommend dau tien
+		//so lan moi san pham duoc BUY sau lan recommend dau tien
+			implicit val formats = DefaultFormats
+			val item = x.getString(6)
+			val jValue = parse(item)
+			// println(jValue.extract[EventLogEntry])
+			val event = x.getString(0)
+			val entityType = x.getString(1)
+
+			val prop = jValue.extract[Properties]
+			val jData = parse(prop.data)
+			var data = jData.extract[Data]
+			var productId = ""
+			try{
+				val data2 = jData.extract[OtherData]
+				val product = data2.product
+				println("data2: "+ data2)
+				if(product != Nil){
+					productId = product.productId
+				}
+			}catch{
+				case e => Nil
+			}
+			val timestamp = data.timestamp
+			
+			var listProduct = List("")
+			if(event == "REC"){
+				try{
+					val data3 = jData.extract[RecData]
+					listProduct = data3.listProduct
+					println("data3: "+ data3)
+				}catch{
+					case e => Nil
+				}
+			}else{
+				println(data)			
+				// println(data)
+				//val product = data.product
+				//productId = data.productId
+			}
+			var properties = new Properties("");
+			val entry = RawLogEntry(event,
+				entityType,
+				timestamp,
+				productId,
+				listProduct,
+				properties)
+			entry
 	}
 	def main(args: Array[String]){
 		val sc = new SparkContext("local", "Word Count", "/opt/spark", List("target/scala-2.10/simple-project_2.10-1.0.jar"))
@@ -33,7 +87,7 @@ object WordCount {
 		 	"driver" -> "org.postgresql.Driver")).load()
 		val lst = people.rdd
 		val rest = lst.map{
-			x => genKey(x) -> x
+			x => genKey(x) -> genValue(x)
 		}
 		rest.foreach(p => println(">>> key=" + p._1 + ", value=" + p._2))
 		// val lst = people.rdd match {
