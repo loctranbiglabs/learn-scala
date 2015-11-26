@@ -9,7 +9,7 @@ import org.apache.spark.rdd.RDD
 import org.apache.spark.sql.Row
 
 case class Properties(data: String)
-case class Product(productId: String)
+case class Product(productID: String)
 case class Data(timestamp: Long, sessionId: String,action: String)
 case class OtherData(timestamp: Long, sessionId: String,action: String, product:Product)
 case class RecData(timestamp: Long, sessionId: String,action: String, listProduct:List[String])
@@ -33,8 +33,8 @@ object WordCount {
 			val item = x.getString(6)
 			val jValue = parse(item)
 			// println(jValue.extract[EventLogEntry])
-			val event = x.getString(0)
-			val entityType = x.getString(1)
+			val event = x.getString(1)
+			val entityType = x.getString(2)
 
 			val prop = jValue.extract[Properties]
 			val jData = parse(prop.data)
@@ -44,22 +44,21 @@ object WordCount {
 				val data2 = jData.extract[OtherData]
 				val product = data2.product
 				println("data2: "+ data2)
-				if(product != Nil){
-					productId = product.productId
-				}
+					productId = product.productID
 			}catch{
-				case e => Nil
+				case e => println("error2 " + prop)
 			}
 			val timestamp = data.timestamp
 			
 			var listProduct = List("")
+			println(event)
 			if(event == "REC"){
 				try{
 					val data3 = jData.extract[RecData]
 					listProduct = data3.listProduct
 					println("data3: "+ data3)
 				}catch{
-					case e => Nil
+					case e => println("error3" + prop)
 				}
 			}else{
 				println(data)			
@@ -68,7 +67,9 @@ object WordCount {
 				//productId = data.productId
 			}
 			var properties = new Properties("");
-			val entry = RawLogEntry(event,
+			println(productId)
+			println(listProduct)
+			lazy val entry = RawLogEntry(event,
 				entityType,
 				timestamp,
 				productId,
