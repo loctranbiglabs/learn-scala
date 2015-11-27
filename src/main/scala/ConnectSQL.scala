@@ -44,7 +44,7 @@ object WordCount {
 				val product = data2.product
 				productId = product.productID
 			}catch{
-				case e : Throwable
+				case e => Nil
 			}
 			val timestamp = data.timestamp
 			
@@ -54,7 +54,7 @@ object WordCount {
 					val data3 = jData.extract[RecData]
 					listProduct = data3.listProduct
 				}catch{
-					case e : Throwable
+					case e => Nil
 				}
 			}else{
 				
@@ -66,6 +66,11 @@ object WordCount {
 				listProduct)
 			entry
 	}
+	def mergeMap[A, B](ms: List[Map[A, B]])(f: (B, B) => B): Map[A, B] =
+	  (Map[A, B]() /: (for (m <- ms; kv <- m) yield kv)) { (a, kv) =>
+	    a + (if (a.contains(kv._1)) kv._1 -> f(a(kv._1), kv._2) else kv)
+    }
+
 	def main(args: Array[String]){
 		val sc = new SparkContext("local", "Word Count", "/opt/spark", List("target/scala-2.10/simple-project_2.10-1.0.jar"))
 		val sqlContext = new SQLContext(sc)
@@ -77,8 +82,10 @@ object WordCount {
 		 	"driver" -> "org.postgresql.Driver")).load()
 		val lst = people.rdd
 		val rest = lst.map{
-			x => genKey(x) -> genValue(x)
+			x =>genKey(x) -> genValue(x)
 		}
-		rest.foreach(p => println(">>> key=" + p._1 + ", value=" + p._2))
+		//rest.foreach(p => println(">>> key=" + p._1 + ", value=" + p._2))
+		val s = for(p <- rest) yield Map(p._1 -> p._2)
+		println(s.collect().toList)
 	}
 }
