@@ -32,7 +32,6 @@ object WordCount {
 			implicit val formats = DefaultFormats
 			val item = x.getString(6)
 			val jValue = parse(item)
-			// println(jValue.extract[EventLogEntry])
 			val event = x.getString(1)
 			val entityType = x.getString(2)
 
@@ -45,7 +44,7 @@ object WordCount {
 				val product = data2.product
 				productId = product.productID
 			}catch{
-				case e => Nil//println("error2 " + prop)
+				case e : Throwable
 			}
 			val timestamp = data.timestamp
 			
@@ -54,20 +53,17 @@ object WordCount {
 				try{
 					val data3 = jData.extract[RecData]
 					listProduct = data3.listProduct
-					//println("data3.listProduct: "+ data3.listProduct)
 				}catch{
-					case e => Nil
+					case e : Throwable
 				}
 			}else{
 				
 			}
-			var properties = new Properties("");
 			lazy val entry = RawLogEntry(event,
 				entityType,
 				timestamp,
 				productId,
-				listProduct,
-				properties)
+				listProduct)
 			entry
 	}
 	def main(args: Array[String]){
@@ -84,76 +80,5 @@ object WordCount {
 			x => genKey(x) -> genValue(x)
 		}
 		rest.foreach(p => println(">>> key=" + p._1 + ", value=" + p._2))
-		// val lst = people.rdd match {
-		// 	 case org.apache.spark.sql.Row(
-		// 		id: String,
-		// 		event: String,
-		// 		entityType: String,
-		// 		entityId: String,
-		// 		targetEntityType: String,
-		// 		targetEntityId: String,
-		// 		properties: String,
-		// 		eventTime: String,
-		// 		eventTimezone: String,
-		// 		tags: String,
-		// 		prid: String,
-		// 		createdTime: String,
-		// 		createdTimezone: String
-		// 		) => LogEntry(id,
-		// 		event,
-		// 		entityType,
-		// 		entityId,
-		// 		targetEntityType,
-		// 		targetEntityId,
-		// 		properties,
-		// 		eventTime,
-		// 		eventTimezone,
-		// 		tags,
-		// 		prid,
-		// 		createdTime,
-		// 		createdTimezone)
-		// 	}
-		// println(lst)
-/*		val commits = sqlContext.load("jdbc", Map(
-		 	"url" -> url,
-		 	"dbtable" -> "pio_event_1",
-		 	"driver" -> "org.postgresql.Driver"))
-		println("......finished....1...")
-		println()
-
-		// val a = commits.filter("event = \"REC\"").select("properties")
-		val a = commits.select("properties")
-
-		var lb = new ListBuffer[Data]()
-		implicit val formats = DefaultFormats
-		a.collect.foreach(i => {
-			val item = i.getString(0)
-			val jValue = parse(item)
-			val prop = jValue.extract[Properties]
-			val jData = parse(prop.data)
-			val data = jData.extract[Data]
-			lb += data
-		})
-		val listRecord = lb.toList
-	//	lb.foreach(println)
-		// for( item <- a){
-		// 	val listProduct = JSON.parseFull(item.getString(0)) match {
-		// 		case Some(x) => {
-		// 			val m = x.asInstanceOf[Map[String, String]]
-		// 			println(m)
-		// 		}
-		// 	}
-		// }
-		println("......finished....2...")
-
-		// val myRDD = new JdbcRDD( sc, () => 
-  //                              DriverManager.getConnection(url,"postgres","123456"),
-  //                       "select event,entitytype from pio_event_1 limit ?, ?",
-  //                       1,//lower bound
-  //                       5,//upper bound
-  //                       2,//number of partitions
-  //                       r =>
-  //                         r.getString("event") + ", " + r.getString("entitytype"))
-*/
 	}
 }

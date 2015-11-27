@@ -3,6 +3,5 @@ case class RawLogEntry(
 	entityType: String,
 	timestamp: Long,
 	productID: String,
-	listProduct: List[String],
-	properties: Properties
+	listProduct: List[String]
 	)
