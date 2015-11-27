@@ -86,6 +86,13 @@ object WordCount {
 		}
 		//rest.foreach(p => println(">>> key=" + p._1 + ", value=" + p._2))
 		val s = for(p <- rest) yield Map(p._1 -> p._2)
-		println(s.collect().toList)
+		val mm=mergeMap(s.collect().toList)((v1, v2) => {
+			RawLogEntry(v1.event,
+				v1.entityType,
+				v1.timestamp - v2.timestamp,
+				"v1.productId",
+				List("pr","p2"))
+			})
+		mm.foreach(println)
 	}
 }
