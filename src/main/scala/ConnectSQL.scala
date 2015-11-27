@@ -81,18 +81,27 @@ object WordCount {
 		 	"dbtable" -> "pio_event_1",
 		 	"driver" -> "org.postgresql.Driver")).load()
 		val lst = people.rdd
-		val rest = lst.map{
-			x =>genKey(x) -> genValue(x)
-		}
+		val rest = lst.map(
+			x =>(genKey(x), genValue(x))
+		)
 		//rest.foreach(p => println(">>> key=" + p._1 + ", value=" + p._2))
 		val s = for(p <- rest) yield Map(p._1 -> p._2)
-		val mm=mergeMap(s.collect().toList)((v1, v2) => {
-			RawLogEntry(v1.event,
-				v1.entityType,
-				v1.timestamp - v2.timestamp,
-				"v1.productId",
-				List("pr","p2"))
-			})
-		mm.foreach(println)
+		val sm =rest.collect().toList
+		val s2 = sm.map(x=> (x._1, List(x._2)))
+		val s3 = sc.parallelize(s2).reduceByKey((x, y) => x ::: y)
+//		s3.foreach(println)
+		//val s4 = for(p <- s3) yield Map(p._1 -> p._2.timestamp)
+		val s4 = for(p <- s3) yield (for(q <- p._2) yield Map(q.timestamp -> q))
+		
+		s4.foreach(println)
+		// val mm=mergeMap(s.collect().toList)((v1, v2) => {
+		// 	RawLogEntry(v1.event,
+		// 		v1.entityType,
+		// 		v1.timestamp - v2.timestamp,
+		// 		"v1.productId",
+		// 		List("pr","p2"))
+		// 	}
+		// )
+		// mm.foreach(println)
 	}
 }
