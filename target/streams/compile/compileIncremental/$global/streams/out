@@ -16,7 +16,7 @@
 [0m[[0minfo[0m] [0mCompiling 1 Scala source to /home/loc/Documents/learn-scala/SimpleSparkProject/target/scala-2.10/classes...[0m
 [0m[[0mdebug[0m] [0mGetting compiler-interface from component compiler for Scala 2.10.4[0m
 [0m[[0mdebug[0m] [0mGetting compiler-interface from component compiler for Scala 2.10.4[0m
-[0m[[0mdebug[0m] [0mRunning cached compiler e004173, interfacing (CompilerInterface) with Scala compiler version 2.10.4[0m
+[0m[[0mdebug[0m] [0mRunning cached compiler 47b1de1a, interfacing (CompilerInterface) with Scala compiler version 2.10.4[0m
 [0m[[0mdebug[0m] [0mCalling Scala compiler with arguments  (CompilerInterface):[0m
 [0m[[0mdebug[0m] [0m	-bootclasspath[0m
 [0m[[0mdebug[0m] [0m	/usr/local/java/jdk1.7.0_79/jre/lib/resources.jar:/usr/local/java/jdk1.7.0_79/jre/lib/rt.jar:/usr/local/java/jdk1.7.0_79/jre/lib/sunrsasign.jar:/usr/local/java/jdk1.7.0_79/jre/lib/jsse.jar:/usr/local/java/jdk1.7.0_79/jre/lib/jce.jar:/usr/local/java/jdk1.7.0_79/jre/lib/charsets.jar:/usr/local/java/jdk1.7.0_79/jre/lib/jfr.jar:/usr/local/java/jdk1.7.0_79/jre/classes:/home/loc/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.10.4.jar[0m
@@ -28,8 +28,9 @@
 [0m[[33mwarn[0m] [0m/home/loc/Documents/learn-scala/SimpleSparkProject/src/main/scala/ConnectSQL.scala:57: This catches all Throwables. If this is really intended, use `case e : Throwable` to clear this warning.[0m
 [0m[[33mwarn[0m] [0m					case e => Nil[0m
 [0m[[33mwarn[0m] [0m					     ^[0m
-[0m[[33mwarn[0m] [0mtwo warnings found[0m
-[0m[[0mdebug[0m] [0mScala compilation took 17.08634349 s[0m
+[0m[[33mwarn[0m] [0mthere were 1 deprecation warning(s); re-run with -deprecation for details[0m
+[0m[[33mwarn[0m] [0mthree warnings found[0m
+[0m[[0mdebug[0m] [0mScala compilation took 19.890633282 s[0m
 [0m[[0mdebug[0m] [0mNew invalidations:[0m
 [0m[[0mdebug[0m] [0m	Set()[0m
 [0m[[0mdebug[0m] [0mInitial set of included nodes: Set()[0m
