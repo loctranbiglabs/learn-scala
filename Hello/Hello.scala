@@ -9,7 +9,7 @@ object HelloWorld {
     case class Result(productID: Int, totalView: Int,totalRec: Int)
 
    def main(args: Array[String]) {
-           case class RawLogEntry(
+          case class RawLogEntry(
           	event: String,
           	entityType: String,
           	timestamp: Long,
@@ -62,19 +62,19 @@ object HelloWorld {
         ("czezu6i0u1241get692r3aesz",RawLogEntry("REC","GUEST",77731305,12312,List(10003, 10007, 10004)))
         )
         val rst = lst.groupBy( _._1 ).map( kv => (kv._1, kv._2.map( x=> {
-            if(x._2.listProduct.isEmpty) (x._2.event,x._2.productID)
+            if(x._2.listProduct.isEmpty) List((x._2.event,x._2.productID))
             else
             for{
                 item <- x._2.listProduct
                 val k = (x._2.event,item)
               } yield k
 
-          }) ) ).toList
+          }).flatten ) ).toList
           rst.foreach(println)
 
-        // val a = List(1003,1004, 1005)
-        // println(a.grouped(1))
-           }
+        // val a = List(List(1003,1004), List(1005, 1006))
+        // println(a.flatten)
+     }
 }
 
 

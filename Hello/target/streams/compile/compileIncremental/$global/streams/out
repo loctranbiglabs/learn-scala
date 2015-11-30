@@ -17,7 +17,7 @@
 [0m[[0minfo[0m] [0mCompiling 1 Scala source to /home/loc/Documents/learn-scala/Hello/target/scala-2.10/classes...[0m
 [0m[[0mdebug[0m] [0mGetting compiler-interface from component compiler for Scala 2.10.5[0m
 [0m[[0mdebug[0m] [0mGetting compiler-interface from component compiler for Scala 2.10.5[0m
-[0m[[0mdebug[0m] [0mRunning cached compiler 1240c2a8, interfacing (CompilerInterface) with Scala compiler version 2.10.5[0m
+[0m[[0mdebug[0m] [0mRunning cached compiler 3637139e, interfacing (CompilerInterface) with Scala compiler version 2.10.5[0m
 [0m[[0mdebug[0m] [0mCalling Scala compiler with arguments  (CompilerInterface):[0m
 [0m[[0mdebug[0m] [0m	-bootclasspath[0m
 [0m[[0mdebug[0m] [0m	/usr/local/java/jdk1.7.0_79/jre/lib/resources.jar:/usr/local/java/jdk1.7.0_79/jre/lib/rt.jar:/usr/local/java/jdk1.7.0_79/jre/lib/sunrsasign.jar:/usr/local/java/jdk1.7.0_79/jre/lib/jsse.jar:/usr/local/java/jdk1.7.0_79/jre/lib/jce.jar:/usr/local/java/jdk1.7.0_79/jre/lib/charsets.jar:/usr/local/java/jdk1.7.0_79/jre/lib/jfr.jar:/usr/local/java/jdk1.7.0_79/jre/classes:/home/loc/.sbt/boot/scala-2.10.5/lib/scala-library.jar[0m
@@ -25,7 +25,7 @@
 [0m[[0mdebug[0m] [0m	/home/loc/Documents/learn-scala/Hello/target/scala-2.10/classes[0m
 [0m[[33mwarn[0m] [0mthere were 1 deprecation warning(s); re-run with -deprecation for details[0m
 [0m[[33mwarn[0m] [0mone warning found[0m
-[0m[[0mdebug[0m] [0mScala compilation took 1.622692933 s[0m
+[0m[[0mdebug[0m] [0mScala compilation took 3.998747936 s[0m
 [0m[[0mdebug[0m] [0mNew invalidations:[0m
 [0m[[0mdebug[0m] [0m	Set()[0m
 [0m[[0mdebug[0m] [0mInitial set of included nodes: Set()[0m
