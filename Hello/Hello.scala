@@ -7,8 +7,9 @@ object HelloWorld {
     case class RecData(timestamp: Long, sessionId: String,action: String, listProduct:List[Int])
     
     case class Result(productID: Int, totalView: Int,totalRec: Int)
-
-   def main(args: Array[String]) {
+    def firstRecTs(): Long = 0L
+     // def genTube() : (String, String, Long) = 
+      def main(args: Array[String]) {
           case class RawLogEntry(
           	event: String,
           	entityType: String,
@@ -62,15 +63,23 @@ object HelloWorld {
         ("czezu6i0u1241get692r3aesz",RawLogEntry("REC","GUEST",77731305,12312,List(10003, 10007, 10004)))
         )
         val rst = lst.groupBy( _._1 ).map( kv => (kv._1, kv._2.map( x=> {
-            if(x._2.listProduct.isEmpty) List((x._2.event,x._2.productID))
+            if(x._2.listProduct.isEmpty) List((x._2.productID,x._2.event, x._2.timestamp))
             else
             for{
                 item <- x._2.listProduct
-                val k = (x._2.event,item)
+                val k = (item, x._2.event, x._2.timestamp)
               } yield k
 
-          }).flatten ) ).toList
-          rst.foreach(println)
+          }).flatten.groupBy(_._1).map(k =>(k._1, k._2.map(m => m._2)))))
+
+        // rst.foreach(println)
+
+         // val m = for{
+         //  item <- rst
+         //  val res = item._2.filter(x => (x._2 !="REC") && (x._1 == 10007))
+         // } yield res
+         // m.foreach(println)
+         rst.foreach(println)
 
         // val a = List(List(1003,1004), List(1005, 1006))
         // println(a.flatten)
