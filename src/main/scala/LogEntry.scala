@@ -1,0 +1,13 @@
+case class LogEntry(id: String,
+				event: String,
+				entityType: String,
+				entityId: String,
+				targetEntityType: String,
+				targetEntityId: String,
+				properties: String,
+				eventTime: String,
+				eventTimezone: String,
+				tags: String,
+				prid: String,
+				createdTime: String,
+				createdTimezone: String)
