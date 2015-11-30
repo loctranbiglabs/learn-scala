@@ -88,12 +88,27 @@ object WordCount {
 		val s = for(p <- rest) yield Map(p._1 -> p._2)
 		val sm =rest.collect().toList
 		val s2 = sm.map(x=> (x._1, List(x._2)))
+		// println(s2)
 		val s3 = sc.parallelize(s2).reduceByKey((x, y) => x ::: y)
 //		s3.foreach(println)
 		//val s4 = for(p <- s3) yield Map(p._1 -> p._2.timestamp)
-		val s4 = for(p <- s3) yield (for(q <- p._2) yield Map(q.timestamp -> q))
-		
-		s4.foreach(println)
+		// val s4 = for(p <- s3) yield (for(q <- p._2) yield Map(q.timestamp -> q))
+		val s5 = for(p <- s3) yield (for{
+			q <- p._2
+			val x = (q.productID -> q)
+			} yield x)
+		s5.foreach(println)
+		 /*var ws = for{
+		 	p <- s5
+			 val w = (p.reduce((x,y) => {
+			 		(x._1, RawLogEntry(x._2.event,
+				x._2.entityType,
+				x._2.timestamp,
+				x._2.productID,
+				x._2.listProduct))
+			 		}))
+		 } yield w
+		 println(ws)*/
 		// val mm=mergeMap(s.collect().toList)((v1, v2) => {
 		// 	RawLogEntry(v1.event,
 		// 		v1.entityType,
