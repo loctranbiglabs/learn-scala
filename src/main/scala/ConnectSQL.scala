@@ -14,6 +14,9 @@ case class Data(timestamp: Long, sessionId: String,action: String)
 case class OtherData(timestamp: Long, sessionId: String,action: String, product:Product)
 case class RecData(timestamp: Long, sessionId: String,action: String, listProduct:List[String])
 
+case class Result(productID: String, totalView: Int,totalRec: Int)
+
+
 object WordCount {
 	def genKey(x: Row) ={
 			implicit val formats = DefaultFormats
@@ -70,7 +73,12 @@ object WordCount {
 	  (Map[A, B]() /: (for (m <- ms; kv <- m) yield kv)) { (a, kv) =>
 	    a + (if (a.contains(kv._1)) kv._1 -> f(a(kv._1), kv._2) else kv)
     }
-
+   /* def fnSsn(lstRawLog: List[(String, RawLogEntry)]): List[Result] = {
+    	val s1 = lstRawLog.groupBy(x => x._2)
+    	println(s1)
+		val x = List(Result("10001",3,10), Result("10005",1,2))
+		x
+    }*/
 	def main(args: Array[String]){
 		val sc = new SparkContext("local", "Word Count", "/opt/spark", List("target/scala-2.10/simple-project_2.10-1.0.jar"))
 		val sqlContext = new SQLContext(sc)
@@ -84,39 +92,30 @@ object WordCount {
 		val rest = lst.map(
 			x =>(genKey(x), genValue(x))
 		)
-		//rest.foreach(p => println(">>> key=" + p._1 + ", value=" + p._2))
 		val s = for(p <- rest) yield Map(p._1 -> p._2)
 		val sm =rest.collect().toList
 		val s2 = sm.map(x=> (x._1, List(x._2)))
-		// println(s2)
-		val s3 = sc.parallelize(s2).reduceByKey((x, y) => x ::: y)
-//		s3.foreach(println)
-		//val s4 = for(p <- s3) yield Map(p._1 -> p._2.timestamp)
-		// val s4 = for(p <- s3) yield (for(q <- p._2) yield Map(q.timestamp -> q))
-		val s5 = for(p <- s3) yield (for{
-			q <- p._2
-			val x = (q.productID -> q)
-			} yield x)
-		s5.foreach(println)
-		 /*var ws = for{
-		 	p <- s5
-			 val w = (p.reduce((x,y) => {
-			 		(x._1, RawLogEntry(x._2.event,
-				x._2.entityType,
-				x._2.timestamp,
-				x._2.productID,
-				x._2.listProduct))
-			 		}))
-		 } yield w
-		 println(ws)*/
-		// val mm=mergeMap(s.collect().toList)((v1, v2) => {
-		// 	RawLogEntry(v1.event,
-		// 		v1.entityType,
-		// 		v1.timestamp - v2.timestamp,
-		// 		"v1.productId",
-		// 		List("pr","p2"))
-		// 	}
-		// )
-		// mm.foreach(println)
+		// val s3 = sc.parallelize(s2).reduceByKey((x, y) => x ::: y)
+
+		// val s5 = for(p <- s3) yield (for{
+		// 	q <- p._2
+		// 	val x = (q.productID -> q)
+		// 	} yield x)
+
+		sm.foreach(println)
+
+         val rst = sm.groupBy( _._1 ).map( kv => (kv._1, kv._2.map( x=> {
+            if(x._2.productID != Nil) List((x._2.productID.toString,x._2.event, x._2.timestamp))
+            else
+            for{
+                item <- x._2.listProduct
+                val k = (item, x._2.event, x._2.timestamp)
+              } yield k
+
+          }).flatten.groupBy(_._1).map(k =>(k._1, k._2.map(k=> k._2)))))
+
+        rst.foreach(println)
+
+		// println(fnSsn(sm))
 	}
 }
