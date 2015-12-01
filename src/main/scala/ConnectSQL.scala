@@ -51,7 +51,7 @@ object WordCount {
 			}
 			val timestamp = data.timestamp
 			
-			var listProduct = List("")
+			var listProduct = List[String]()
 			if(event == "REC"){
 				try{
 					val data3 = jData.extract[RecData]
@@ -94,24 +94,29 @@ object WordCount {
 		)
 		val s = for(p <- rest) yield Map(p._1 -> p._2)
 		val sm =rest.collect().toList
-		val s2 = sm.map(x=> (x._1, List(x._2)))
+		val s2 = sm.map(x=> {
+			if(x._2 != Nil){
+				(x._1, List(x._2))
+			}
+			else (x._1, List())
+		})
 		// val s3 = sc.parallelize(s2).reduceByKey((x, y) => x ::: y)
 
 		// val s5 = for(p <- s3) yield (for{
 		// 	q <- p._2
 		// 	val x = (q.productID -> q)
 		// 	} yield x)
-
-		sm.foreach(println)
+// 
+		// sm.foreach(println)
 
          val rst = sm.groupBy( _._1 ).map( kv => (kv._1, kv._2.map( x=> {
-            if(x._2.productID != Nil) List((x._2.productID.toString,x._2.event, x._2.timestamp))
-            else
-            for{
-                item <- x._2.listProduct
-                val k = (item, x._2.event, x._2.timestamp)
-              } yield k
-
+            if(x._2.listProduct.isEmpty) List((x._2.productID.toString,x._2.event, x._2.timestamp))
+            else{
+	            for{
+	                item <- x._2.listProduct
+	                val k = (item, x._2.event, x._2.timestamp)
+	              } yield k
+			}
           }).flatten.groupBy(_._1).map(k =>(k._1, k._2.map(k=> k._2)))))
 
         rst.foreach(println)
