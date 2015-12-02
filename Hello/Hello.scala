@@ -7,8 +7,17 @@ object HelloWorld {
     case class RecData(timestamp: Long, sessionId: String,action: String, listProduct:List[Int])
     
     case class Result(productID: Int, totalView: Int,totalRec: Int)
-    def firstRecTs(): Long = 0L
-     // def genTube() : (String, String, Long) = 
+     def minTs(lst: List[(String, Long)]) :Long = {
+       val r = lst.reduce((x,y) => {
+            if(x._1 == "REC" && x._2 < y._2){
+              x
+            }else if(y._1 == "REC" && y._2 < x._2){
+              y
+            }else ("REC",999999999L)
+          }
+        )
+        r._2
+     }
       def main(args: Array[String]) {
           case class RawLogEntry(
           	event: String,
@@ -70,7 +79,12 @@ object HelloWorld {
                 val k = (item, x._2.event, x._2.timestamp)
               } yield k
 
-          }).flatten.groupBy(_._1).map(k =>(k._1, k._2.map(m => m._2)))))
+          }).flatten.groupBy(_._1).map(k =>(k._1, k._2.map(x => {
+              if((x._2 =="REC") || (x._2 != "REC" && x._3 >= minTs(k._2.map(k=> (k._2, k._3))))) x._2
+              else "0"
+            }))))).map(x => {(x._1, x._2.filter(
+              x=> x._2.size > 1 && x._2.indexOf("REC") > -1
+            ))})
 
         // rst.foreach(println)
 
