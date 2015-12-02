@@ -73,12 +73,17 @@ object WordCount {
 	  (Map[A, B]() /: (for (m <- ms; kv <- m) yield kv)) { (a, kv) =>
 	    a + (if (a.contains(kv._1)) kv._1 -> f(a(kv._1), kv._2) else kv)
     }
-   /* def fnSsn(lstRawLog: List[(String, RawLogEntry)]): List[Result] = {
-    	val s1 = lstRawLog.groupBy(x => x._2)
-    	println(s1)
-		val x = List(Result("10001",3,10), Result("10005",1,2))
-		x
-    }*/
+     def minTs(lst: List[(String, Long)]) :Long = {
+       val r = lst.reduce((x,y) => {
+            if(x._1 == "REC" && x._2 < y._2){
+              x
+            }else if(y._1 == "REC" && y._2 < x._2){
+              y
+            }else ("REC",999999999L)
+          }
+        )
+        r._2
+     }
 	def main(args: Array[String]){
 		val sc = new SparkContext("local", "Word Count", "/opt/spark", List("target/scala-2.10/simple-project_2.10-1.0.jar"))
 		val sqlContext = new SQLContext(sc)
@@ -109,16 +114,22 @@ object WordCount {
 // 
 		// sm.foreach(println)
 
-         val rst = sm.groupBy( _._1 ).map( kv => (kv._1, kv._2.map( x=> {
-            if(x._2.listProduct.isEmpty) List((x._2.productID.toString,x._2.event, x._2.timestamp))
-            else{
-	            for{
-	                item <- x._2.listProduct
-	                val k = (item, x._2.event, x._2.timestamp)
-	              } yield k
-			}
-          }).flatten.groupBy(_._1).map(k =>(k._1, k._2.map(k=> k._2)))))
+        val rst = sm.groupBy( _._1 ).map( kv => (kv._1, kv._2.map( x=> {
+            if(x._2.listProduct.isEmpty) List((x._2.productID,x._2.event, x._2.timestamp))
+            else
+            for{
+                item <- x._2.listProduct
+                val k = (item, x._2.event, x._2.timestamp)
+              } yield k
 
+          }).flatten.groupBy(_._1).map(k =>(k._1, k._2.map(x => {
+              if((x._2 =="REC") || (x._2 != "REC" && x._3 >= minTs(k._2.map(k=> (k._2, k._3))))) x._2
+              else "0"
+            }))))).map(x => {(x._1, x._2.filter(
+              x=> x._2.size > 1 && x._2.indexOf("REC") > -1
+            ).map(z=>{
+              z._1 -> z._2.map(x=>(x,1)).groupBy(_._1).map(t => (t._1, t._2.size))
+              }))}).map(x => x._2).flatten
         rst.foreach(println)
 
 		// println(fnSsn(sm))
