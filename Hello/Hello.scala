@@ -58,6 +58,8 @@ object HelloWorld {
         ("1f5rrorze7ejdsp6btjt4v2oy",RawLogEntry("VIEW","GUEST",76193840,10007,List())),
         ("fscwbh0rlocfwrkn2kvp8wlz",RawLogEntry("VIEW","GUEST",77263667,1234,List())),
         ("fscwbh0rlocfwrkn2kvp8wlz",RawLogEntry("ADD_CARD","GUEST",77392965,10007,List())),
+        ("ZZzezu6i0u1241get692r3aesz",RawLogEntry("REC","GUEST",77723653,234,List(10003, 10005, 10004))),
+        ("ZZzezu6i0u1241get692r3aesz",RawLogEntry("REC","GUEST",77723653,234,List(10003, 10005, 10004))),
         ("fscwbh0rlocfwrkn2kvp8wlz",RawLogEntry("VIEW","GUEST",77477058,10002,List())),
         ("fscwbh0rlocfwrkn2kvp8wlz",RawLogEntry("VIEW","GUEST",77481565,9952,List())),
         ("fscwbh0rlocfwrkn2kvp8wlz",RawLogEntry("VIEW","GUEST",77484391,10013,List())),
@@ -86,16 +88,19 @@ object HelloWorld {
               x=> x._2.size > 1 && x._2.indexOf("REC") > -1
             ).map(z=>{
               z._1 -> z._2.map(x=>(x,1)).groupBy(_._1).map(t => (t._1, t._2.size))
-              }))}).map(x => x._2).flatten
-
-        // rst.foreach(println)
-
+              }))}).map(x => x._2).flatten.groupBy(_._1).map(x =>{
+              (x._1, x._2.groupBy(_._1).map( y => y._2).flatten.map( z => 
+                z._2).flatten.groupBy(_._1).map( t =>{
+                  (t._1, t._2.map(x => x._2).sum)
+                  }))
+              })
+        rst.foreach(println)
          // val m = for{
          //  item <- rst
          //  val res = item._2.filter(x => (x._2 !="REC") && (x._1 == 10007))
          // } yield res
          // m.foreach(println)
-         rst.foreach(println)
+         // println(rst)
 
         // val a = List(List(1003,1004), List(1005, 1006))
         // println(a.flatten)
