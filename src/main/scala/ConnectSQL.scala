@@ -129,9 +129,13 @@ object WordCount {
               x=> x._2.size > 1 && x._2.indexOf("REC") > -1
             ).map(z=>{
               z._1 -> z._2.map(x=>(x,1)).groupBy(_._1).map(t => (t._1, t._2.size))
-              }))}).map(x => x._2).flatten
-        rst.foreach(println)
+              }))}).map(x => x._2).flatten.groupBy(_._1).map(x =>{
+              (x._1, x._2.groupBy(_._1).map( y => y._2).flatten.map( z => 
+                z._2).flatten.groupBy(_._1).map( t =>{
+                  (t._1, t._2.map(x => x._2).sum)
+                  }))
+              })
 
-		// println(fnSsn(sm))
+		 rst.foreach(println)
 	}
 }
