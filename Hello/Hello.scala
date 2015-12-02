@@ -84,7 +84,9 @@ object HelloWorld {
               else "0"
             }))))).map(x => {(x._1, x._2.filter(
               x=> x._2.size > 1 && x._2.indexOf("REC") > -1
-            ))})
+            ).map(z=>{
+              z._1 -> z._2.map(x=>(x,1)).groupBy(_._1).map(t => (t._1, t._2.size))
+              }))}).map(x => x._2).flatten
 
         // rst.foreach(println)
 
