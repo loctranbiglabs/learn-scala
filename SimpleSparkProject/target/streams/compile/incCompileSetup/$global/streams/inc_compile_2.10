@@ -4,7 +4,7 @@ output mode:
 0 -> single
 output directories:
 1 items
-output dir -> /home/loc/Documents/SimpleSparkProject/target/scala-2.10/classes
+output dir -> /home/lavalamp/Documents/learn-scala/SimpleSparkProject/target/scala-2.10/classes
 compile options:
 0 items
 javac options:
@@ -19,23 +19,65 @@ name hashing:
 1 items
 0 -> true
 products:
-8 items
-/home/loc/Documents/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> /home/loc/Documents/SimpleSparkProject/target/scala-2.10/classes/Data$.class
-/home/loc/Documents/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> /home/loc/Documents/SimpleSparkProject/target/scala-2.10/classes/Data.class
-/home/loc/Documents/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> /home/loc/Documents/SimpleSparkProject/target/scala-2.10/classes/Properties$.class
-/home/loc/Documents/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> /home/loc/Documents/SimpleSparkProject/target/scala-2.10/classes/Properties.class
-/home/loc/Documents/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> /home/loc/Documents/SimpleSparkProject/target/scala-2.10/classes/WordCount$$anonfun$main$1.class
-/home/loc/Documents/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> /home/loc/Documents/SimpleSparkProject/target/scala-2.10/classes/WordCount$$anonfun$main$2.class
-/home/loc/Documents/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> /home/loc/Documents/SimpleSparkProject/target/scala-2.10/classes/WordCount$.class
-/home/loc/Documents/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> /home/loc/Documents/SimpleSparkProject/target/scala-2.10/classes/WordCount.class
+48 items
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> /home/lavalamp/Documents/learn-scala/SimpleSparkProject/target/scala-2.10/classes/Data$.class
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> /home/lavalamp/Documents/learn-scala/SimpleSparkProject/target/scala-2.10/classes/Data.class
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> /home/lavalamp/Documents/learn-scala/SimpleSparkProject/target/scala-2.10/classes/OtherData$.class
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> /home/lavalamp/Documents/learn-scala/SimpleSparkProject/target/scala-2.10/classes/OtherData.class
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> /home/lavalamp/Documents/learn-scala/SimpleSparkProject/target/scala-2.10/classes/Product$.class
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> /home/lavalamp/Documents/learn-scala/SimpleSparkProject/target/scala-2.10/classes/Product.class
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> /home/lavalamp/Documents/learn-scala/SimpleSparkProject/target/scala-2.10/classes/Properties$.class
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> /home/lavalamp/Documents/learn-scala/SimpleSparkProject/target/scala-2.10/classes/Properties.class
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> /home/lavalamp/Documents/learn-scala/SimpleSparkProject/target/scala-2.10/classes/RecData$.class
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> /home/lavalamp/Documents/learn-scala/SimpleSparkProject/target/scala-2.10/classes/RecData.class
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> /home/lavalamp/Documents/learn-scala/SimpleSparkProject/target/scala-2.10/classes/Result$.class
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> /home/lavalamp/Documents/learn-scala/SimpleSparkProject/target/scala-2.10/classes/Result.class
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> /home/lavalamp/Documents/learn-scala/SimpleSparkProject/target/scala-2.10/classes/WordCount$$anonfun$1.class
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> /home/lavalamp/Documents/learn-scala/SimpleSparkProject/target/scala-2.10/classes/WordCount$$anonfun$10$$anonfun$apply$14.class
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> /home/lavalamp/Documents/learn-scala/SimpleSparkProject/target/scala-2.10/classes/WordCount$$anonfun$10$$anonfun$apply$15.class
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> /home/lavalamp/Documents/learn-scala/SimpleSparkProject/target/scala-2.10/classes/WordCount$$anonfun$10$$anonfun$apply$16.class
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> /home/lavalamp/Documents/learn-scala/SimpleSparkProject/target/scala-2.10/classes/WordCount$$anonfun$10$$anonfun$apply$17.class
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> /home/lavalamp/Documents/learn-scala/SimpleSparkProject/target/scala-2.10/classes/WordCount$$anonfun$10$$anonfun$apply$18$$anonfun$apply$19.class
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> /home/lavalamp/Documents/learn-scala/SimpleSparkProject/target/scala-2.10/classes/WordCount$$anonfun$10$$anonfun$apply$18.class
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> /home/lavalamp/Documents/learn-scala/SimpleSparkProject/target/scala-2.10/classes/WordCount$$anonfun$10.class
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> /home/lavalamp/Documents/learn-scala/SimpleSparkProject/target/scala-2.10/classes/WordCount$$anonfun$2.class
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> /home/lavalamp/Documents/learn-scala/SimpleSparkProject/target/scala-2.10/classes/WordCount$$anonfun$3.class
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> /home/lavalamp/Documents/learn-scala/SimpleSparkProject/target/scala-2.10/classes/WordCount$$anonfun$4.class
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> /home/lavalamp/Documents/learn-scala/SimpleSparkProject/target/scala-2.10/classes/WordCount$$anonfun$5.class
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> /home/lavalamp/Documents/learn-scala/SimpleSparkProject/target/scala-2.10/classes/WordCount$$anonfun$6$$anonfun$apply$2$$anonfun$apply$3.class
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> /home/lavalamp/Documents/learn-scala/SimpleSparkProject/target/scala-2.10/classes/WordCount$$anonfun$6$$anonfun$apply$2$$anonfun$apply$4.class
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> /home/lavalamp/Documents/learn-scala/SimpleSparkProject/target/scala-2.10/classes/WordCount$$anonfun$6$$anonfun$apply$2.class
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> /home/lavalamp/Documents/learn-scala/SimpleSparkProject/target/scala-2.10/classes/WordCount$$anonfun$6$$anonfun$apply$5.class
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> /home/lavalamp/Documents/learn-scala/SimpleSparkProject/target/scala-2.10/classes/WordCount$$anonfun$6$$anonfun$apply$6$$anonfun$apply$7$$anonfun$apply$8.class
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> /home/lavalamp/Documents/learn-scala/SimpleSparkProject/target/scala-2.10/classes/WordCount$$anonfun$6$$anonfun$apply$6$$anonfun$apply$7.class
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> /home/lavalamp/Documents/learn-scala/SimpleSparkProject/target/scala-2.10/classes/WordCount$$anonfun$6$$anonfun$apply$6.class
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> /home/lavalamp/Documents/learn-scala/SimpleSparkProject/target/scala-2.10/classes/WordCount$$anonfun$6.class
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> /home/lavalamp/Documents/learn-scala/SimpleSparkProject/target/scala-2.10/classes/WordCount$$anonfun$7$$anonfun$apply$10$$anonfun$apply$11.class
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> /home/lavalamp/Documents/learn-scala/SimpleSparkProject/target/scala-2.10/classes/WordCount$$anonfun$7$$anonfun$apply$10$$anonfun$apply$12.class
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> /home/lavalamp/Documents/learn-scala/SimpleSparkProject/target/scala-2.10/classes/WordCount$$anonfun$7$$anonfun$apply$10$$anonfun$apply$13.class
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> /home/lavalamp/Documents/learn-scala/SimpleSparkProject/target/scala-2.10/classes/WordCount$$anonfun$7$$anonfun$apply$10.class
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> /home/lavalamp/Documents/learn-scala/SimpleSparkProject/target/scala-2.10/classes/WordCount$$anonfun$7$$anonfun$apply$9.class
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> /home/lavalamp/Documents/learn-scala/SimpleSparkProject/target/scala-2.10/classes/WordCount$$anonfun$7.class
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> /home/lavalamp/Documents/learn-scala/SimpleSparkProject/target/scala-2.10/classes/WordCount$$anonfun$8.class
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> /home/lavalamp/Documents/learn-scala/SimpleSparkProject/target/scala-2.10/classes/WordCount$$anonfun$9.class
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> /home/lavalamp/Documents/learn-scala/SimpleSparkProject/target/scala-2.10/classes/WordCount$$anonfun$main$1.class
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> /home/lavalamp/Documents/learn-scala/SimpleSparkProject/target/scala-2.10/classes/WordCount$$anonfun$mergeMap$1$$anonfun$apply$1.class
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> /home/lavalamp/Documents/learn-scala/SimpleSparkProject/target/scala-2.10/classes/WordCount$$anonfun$mergeMap$1.class
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> /home/lavalamp/Documents/learn-scala/SimpleSparkProject/target/scala-2.10/classes/WordCount$$anonfun$mergeMap$2.class
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> /home/lavalamp/Documents/learn-scala/SimpleSparkProject/target/scala-2.10/classes/WordCount$.class
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> /home/lavalamp/Documents/learn-scala/SimpleSparkProject/target/scala-2.10/classes/WordCount.class
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/RawLogEntry.scala -> /home/lavalamp/Documents/learn-scala/SimpleSparkProject/target/scala-2.10/classes/RawLogEntry$.class
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/RawLogEntry.scala -> /home/lavalamp/Documents/learn-scala/SimpleSparkProject/target/scala-2.10/classes/RawLogEntry.class
 binary dependencies:
-6 items
-/home/loc/Documents/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> /home/loc/.ivy2/cache/net.liftweb/lift-json_2.10/jars/lift-json_2.10-2.5.1.jar
-/home/loc/Documents/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> /home/loc/.ivy2/cache/org.apache.spark/spark-catalyst_2.10/jars/spark-catalyst_2.10-1.5.2.jar
-/home/loc/Documents/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> /home/loc/.ivy2/cache/org.apache.spark/spark-core_2.10/jars/spark-core_2.10-1.5.2.jar
-/home/loc/Documents/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> /home/loc/.ivy2/cache/org.apache.spark/spark-sql_2.10/jars/spark-sql_2.10-1.5.2.jar
-/home/loc/Documents/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> /home/loc/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.10.4.jar
-/home/loc/Documents/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> /usr/local/java/jdk1.7.0_79/jre/lib/rt.jar
+8 items
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> /home/lavalamp/.ivy2/cache/net.liftweb/lift-json_2.10/jars/lift-json_2.10-2.5.1.jar
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> /home/lavalamp/.ivy2/cache/org.apache.spark/spark-catalyst_2.10/jars/spark-catalyst_2.10-1.5.2.jar
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> /home/lavalamp/.ivy2/cache/org.apache.spark/spark-core_2.10/jars/spark-core_2.10-1.5.2.jar
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> /home/lavalamp/.ivy2/cache/org.apache.spark/spark-sql_2.10/jars/spark-sql_2.10-1.5.2.jar
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> /home/lavalamp/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.10.4.jar
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> /usr/lib/jvm/java-7-openjdk-amd64/jre/lib/rt.jar
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/RawLogEntry.scala -> /home/lavalamp/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.10.4.jar
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/RawLogEntry.scala -> /usr/lib/jvm/java-7-openjdk-amd64/jre/lib/rt.jar
 direct source dependencies:
 0 items
 direct external dependencies:
@@ -45,7 +87,8 @@ public inherited source dependencies:
 public inherited external dependencies:
 0 items
 member reference internal dependencies:
-0 items
+1 items
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> /home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/RawLogEntry.scala
 member reference external dependencies:
 0 items
 inheritance internal dependencies:
@@ -53,166 +96,354 @@ inheritance internal dependencies:
 inheritance external dependencies:
 0 items
 class names:
-8 items
-/home/loc/Documents/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> Data
-/home/loc/Documents/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> Data$
-/home/loc/Documents/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> Properties
-/home/loc/Documents/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> Properties$
-/home/loc/Documents/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> WordCount
-/home/loc/Documents/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> WordCount$
-/home/loc/Documents/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> WordCount$$anonfun$main$1
-/home/loc/Documents/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> WordCount$$anonfun$main$2
+48 items
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> Data
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> Data$
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> OtherData
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> OtherData$
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> Product
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> Product$
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> Properties
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> Properties$
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> RecData
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> RecData$
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> Result
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> Result$
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> WordCount
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> WordCount$
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> WordCount$$anonfun$1
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> WordCount$$anonfun$10
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> WordCount$$anonfun$10$$anonfun$apply$14
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> WordCount$$anonfun$10$$anonfun$apply$15
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> WordCount$$anonfun$10$$anonfun$apply$16
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> WordCount$$anonfun$10$$anonfun$apply$17
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> WordCount$$anonfun$10$$anonfun$apply$18
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> WordCount$$anonfun$10$$anonfun$apply$18$$anonfun$apply$19
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> WordCount$$anonfun$2
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> WordCount$$anonfun$3
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> WordCount$$anonfun$4
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> WordCount$$anonfun$5
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> WordCount$$anonfun$6
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> WordCount$$anonfun$6$$anonfun$apply$2
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> WordCount$$anonfun$6$$anonfun$apply$2$$anonfun$apply$3
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> WordCount$$anonfun$6$$anonfun$apply$2$$anonfun$apply$4
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> WordCount$$anonfun$6$$anonfun$apply$5
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> WordCount$$anonfun$6$$anonfun$apply$6
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> WordCount$$anonfun$6$$anonfun$apply$6$$anonfun$apply$7
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> WordCount$$anonfun$6$$anonfun$apply$6$$anonfun$apply$7$$anonfun$apply$8
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> WordCount$$anonfun$7
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> WordCount$$anonfun$7$$anonfun$apply$10
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> WordCount$$anonfun$7$$anonfun$apply$10$$anonfun$apply$11
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> WordCount$$anonfun$7$$anonfun$apply$10$$anonfun$apply$12
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> WordCount$$anonfun$7$$anonfun$apply$10$$anonfun$apply$13
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> WordCount$$anonfun$7$$anonfun$apply$9
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> WordCount$$anonfun$8
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> WordCount$$anonfun$9
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> WordCount$$anonfun$main$1
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> WordCount$$anonfun$mergeMap$1
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> WordCount$$anonfun$mergeMap$1$$anonfun$apply$1
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> WordCount$$anonfun$mergeMap$2
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/RawLogEntry.scala -> RawLogEntry
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/RawLogEntry.scala -> RawLogEntry$
 used names:
-93 items
-/home/loc/Documents/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> &&
-/home/loc/Documents/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> +=
-/home/loc/Documents/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> ->
-/home/loc/Documents/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> <init>
-/home/loc/Documents/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> <repeated>
-/home/loc/Documents/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> ==
-/home/loc/Documents/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> AbstractFunction1
-/home/loc/Documents/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> AbstractFunction5
-/home/loc/Documents/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> AnyRef
-/home/loc/Documents/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> Array
-/home/loc/Documents/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> Data
-/home/loc/Documents/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> DefaultFormats
-/home/loc/Documents/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> JSON
-/home/loc/Documents/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> JdbcRDD
-/home/loc/Documents/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> List
-/home/loc/Documents/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> ListBuffer
-/home/loc/Documents/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> Long
-/home/loc/Documents/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> ManifestFactory
-/home/loc/Documents/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> Map
-/home/loc/Documents/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> None
-/home/loc/Documents/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> Predef
-/home/loc/Documents/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> Product
-/home/loc/Documents/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> Properties
-/home/loc/Documents/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> SQLContext
-/home/loc/Documents/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> ScalaRunTime
-/home/loc/Documents/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> Serializable
-/home/loc/Documents/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> SparkContext
-/home/loc/Documents/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> Statics
-/home/loc/Documents/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> String
-/home/loc/Documents/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> Unit
-/home/loc/Documents/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> WordCount
-/home/loc/Documents/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> _hashCode
-/home/loc/Documents/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> _root_
-/home/loc/Documents/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> _toString
-/home/loc/Documents/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> a
-/home/loc/Documents/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> action
-/home/loc/Documents/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> any2ArrowAssoc
-/home/loc/Documents/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> anyHash
-/home/loc/Documents/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> apache
-/home/loc/Documents/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> apply
-/home/loc/Documents/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> asInstanceOf
-/home/loc/Documents/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> classType
-/home/loc/Documents/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> collect
-/home/loc/Documents/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> collection
-/home/loc/Documents/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> commits
-/home/loc/Documents/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> data
-/home/loc/Documents/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> eq
-/home/loc/Documents/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> extract
-/home/loc/Documents/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> finalizeHash
-/home/loc/Documents/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> foreach
-/home/loc/Documents/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> formats
-/home/loc/Documents/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> getString
-/home/loc/Documents/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> i
-/home/loc/Documents/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> immutable
-/home/loc/Documents/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> implicits
-/home/loc/Documents/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> isInstanceOf
-/home/loc/Documents/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> item
-/home/loc/Documents/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> jData
-/home/loc/Documents/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> jValue
-/home/loc/Documents/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> json
-/home/loc/Documents/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> lb
-/home/loc/Documents/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> liftweb
-/home/loc/Documents/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> listProduct
-/home/loc/Documents/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> load
-/home/loc/Documents/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> longHash
-/home/loc/Documents/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> mix
-/home/loc/Documents/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> mutable
-/home/loc/Documents/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> net
-/home/loc/Documents/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> org
-/home/loc/Documents/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> package
-/home/loc/Documents/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> parse
-/home/loc/Documents/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> parsing
-/home/loc/Documents/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> println
-/home/loc/Documents/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> product
-/home/loc/Documents/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> prop
-/home/loc/Documents/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> rdd
-/home/loc/Documents/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> refArrayOps
-/home/loc/Documents/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> reflect
-/home/loc/Documents/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> runtime
-/home/loc/Documents/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> sc
-/home/loc/Documents/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> scala
-/home/loc/Documents/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> select
-/home/loc/Documents/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> sessionId
-/home/loc/Documents/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> spark
-/home/loc/Documents/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> sql
-/home/loc/Documents/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> sqlContext
-/home/loc/Documents/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> timestamp
-/home/loc/Documents/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> toList
-/home/loc/Documents/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> toString
-/home/loc/Documents/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> typedProductIterator
-/home/loc/Documents/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> url
-/home/loc/Documents/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> util
-/home/loc/Documents/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> ||
+196 items
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> !=
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> &&
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> +
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> ->
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> /:
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> <
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> <init>
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> ==
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> >
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> >=
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> A
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> AbstractFunction1
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> AbstractFunction3
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> AbstractFunction4
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> Any
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> AnyRef
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> Array
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> B
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> ClassTag
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> Data
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> DefaultFormats
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> Function2
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> Int
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> IntIsIntegral
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> Iterable
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> JSON
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> JdbcRDD
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> List
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> ListBuffer
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> Long
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> ManifestFactory
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> Map
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> Nil
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> None
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> Nothing
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> Numeric
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> OtherData
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> Predef
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> Product
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> Properties
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> RDD
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> RecData
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> Result
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> Row
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> SQLContext
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> ScalaRunTime
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> Serializable
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> SparkContext
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> Statics
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> String
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> Tuple2
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> Unit
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> WordCount
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> _1
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> _2
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> _3
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> _hashCode
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> _root_
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> _toString
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> a
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> action
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> any2ArrowAssoc
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> anyHash
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> apache
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> apply
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> asInstanceOf
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> canBuildFrom
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> classType
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> collect
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> collection
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> conforms
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> contains
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> data
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> data2
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> data3
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> entityType
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> entry
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> entry$lzy
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> eq
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> event
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> extract
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> f
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> filter
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> finalizeHash
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> flatMap
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> flatten
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> foreach
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> format
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> formats
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> genKey
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> genValue
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> getString
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> groupBy
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> immutable
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> implicits
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> indexOf
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> isEmpty
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> isInstanceOf
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> item
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> jData
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> jValue
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> json
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> k
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> kv
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> liftweb
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> listProduct
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> load
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> longHash
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> lst
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> m
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> map
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> materializeClassTag
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> math
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> minTs
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> mix
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> ms
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> mutable
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> ne
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> net
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> options
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> org
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> p
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> package
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> parse
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> parsing
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> people
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> println
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> product
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> productID
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> productId
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> prop
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> r
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> rdd
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> read
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> reduce
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> refArrayOps
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> reflect
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> rest
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> rst
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> runtime
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> sc
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> scala
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> sessionId
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> size
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> sm
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> spark
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> sql
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> sqlContext
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> sum
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> t
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> timestamp
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> toList
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> toString
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> totalRec
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> totalView
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> typedProductIterator
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> unchecked
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> url
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> util
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> x
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> y
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> z
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> ||
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/RawLogEntry.scala -> &&
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/RawLogEntry.scala -> <init>
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/RawLogEntry.scala -> ==
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/RawLogEntry.scala -> AbstractFunction5
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/RawLogEntry.scala -> List
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/RawLogEntry.scala -> Long
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/RawLogEntry.scala -> None
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/RawLogEntry.scala -> Predef
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/RawLogEntry.scala -> Product
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/RawLogEntry.scala -> RawLogEntry
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/RawLogEntry.scala -> ScalaRunTime
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/RawLogEntry.scala -> Serializable
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/RawLogEntry.scala -> Statics
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/RawLogEntry.scala -> String
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/RawLogEntry.scala -> _toString
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/RawLogEntry.scala -> anyHash
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/RawLogEntry.scala -> asInstanceOf
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/RawLogEntry.scala -> entityType
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/RawLogEntry.scala -> eq
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/RawLogEntry.scala -> event
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/RawLogEntry.scala -> finalizeHash
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/RawLogEntry.scala -> isInstanceOf
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/RawLogEntry.scala -> listProduct
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/RawLogEntry.scala -> longHash
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/RawLogEntry.scala -> mix
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/RawLogEntry.scala -> package
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/RawLogEntry.scala -> productID
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/RawLogEntry.scala -> runtime
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/RawLogEntry.scala -> scala
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/RawLogEntry.scala -> timestamp
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/RawLogEntry.scala -> toString
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/RawLogEntry.scala -> typedProductIterator
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/RawLogEntry.scala -> ||
 product stamps:
-8 items
-/home/loc/Documents/SimpleSparkProject/target/scala-2.10/classes/Data$.class -> lastModified(1448446612000)
-/home/loc/Documents/SimpleSparkProject/target/scala-2.10/classes/Data.class -> lastModified(1448446612000)
-/home/loc/Documents/SimpleSparkProject/target/scala-2.10/classes/Properties$.class -> lastModified(1448446612000)
-/home/loc/Documents/SimpleSparkProject/target/scala-2.10/classes/Properties.class -> lastModified(1448446612000)
-/home/loc/Documents/SimpleSparkProject/target/scala-2.10/classes/WordCount$$anonfun$main$1.class -> lastModified(1448446612000)
-/home/loc/Documents/SimpleSparkProject/target/scala-2.10/classes/WordCount$$anonfun$main$2.class -> lastModified(1448446612000)
-/home/loc/Documents/SimpleSparkProject/target/scala-2.10/classes/WordCount$.class -> lastModified(1448446612000)
-/home/loc/Documents/SimpleSparkProject/target/scala-2.10/classes/WordCount.class -> lastModified(1448446612000)
+48 items
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/target/scala-2.10/classes/Data$.class -> lastModified(1449473199000)
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/target/scala-2.10/classes/Data.class -> lastModified(1449473199000)
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/target/scala-2.10/classes/OtherData$.class -> lastModified(1449473199000)
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/target/scala-2.10/classes/OtherData.class -> lastModified(1449473199000)
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/target/scala-2.10/classes/Product$.class -> lastModified(1449473199000)
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/target/scala-2.10/classes/Product.class -> lastModified(1449473199000)
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/target/scala-2.10/classes/Properties$.class -> lastModified(1449473199000)
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/target/scala-2.10/classes/Properties.class -> lastModified(1449473199000)
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/target/scala-2.10/classes/RawLogEntry$.class -> lastModified(1449473199000)
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/target/scala-2.10/classes/RawLogEntry.class -> lastModified(1449473200000)
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/target/scala-2.10/classes/RecData$.class -> lastModified(1449473200000)
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/target/scala-2.10/classes/RecData.class -> lastModified(1449473200000)
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/target/scala-2.10/classes/Result$.class -> lastModified(1449473200000)
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/target/scala-2.10/classes/Result.class -> lastModified(1449473200000)
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/target/scala-2.10/classes/WordCount$$anonfun$1.class -> lastModified(1449473200000)
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/target/scala-2.10/classes/WordCount$$anonfun$10$$anonfun$apply$14.class -> lastModified(1449473200000)
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/target/scala-2.10/classes/WordCount$$anonfun$10$$anonfun$apply$15.class -> lastModified(1449473200000)
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/target/scala-2.10/classes/WordCount$$anonfun$10$$anonfun$apply$16.class -> lastModified(1449473200000)
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/target/scala-2.10/classes/WordCount$$anonfun$10$$anonfun$apply$17.class -> lastModified(1449473200000)
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/target/scala-2.10/classes/WordCount$$anonfun$10$$anonfun$apply$18$$anonfun$apply$19.class -> lastModified(1449473200000)
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/target/scala-2.10/classes/WordCount$$anonfun$10$$anonfun$apply$18.class -> lastModified(1449473200000)
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/target/scala-2.10/classes/WordCount$$anonfun$10.class -> lastModified(1449473200000)
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/target/scala-2.10/classes/WordCount$$anonfun$2.class -> lastModified(1449473200000)
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/target/scala-2.10/classes/WordCount$$anonfun$3.class -> lastModified(1449473200000)
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/target/scala-2.10/classes/WordCount$$anonfun$4.class -> lastModified(1449473200000)
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/target/scala-2.10/classes/WordCount$$anonfun$5.class -> lastModified(1449473200000)
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/target/scala-2.10/classes/WordCount$$anonfun$6$$anonfun$apply$2$$anonfun$apply$3.class -> lastModified(1449473200000)
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/target/scala-2.10/classes/WordCount$$anonfun$6$$anonfun$apply$2$$anonfun$apply$4.class -> lastModified(1449473200000)
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/target/scala-2.10/classes/WordCount$$anonfun$6$$anonfun$apply$2.class -> lastModified(1449473200000)
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/target/scala-2.10/classes/WordCount$$anonfun$6$$anonfun$apply$5.class -> lastModified(1449473200000)
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/target/scala-2.10/classes/WordCount$$anonfun$6$$anonfun$apply$6$$anonfun$apply$7$$anonfun$apply$8.class -> lastModified(1449473200000)
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/target/scala-2.10/classes/WordCount$$anonfun$6$$anonfun$apply$6$$anonfun$apply$7.class -> lastModified(1449473200000)
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/target/scala-2.10/classes/WordCount$$anonfun$6$$anonfun$apply$6.class -> lastModified(1449473200000)
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/target/scala-2.10/classes/WordCount$$anonfun$6.class -> lastModified(1449473200000)
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/target/scala-2.10/classes/WordCount$$anonfun$7$$anonfun$apply$10$$anonfun$apply$11.class -> lastModified(1449473200000)
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/target/scala-2.10/classes/WordCount$$anonfun$7$$anonfun$apply$10$$anonfun$apply$12.class -> lastModified(1449473200000)
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/target/scala-2.10/classes/WordCount$$anonfun$7$$anonfun$apply$10$$anonfun$apply$13.class -> lastModified(1449473200000)
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/target/scala-2.10/classes/WordCount$$anonfun$7$$anonfun$apply$10.class -> lastModified(1449473200000)
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/target/scala-2.10/classes/WordCount$$anonfun$7$$anonfun$apply$9.class -> lastModified(1449473200000)
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/target/scala-2.10/classes/WordCount$$anonfun$7.class -> lastModified(1449473200000)
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/target/scala-2.10/classes/WordCount$$anonfun$8.class -> lastModified(1449473200000)
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/target/scala-2.10/classes/WordCount$$anonfun$9.class -> lastModified(1449473200000)
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/target/scala-2.10/classes/WordCount$$anonfun$main$1.class -> lastModified(1449473200000)
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/target/scala-2.10/classes/WordCount$$anonfun$mergeMap$1$$anonfun$apply$1.class -> lastModified(1449473200000)
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/target/scala-2.10/classes/WordCount$$anonfun$mergeMap$1.class -> lastModified(1449473200000)
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/target/scala-2.10/classes/WordCount$$anonfun$mergeMap$2.class -> lastModified(1449473200000)
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/target/scala-2.10/classes/WordCount$.class -> lastModified(1449473200000)
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/target/scala-2.10/classes/WordCount.class -> lastModified(1449473200000)
 source stamps:
-4 items
-/home/loc/Documents/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> hash(cde771f12210c14d22265f7b66e2077ce06c35f8)
-/home/loc/Documents/SimpleSparkProject/src/main/scala/LogHandling.scala -> hash(61714761ea23a6b74d0da6cecb5493104b346f16)
-/home/loc/Documents/SimpleSparkProject/src/main/scala/SimpleApp.scala -> hash(c3f3f758b065e8d0837363423b1ced73f2c8e671)
-/home/loc/Documents/SimpleSparkProject/src/main/scala/WordCount.scala -> hash(0b48cb77f170812045529afe4649165e286251b5)
+5 items
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> hash(f6294165b7d9f4faa9c96ef7551700e15a53de67)
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/LogHandling.scala -> hash(61714761ea23a6b74d0da6cecb5493104b346f16)
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/RawLogEntry.scala -> hash(f9dee9dfac9f1182e51574afac64b254881d61ff)
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/SimpleApp.scala -> hash(c3f3f758b065e8d0837363423b1ced73f2c8e671)
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/WordCount.scala -> hash(0b48cb77f170812045529afe4649165e286251b5)
 binary stamps:
 6 items
-/home/loc/.ivy2/cache/net.liftweb/lift-json_2.10/jars/lift-json_2.10-2.5.1.jar -> lastModified(1396522354000)
-/home/loc/.ivy2/cache/org.apache.spark/spark-catalyst_2.10/jars/spark-catalyst_2.10-1.5.2.jar -> lastModified(1447182737000)
-/home/loc/.ivy2/cache/org.apache.spark/spark-core_2.10/jars/spark-core_2.10-1.5.2.jar -> lastModified(1447165215000)
-/home/loc/.ivy2/cache/org.apache.spark/spark-sql_2.10/jars/spark-sql_2.10-1.5.2.jar -> lastModified(1447182739000)
-/home/loc/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.10.4.jar -> lastModified(1396783702000)
-/usr/local/java/jdk1.7.0_79/jre/lib/rt.jar -> lastModified(1428691999000)
+/home/lavalamp/.ivy2/cache/net.liftweb/lift-json_2.10/jars/lift-json_2.10-2.5.1.jar -> lastModified(1396522354000)
+/home/lavalamp/.ivy2/cache/org.apache.spark/spark-catalyst_2.10/jars/spark-catalyst_2.10-1.5.2.jar -> lastModified(1447182737000)
+/home/lavalamp/.ivy2/cache/org.apache.spark/spark-core_2.10/jars/spark-core_2.10-1.5.2.jar -> lastModified(1447165215000)
+/home/lavalamp/.ivy2/cache/org.apache.spark/spark-sql_2.10/jars/spark-sql_2.10-1.5.2.jar -> lastModified(1447182739000)
+/home/lavalamp/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.10.4.jar -> lastModified(1395179187000)
+/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/rt.jar -> lastModified(1437727270000)
 class names:
 6 items
-/home/loc/.ivy2/cache/net.liftweb/lift-json_2.10/jars/lift-json_2.10-2.5.1.jar -> net.liftweb.json.DefaultFormats$
-/home/loc/.ivy2/cache/org.apache.spark/spark-catalyst_2.10/jars/spark-catalyst_2.10-1.5.2.jar -> org.apache.spark.sql.Row
-/home/loc/.ivy2/cache/org.apache.spark/spark-core_2.10/jars/spark-core_2.10-1.5.2.jar -> org.apache.spark.rdd.JdbcRDD$
-/home/loc/.ivy2/cache/org.apache.spark/spark-sql_2.10/jars/spark-sql_2.10-1.5.2.jar -> org.apache.spark.sql.SQLContext$
-/home/loc/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.10.4.jar -> scala.Product
-/usr/local/java/jdk1.7.0_79/jre/lib/rt.jar -> java.lang.Object
+/home/lavalamp/.ivy2/cache/net.liftweb/lift-json_2.10/jars/lift-json_2.10-2.5.1.jar -> net.liftweb.json.DefaultFormats$
+/home/lavalamp/.ivy2/cache/org.apache.spark/spark-catalyst_2.10/jars/spark-catalyst_2.10-1.5.2.jar -> org.apache.spark.sql.Row$
+/home/lavalamp/.ivy2/cache/org.apache.spark/spark-core_2.10/jars/spark-core_2.10-1.5.2.jar -> org.apache.spark.rdd.JdbcRDD$
+/home/lavalamp/.ivy2/cache/org.apache.spark/spark-sql_2.10/jars/spark-sql_2.10-1.5.2.jar -> org.apache.spark.sql.SQLContext
+/home/lavalamp/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.10.4.jar -> scala.runtime.AbstractFunction5
+/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/rt.jar -> java.lang.Object
 internal apis:
-4 items
-/home/loc/Documents/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> 
-rO0ABXNyABB4c2J0aS5hcGkuU291cmNlFlpwRASfbtoCAAZJAAdhcGlIYXNoWgAIaGFzTWFjcm9MABhfaW50ZXJuYWxPbmx5X25hbWVIYXNoZXN0ACRMeHNidGkvYXBpL19pbnRlcm5hbE9ubHlfTmFtZUhhc2hlcztMAANhcGl0ABVMeHNidGkvYXBpL1NvdXJjZUFQSTtMAAtjb21waWxhdGlvbnQAF0x4c2J0aS9hcGkvQ29tcGlsYXRpb247WwAEaGFzaHQAAltCeHBzeAl2AHNyACJ4c2J0aS5hcGkuX2ludGVybmFsT25seV9OYW1lSGFzaGVzVNq+mfrU7EwCAAJbAA9pbXBsaWNpdE1lbWJlcnN0ACNbTHhzYnRpL2FwaS9faW50ZXJuYWxPbmx5X05hbWVIYXNoO1sADnJlZ3VsYXJNZW1iZXJzcQB+AAd4cHVyACNbTHhzYnRpLmFwaS5faW50ZXJuYWxPbmx5X05hbWVIYXNoO0lagLbdlov0AgAAeHAAAAAAdXEAfgAJAAAAJXNyACB4c2J0aS5hcGkuX2ludGVybmFsT25seV9OYW1lSGFzaFsO9SJ2OFfPAgACSQAEaGFzaEwABG5hbWV0ABJMamF2YS9sYW5nL1N0cmluZzt4cAwh0et0AApQcm9wZXJ0aWVzc3EAfgAMHYkuJXQABm5vdGlmeXNxAH4ADEHqXLF0AAR3YWl0c3EAfgAMil16tXQADSRhc0luc3RhbmNlT2ZzcQB+AAyzQmvTdAAJdGltZXN0YW1wc3EAfgAM4lc0qXQADHByb2R1Y3RBcml0eXNxAH4ADKe2Anp0AAZlcXVhbHNzcQB+AAxURPx6dAAMYXNJbnN0YW5jZU9mc3EAfgAMRL2he3QABGRhdGFzcQB+AAz2iU/1dAAMc3luY2hyb25pemVkc3EAfgAM65VJ7HQADSRpc0luc3RhbmNlT2ZzcQB+AAzUJGrydAAIY2FuRXF1YWxzcQB+AAxaCNQ8dAAEbWFpbnNxAH4ADHYTsGd0AA1wcm9kdWN0UHJlZml4c3EAfgAMZDBMvXQACVdvcmRDb3VudHNxAH4ADBaWmoN0AAtsaXN0UHJvZHVjdHNxAH4ADM2iW3d0AAlub3RpZnlBbGxzcQB+AAz9hu15dAAMaXNJbnN0YW5jZU9mc3EAfgAMJgQLDXQABjxpbml0PnNxAH4ADKfkhu10AAI9PXNxAH4ADM5lnZV0AAVjbG9uZXNxAH4ADF5FVVx0AAlzZXNzaW9uSWRzcQB+AAyE3zI1dAAEY29weXNxAH4ADB3wppB0AAh0b1N0cmluZ3NxAH4ADD8Wjrp0AAIhPXNxAH4ADCFbj4p0AAhnZXRDbGFzc3NxAH4ADBMhuEd0AA5jb3B5JGRlZmF1bHQkMXNxAH4ADEJpFPR0AAJuZXNxAH4ADKktImN0AAREYXRhc3EAfgAMu8fmfXQABmFjdGlvbnNxAH4ADEd01sZ0AAJlcXNxAH4ADIbkOTJ0AA9wcm9kdWN0SXRlcmF0b3JzcQB+AAyNEHQhdAACIyNzcQB+AAxDLCkedAAIZmluYWxpemVzcQB+AAze+wyldAAOcHJvZHVjdEVsZW1lbnRzcQB+AAxZYaOKdAAIaGFzaENvZGVzcQB+AAyK3e/bdAAHcHJvZHVjdHNyABN4c2J0aS5hcGkuU291cmNlQVBJuV6n+SkjOKQCAAJbAAtkZWZpbml0aW9uc3QAF1tMeHNidGkvYXBpL0RlZmluaXRpb247WwAIcGFja2FnZXN0ABRbTHhzYnRpL2FwaS9QYWNrYWdlO3hwdXIAF1tMeHNidGkuYXBpLkRlZmluaXRpb247iMlc57TjXg4CAAB4cAAAAANzcgATeHNidGkuYXBpLkNsYXNzTGlrZYM0HKHfsJdsAgAETAAOZGVmaW5pdGlvblR5cGV0ABpMeHNidGkvYXBpL0RlZmluaXRpb25UeXBlO1sAEHNhdmVkQW5ub3RhdGlvbnN0ABNbTGphdmEvbGFuZy9TdHJpbmc7TAAIc2VsZlR5cGV0ABBMeHNidGkvYXBpL0xhenk7TAAJc3RydWN0dXJlcQB+AGF4cgAheHNidGkuYXBpLlBhcmFtZXRlcml6ZWREZWZpbml0aW9u+RFusdVQPOICAAFbAA50eXBlUGFyYW1ldGVyc3QAGltMeHNidGkvYXBpL1R5cGVQYXJhbWV0ZXI7eHIAFHhzYnRpLmFwaS5EZWZpbml0aW9uhyob6HFC40YCAARMAAZhY2Nlc3N0ABJMeHNidGkvYXBpL0FjY2VzcztbAAthbm5vdGF0aW9uc3QAF1tMeHNidGkvYXBpL0Fubm90YXRpb247TAAJbW9kaWZpZXJzdAAVTHhzYnRpL2FwaS9Nb2RpZmllcnM7TAAEbmFtZXEAfgANeHBzcgAQeHNidGkuYXBpLlB1YmxpY7pYPa5sLWBCAgAAeHIAEHhzYnRpLmFwaS5BY2Nlc3PdYpr4HWMxSAIAAHhwdXIAF1tMeHNidGkuYXBpLkFubm90YXRpb24765frGRD2jUgCAAB4cAAAAABzcgATeHNidGkuYXBpLk1vZGlmaWVyc8cREyFpnNwkAgABQgAFZmxhZ3N4cABxAH4AD3VyABpbTHhzYnRpLmFwaS5UeXBlUGFyYW1ldGVyO9ltJg8onfK2AgAAeHAAAAAAfnIAGHhzYnRpLmFwaS5EZWZpbml0aW9uVHlwZQAAAAAAAAAAEgAAeHIADmphdmEubGFuZy5FbnVtAAAAAAAAAAASAAB4cHQACENsYXNzRGVmdXIAE1tMamF2YS5sYW5nLlN0cmluZzut0lbn6R17RwIAAHhwAAAAAHNyABN4c2J0aS5TYWZlTGF6eSRJbXBsUAIuk5eXQD8CAANaAAhiaXRtYXAkMEwAAl90dAASTGphdmEvbGFuZy9PYmplY3Q7TAAEZXZhbHQAEUxzY2FsYS9GdW5jdGlvbjA7eHIAFnhzYnRpLmFwaS5BYnN0cmFjdExhennTd7UBX7vnoAIAAHhwAHBzcgAgeHNidGkuU2FmZUxhenkkJGFub25mdW4kc3RyaWN0JDEAAAAAAAAAAAIAAUwAB3ZhbHVlJDFxAH4AeXhwc3IAE3hzYnRpLmFwaS5FbXB0eVR5cGW8/Z5GSTuJJAIAAHhyABR4c2J0aS5hcGkuU2ltcGxlVHlwZXJ4YoghI79AAgAAeHIADnhzYnRpLmFwaS5UeXBlP2rZIRZJqsoCAAB4cHNxAH4AeABwc3EAfgB9c3IAE3hzYnRpLmFwaS5TdHJ1Y3R1cmWpqvmAk2/YAAIAA0wACGRlY2xhcmVkcQB+AGFMAAlpbmhlcml0ZWRxAH4AYUwAB3BhcmVudHNxAH4AYXhxAH4AgXNxAH4AeABwc3EAfgB9dXEAfgBcAAAAAHNxAH4AeABwc3EAfgB9dXEAfgBcAAAAAHNxAH4AeABwc3EAfgB9dXIAEVtMeHNidGkuYXBpLlR5cGU7dP+lWnv56UECAAB4cAAAAAZzcgAUeHNidGkuYXBpLlByb2plY3Rpb27z0o1U6UWkLQIAAkwAAmlkcQB+AA1MAAZwcmVmaXh0ABZMeHNidGkvYXBpL1NpbXBsZVR5cGU7eHEAfgCAdAAMU2VyaWFsaXphYmxlc3IAE3hzYnRpLmFwaS5TaW5nbGV0b278p1/4z1bkRgIAAUwABHBhdGh0ABBMeHNidGkvYXBpL1BhdGg7eHEAfgCAc3IADnhzYnRpLmFwaS5QYXRomz1cCM6lJ4QCAAFbAApjb21wb25lbnRzdAAaW0x4c2J0aS9hcGkvUGF0aENvbXBvbmVudDt4cHVyABpbTHhzYnRpLmFwaS5QYXRoQ29tcG9uZW50O0PaCXQtZxZ0AgAAeHAAAAACc3IADHhzYnRpLmFwaS5JZJgybIs3U8RAAgABTAACaWRxAH4ADXhyABd4c2J0aS5hcGkuUGF0aENvbXBvbmVudF+aIlsuhp+8AgAAeHB0AAVzY2FsYXNyAA54c2J0aS5hcGkuVGhpc9sJ7abMWkBcAgAAeHEAfgCec3EAfgCRcQB+AJRzcQB+AJVzcQB+AJh1cQB+AJsAAAADc3EAfgCddAAEamF2YXNxAH4AnXQAAmlvcQB+AKJzcQB+AJF0AAdQcm9kdWN0cQB+AJdzcQB+AJF0AAZFcXVhbHNxAH4Al3NxAH4AkXQABk9iamVjdHNxAH4AlXNxAH4AmHVxAH4AmwAAAANzcQB+AJ1xAH4AqHNxAH4AnXQABGxhbmdxAH4AonNxAH4AkXQAA0FueXEAfgCXc3EAfgBecQB+AGt1cQB+AGwAAAAAc3EAfgBuAHEAfgBHdXEAfgBwAAAAAHEAfgB0dXEAfgB2AAAAAHNxAH4AeABwc3EAfgB9cQB+AIJzcQB+AHgAcHNxAH4AfXNxAH4AhXNxAH4AeABwc3EAfgB9dXEAfgBcAAAAAHNxAH4AeABwc3EAfgB9dXEAfgBcAAAAAHNxAH4AeABwc3EAfgB9dXEAfgCPAAAABnNxAH4AkXEAfgCUc3EAfgCVc3EAfgCYdXEAfgCbAAAAAnNxAH4AnXEAfgCgcQB+AKJzcQB+AJFxAH4AlHNxAH4AlXNxAH4AmHVxAH4AmwAAAANzcQB+AJ1xAH4AqHNxAH4AnXQAAmlvcQB+AKJzcQB+AJFxAH4ArHEAfgDNc3EAfgCRdAAGRXF1YWxzcQB+AM1zcQB+AJFxAH4AsHNxAH4AlXNxAH4AmHVxAH4AmwAAAANzcQB+AJ1xAH4AqHNxAH4AnXEAfgC2cQB+AKJzcQB+AJFxAH4AuHEAfgDNc3EAfgBecQB+AGt1cQB+AGwAAAAAc3EAfgBuAHEAfgArdXEAfgBwAAAAAH5xAH4AcnQABk1vZHVsZXVxAH4AdgAAAABzcQB+AHgAcHNxAH4AfXEAfgCCc3EAfgB4AHBzcQB+AH1zcQB+AIVzcQB+AHgAcHNxAH4AfXVxAH4AXAAAAAFzcgANeHNidGkuYXBpLkRlZlK+n+J8tDZpAgACTAAKcmV0dXJuVHlwZXQAEEx4c2J0aS9hcGkvVHlwZTtbAA92YWx1ZVBhcmFtZXRlcnN0ABpbTHhzYnRpL2FwaS9QYXJhbWV0ZXJMaXN0O3hxAH4AYnEAfgBrdXEAfgBsAAAAAHNxAH4AbgBxAH4AJ3VxAH4AcAAAAABzcQB+AJF0AARVbml0c3EAfgCVc3EAfgCYdXEAfgCbAAAAAnNxAH4AnXEAfgCgcQB+AKJ1cgAaW0x4c2J0aS5hcGkuUGFyYW1ldGVyTGlzdDv10zod8rNw7gIAAHhwAAAAAXNyABd4c2J0aS5hcGkuUGFyYW1ldGVyTGlzdNbFvBxkSXTjAgACWgAKaXNJbXBsaWNpdFsACnBhcmFtZXRlcnN0ABxbTHhzYnRpL2FwaS9NZXRob2RQYXJhbWV0ZXI7eHAAdXIAHFtMeHNidGkuYXBpLk1ldGhvZFBhcmFtZXRlcjvPuMVdpd21bQIAAHhwAAAAAXNyABl4c2J0aS5hcGkuTWV0aG9kUGFyYW1ldGVyH0WuF9NJsOoCAARaAApoYXNEZWZhdWx0TAAIbW9kaWZpZXJ0AB1MeHNidGkvYXBpL1BhcmFtZXRlck1vZGlmaWVyO0wABG5hbWVxAH4ADUwAA3RwZXEAfgDyeHAAfnIAG3hzYnRpLmFwaS5QYXJhbWV0ZXJNb2RpZmllcgAAAAAAAAAAEgAAeHEAfgBzdAAFUGxhaW50AARhcmdzc3IAF3hzYnRpLmFwaS5QYXJhbWV0ZXJpemVkFmzuaQPJu38CAAJMAAhiYXNlVHlwZXEAfgCSWwANdHlwZUFyZ3VtZW50c3QAEVtMeHNidGkvYXBpL1R5cGU7eHEAfgCAc3EAfgCRdAAFQXJyYXlxAH4A+nVxAH4AjwAAAAFzcQB+AJF0AAZTdHJpbmdzcQB+AJVzcQB+AJh1cQB+AJsAAAADc3EAfgCdcQB+AKhzcQB+AJ1xAH4AtnEAfgCic3EAfgB4AHBzcQB+AH11cQB+AFwAAAAAc3EAfgB4AHBzcQB+AH11cQB+AI8AAAACc3EAfgCRcQB+ALBxAH4BFHNxAH4AkXEAfgC4cQB+APp1cgAUW0x4c2J0aS5hcGkuUGFja2FnZTtbExk3cKcnoQIAAHhwAAAAAHNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABUT4lIXB1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5cQB+AA1MAA9zb3VyY2VEaXJlY3RvcnlxAH4ADXhwdABAL2hvbWUvbG9jL0RvY3VtZW50cy9TaW1wbGVTcGFya1Byb2plY3QvdGFyZ2V0L3NjYWxhLTIuMTAvY2xhc3Nlc3QAAS91cgACW0Ks8xf4BghU4AIAAHhwAAAAFM3ncfEiEMFNIiZfe2biB3zgbDX4
-/home/loc/Documents/SimpleSparkProject/src/main/scala/LogHandling.scala -> 
-rO0ABXNyABB4c2J0aS5hcGkuU291cmNlFlpwRASfbtoCAAZJAAdhcGlIYXNoWgAIaGFzTWFjcm9MABhfaW50ZXJuYWxPbmx5X25hbWVIYXNoZXN0ACRMeHNidGkvYXBpL19pbnRlcm5hbE9ubHlfTmFtZUhhc2hlcztMAANhcGl0ABVMeHNidGkvYXBpL1NvdXJjZUFQSTtMAAtjb21waWxhdGlvbnQAF0x4c2J0aS9hcGkvQ29tcGlsYXRpb247WwAEaGFzaHQAAltCeHC4IVHqAHNyACJ4c2J0aS5hcGkuX2ludGVybmFsT25seV9OYW1lSGFzaGVzVNq+mfrU7EwCAAJbAA9pbXBsaWNpdE1lbWJlcnN0ACNbTHhzYnRpL2FwaS9faW50ZXJuYWxPbmx5X05hbWVIYXNoO1sADnJlZ3VsYXJNZW1iZXJzcQB+AAd4cHVyACNbTHhzYnRpLmFwaS5faW50ZXJuYWxPbmx5X05hbWVIYXNoO0lagLbdlov0AgAAeHAAAAAAdXEAfgAJAAAAAHNyABN4c2J0aS5hcGkuU291cmNlQVBJuV6n+SkjOKQCAAJbAAtkZWZpbml0aW9uc3QAF1tMeHNidGkvYXBpL0RlZmluaXRpb247WwAIcGFja2FnZXN0ABRbTHhzYnRpL2FwaS9QYWNrYWdlO3hwdXIAF1tMeHNidGkuYXBpLkRlZmluaXRpb247iMlc57TjXg4CAAB4cAAAAAB1cgAUW0x4c2J0aS5hcGkuUGFja2FnZTtbExk3cKcnoQIAAHhwAAAAAHNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABUTiztz51cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+ABp4cHQAQC9ob21lL2xvYy9Eb2N1bWVudHMvU2ltcGxlU3BhcmtQcm9qZWN0L3RhcmdldC9zY2FsYS0yLjEwL2NsYXNzZXN0AAEvdXIAAltCrPMX+AYIVOACAAB4cAAAABRhcUdh6iOmt00Nps7LVJMQSzRvFg==
-/home/loc/Documents/SimpleSparkProject/src/main/scala/SimpleApp.scala -> 
-rO0ABXNyABB4c2J0aS5hcGkuU291cmNlFlpwRASfbtoCAAZJAAdhcGlIYXNoWgAIaGFzTWFjcm9MABhfaW50ZXJuYWxPbmx5X25hbWVIYXNoZXN0ACRMeHNidGkvYXBpL19pbnRlcm5hbE9ubHlfTmFtZUhhc2hlcztMAANhcGl0ABVMeHNidGkvYXBpL1NvdXJjZUFQSTtMAAtjb21waWxhdGlvbnQAF0x4c2J0aS9hcGkvQ29tcGlsYXRpb247WwAEaGFzaHQAAltCeHC4IVHqAHNyACJ4c2J0aS5hcGkuX2ludGVybmFsT25seV9OYW1lSGFzaGVzVNq+mfrU7EwCAAJbAA9pbXBsaWNpdE1lbWJlcnN0ACNbTHhzYnRpL2FwaS9faW50ZXJuYWxPbmx5X05hbWVIYXNoO1sADnJlZ3VsYXJNZW1iZXJzcQB+AAd4cHVyACNbTHhzYnRpLmFwaS5faW50ZXJuYWxPbmx5X05hbWVIYXNoO0lagLbdlov0AgAAeHAAAAAAdXEAfgAJAAAAAHNyABN4c2J0aS5hcGkuU291cmNlQVBJuV6n+SkjOKQCAAJbAAtkZWZpbml0aW9uc3QAF1tMeHNidGkvYXBpL0RlZmluaXRpb247WwAIcGFja2FnZXN0ABRbTHhzYnRpL2FwaS9QYWNrYWdlO3hwdXIAF1tMeHNidGkuYXBpLkRlZmluaXRpb247iMlc57TjXg4CAAB4cAAAAAB1cgAUW0x4c2J0aS5hcGkuUGFja2FnZTtbExk3cKcnoQIAAHhwAAAAAHNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABUTiztz51cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+ABp4cHQAQC9ob21lL2xvYy9Eb2N1bWVudHMvU2ltcGxlU3BhcmtQcm9qZWN0L3RhcmdldC9zY2FsYS0yLjEwL2NsYXNzZXN0AAEvdXIAAltCrPMX+AYIVOACAAB4cAAAABTD8/dYsGXo0INzY0I7HO1z8sjmcQ==
-/home/loc/Documents/SimpleSparkProject/src/main/scala/WordCount.scala -> 
-rO0ABXNyABB4c2J0aS5hcGkuU291cmNlFlpwRASfbtoCAAZJAAdhcGlIYXNoWgAIaGFzTWFjcm9MABhfaW50ZXJuYWxPbmx5X25hbWVIYXNoZXN0ACRMeHNidGkvYXBpL19pbnRlcm5hbE9ubHlfTmFtZUhhc2hlcztMAANhcGl0ABVMeHNidGkvYXBpL1NvdXJjZUFQSTtMAAtjb21waWxhdGlvbnQAF0x4c2J0aS9hcGkvQ29tcGlsYXRpb247WwAEaGFzaHQAAltCeHC4IVHqAHNyACJ4c2J0aS5hcGkuX2ludGVybmFsT25seV9OYW1lSGFzaGVzVNq+mfrU7EwCAAJbAA9pbXBsaWNpdE1lbWJlcnN0ACNbTHhzYnRpL2FwaS9faW50ZXJuYWxPbmx5X05hbWVIYXNoO1sADnJlZ3VsYXJNZW1iZXJzcQB+AAd4cHVyACNbTHhzYnRpLmFwaS5faW50ZXJuYWxPbmx5X05hbWVIYXNoO0lagLbdlov0AgAAeHAAAAAAdXEAfgAJAAAAAHNyABN4c2J0aS5hcGkuU291cmNlQVBJuV6n+SkjOKQCAAJbAAtkZWZpbml0aW9uc3QAF1tMeHNidGkvYXBpL0RlZmluaXRpb247WwAIcGFja2FnZXN0ABRbTHhzYnRpL2FwaS9QYWNrYWdlO3hwdXIAF1tMeHNidGkuYXBpLkRlZmluaXRpb247iMlc57TjXg4CAAB4cAAAAAB1cgAUW0x4c2J0aS5hcGkuUGFja2FnZTtbExk3cKcnoQIAAHhwAAAAAHNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABUTiztz51cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+ABp4cHQAQC9ob21lL2xvYy9Eb2N1bWVudHMvU2ltcGxlU3BhcmtQcm9qZWN0L3RhcmdldC9zY2FsYS0yLjEwL2NsYXNzZXN0AAEvdXIAAltCrPMX+AYIVOACAAB4cAAAABQLSMt38XCBIEVSmv5GSRZeKGJRtQ==
+5 items
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> 
+rO0ABXNyABB4c2J0aS5hcGkuU291cmNlFlpwRASfbtoCAAZJAAdhcGlIYXNoWgAIaGFzTWFjcm9MABhfaW50ZXJuYWxPbmx5X25hbWVIYXNoZXN0ACRMeHNidGkvYXBpL19pbnRlcm5hbE9ubHlfTmFtZUhhc2hlcztMAANhcGl0ABVMeHNidGkvYXBpL1NvdXJjZUFQSTtMAAtjb21waWxhdGlvbnQAF0x4c2J0aS9hcGkvQ29tcGlsYXRpb247WwAEaGFzaHQAAltCeHA1b7eLAHNyACJ4c2J0aS5hcGkuX2ludGVybmFsT25seV9OYW1lSGFzaGVzVNq+mfrU7EwCAAJbAA9pbXBsaWNpdE1lbWJlcnN0ACNbTHhzYnRpL2FwaS9faW50ZXJuYWxPbmx5X05hbWVIYXNoO1sADnJlZ3VsYXJNZW1iZXJzcQB+AAd4cHVyACNbTHhzYnRpLmFwaS5faW50ZXJuYWxPbmx5X05hbWVIYXNoO0lagLbdlov0AgAAeHAAAAAAdXEAfgAJAAAAM3NyACB4c2J0aS5hcGkuX2ludGVybmFsT25seV9OYW1lSGFzaFsO9SJ2OFfPAgACSQAEaGFzaEwABG5hbWV0ABJMamF2YS9sYW5nL1N0cmluZzt4cAwh0et0AApQcm9wZXJ0aWVzc3EAfgAMk2VeJ3QABm5vdGlmeXNxAH4ADAiW/Ml0AAl0b3RhbFZpZXdzcQB+AAylKKfpdAAEd2FpdHNxAH4ADOhEsfN0AA5jb3B5JGRlZmF1bHQkMnNxAH4ADMiHcLZ0AA0kYXNJbnN0YW5jZU9mc3EAfgAMTwCDR3QACXRpbWVzdGFtcHNxAH4ADO79PGp0AAhtZXJnZU1hcHNxAH4ADHX2zEp0AAZnZW5LZXlzcQB+AAzuRzcbdAAMcHJvZHVjdEFyaXR5c3EAfgAMvGoTPnQABmVxdWFsc3NxAH4ADKtxyWl0AAdSZWNEYXRhc3EAfgAMGnqy8XQADGFzSW5zdGFuY2VPZnNxAH4ADE2/2LF0AAhnZW5WYWx1ZXNxAH4ADES9oXt0AARkYXRhc3EAfgAM1OlqW3QADHN5bmNocm9uaXplZHNxAH4ADCR1wbJ0AA0kaXNJbnN0YW5jZU9mc3EAfgAM3BLrS3QACHRvdGFsUmVjc3EAfgAMIS4qOnQACGNhbkVxdWFsc3EAfgAMNTFXPXQADmNvcHkkZGVmYXVsdCQ0c3EAfgAMWgjUPHQABG1haW5zcQB+AAx/nkUcdAANcHJvZHVjdFByZWZpeHNxAH4ADGQwTL10AAlXb3JkQ291bnRzcQB+AAyllXOadAALbGlzdFByb2R1Y3RzcQB+AAz20u+adAAJbm90aWZ5QWxsc3EAfgAM2krEwnQADGlzSW5zdGFuY2VPZnNxAH4ADBz8M6l0AAY8aW5pdD5zcQB+AAxWzNdrdAAFbWluVHNzcQB+AAysbymHdAACPT1zcQB+AAwo3wQodAAFY2xvbmVzcQB+AAzpR0OvdAAJc2Vzc2lvbklkc3EAfgAMoDwnjHQADmNvcHkkZGVmYXVsdCQzc3EAfgAM854h2nQABGNvcHlzcQB+AAx9cfBYdAAIdG9TdHJpbmdzcQB+AAzEqK2adAAJcHJvZHVjdElEc3EAfgAMaEwp1HQAAiE9c3EAfgAMO2eb93QACGdldENsYXNzc3EAfgAMxXYrr3QADmNvcHkkZGVmYXVsdCQxc3EAfgAMJ7XSB3QAB1Byb2R1Y3RzcQB+AAwzVkrNdAAGUmVzdWx0c3EAfgAM2BttkXQAAm5lc3EAfgAMqS0iY3QABERhdGFzcQB+AAx5FeDAdAAGYWN0aW9uc3EAfgAMW8vEvXQACU90aGVyRGF0YXNxAH4ADI9iq0x0AAJlcXNxAH4ADFhvhad0AA9wcm9kdWN0SXRlcmF0b3JzcQB+AAzcW4EbdAACIyNzcQB+AAzaEOXgdAAIZmluYWxpemVzcQB+AAwf5YaYdAAOcHJvZHVjdEVsZW1lbnRzcQB+AAwYxUlPdAAIaGFzaENvZGVzcQB+AAxmOkDUdAAHcHJvZHVjdHNyABN4c2J0aS5hcGkuU291cmNlQVBJuV6n+SkjOKQCAAJbAAtkZWZpbml0aW9uc3QAF1tMeHNidGkvYXBpL0RlZmluaXRpb247WwAIcGFja2FnZXN0ABRbTHhzYnRpL2FwaS9QYWNrYWdlO3hwdXIAF1tMeHNidGkuYXBpLkRlZmluaXRpb247iMlc57TjXg4CAAB4cAAAAAdzcgATeHNidGkuYXBpLkNsYXNzTGlrZYM0HKHfsJdsAgAETAAOZGVmaW5pdGlvblR5cGV0ABpMeHNidGkvYXBpL0RlZmluaXRpb25UeXBlO1sAEHNhdmVkQW5ub3RhdGlvbnN0ABNbTGphdmEvbGFuZy9TdHJpbmc7TAAIc2VsZlR5cGV0ABBMeHNidGkvYXBpL0xhenk7TAAJc3RydWN0dXJlcQB+AH14cgAheHNidGkuYXBpLlBhcmFtZXRlcml6ZWREZWZpbml0aW9u+RFusdVQPOICAAFbAA50eXBlUGFyYW1ldGVyc3QAGltMeHNidGkvYXBpL1R5cGVQYXJhbWV0ZXI7eHIAFHhzYnRpLmFwaS5EZWZpbml0aW9uhyob6HFC40YCAARMAAZhY2Nlc3N0ABJMeHNidGkvYXBpL0FjY2VzcztbAAthbm5vdGF0aW9uc3QAF1tMeHNidGkvYXBpL0Fubm90YXRpb247TAAJbW9kaWZpZXJzdAAVTHhzYnRpL2FwaS9Nb2RpZmllcnM7TAAEbmFtZXEAfgANeHBzcgAQeHNidGkuYXBpLlB1YmxpY7pYPa5sLWBCAgAAeHIAEHhzYnRpLmFwaS5BY2Nlc3PdYpr4HWMxSAIAAHhwdXIAF1tMeHNidGkuYXBpLkFubm90YXRpb24765frGRD2jUgCAAB4cAAAAABzcgATeHNidGkuYXBpLk1vZGlmaWVyc8cREyFpnNwkAgABQgAFZmxhZ3N4cABxAH4AD3VyABpbTHhzYnRpLmFwaS5UeXBlUGFyYW1ldGVyO9ltJg8onfK2AgAAeHAAAAAAfnIAGHhzYnRpLmFwaS5EZWZpbml0aW9uVHlwZQAAAAAAAAAAEgAAeHIADmphdmEubGFuZy5FbnVtAAAAAAAAAAASAAB4cHQACENsYXNzRGVmdXIAE1tMamF2YS5sYW5nLlN0cmluZzut0lbn6R17RwIAAHhwAAAAAHNyABN4c2J0aS5TYWZlTGF6eSRJbXBsUAIuk5eXQD8CAANaAAhiaXRtYXAkMEwAAl90dAASTGphdmEvbGFuZy9PYmplY3Q7TAAEZXZhbHQAEUxzY2FsYS9GdW5jdGlvbjA7eHIAFnhzYnRpLmFwaS5BYnN0cmFjdExhennTd7UBX7vnoAIAAHhwAHBzcgAgeHNidGkuU2FmZUxhenkkJGFub25mdW4kc3RyaWN0JDEAAAAAAAAAAAIAAUwAB3ZhbHVlJDFxAH4AlXhwc3IAE3hzYnRpLmFwaS5FbXB0eVR5cGW8/Z5GSTuJJAIAAHhyABR4c2J0aS5hcGkuU2ltcGxlVHlwZXJ4YoghI79AAgAAeHIADnhzYnRpLmFwaS5UeXBlP2rZIRZJqsoCAAB4cHNxAH4AlABwc3EAfgCZc3IAE3hzYnRpLmFwaS5TdHJ1Y3R1cmWpqvmAk2/YAAIAA0wACGRlY2xhcmVkcQB+AH1MAAlpbmhlcml0ZWRxAH4AfUwAB3BhcmVudHNxAH4AfXhxAH4AnXNxAH4AlABwc3EAfgCZdXEAfgB4AAAAAHNxAH4AlABwc3EAfgCZdXEAfgB4AAAAAHNxAH4AlABwc3EAfgCZdXIAEVtMeHNidGkuYXBpLlR5cGU7dP+lWnv56UECAAB4cAAAAAZzcgAUeHNidGkuYXBpLlByb2plY3Rpb27z0o1U6UWkLQIAAkwAAmlkcQB+AA1MAAZwcmVmaXh0ABZMeHNidGkvYXBpL1NpbXBsZVR5cGU7eHEAfgCcdAAMU2VyaWFsaXphYmxlc3IAE3hzYnRpLmFwaS5TaW5nbGV0b278p1/4z1bkRgIAAUwABHBhdGh0ABBMeHNidGkvYXBpL1BhdGg7eHEAfgCcc3IADnhzYnRpLmFwaS5QYXRomz1cCM6lJ4QCAAFbAApjb21wb25lbnRzdAAaW0x4c2J0aS9hcGkvUGF0aENvbXBvbmVudDt4cHVyABpbTHhzYnRpLmFwaS5QYXRoQ29tcG9uZW50O0PaCXQtZxZ0AgAAeHAAAAACc3IADHhzYnRpLmFwaS5JZJgybIs3U8RAAgABTAACaWRxAH4ADXhyABd4c2J0aS5hcGkuUGF0aENvbXBvbmVudF+aIlsuhp+8AgAAeHB0AAVzY2FsYXNyAA54c2J0aS5hcGkuVGhpc9sJ7abMWkBcAgAAeHEAfgC6c3EAfgCtcQB+ALBzcQB+ALFzcQB+ALR1cQB+ALcAAAADc3EAfgC5dAAEamF2YXNxAH4AuXQAAmlvcQB+AL5zcQB+AK1xAH4AW3EAfgCzc3EAfgCtdAAGRXF1YWxzcQB+ALNzcQB+AK10AAZPYmplY3RzcQB+ALFzcQB+ALR1cQB+ALcAAAADc3EAfgC5cQB+AMRzcQB+ALl0AARsYW5ncQB+AL5zcQB+AK10AANBbnlxAH4As3NxAH4AenEAfgCHdXEAfgCIAAAAAHNxAH4AigBxAH4AW3VxAH4AjAAAAABxAH4AkHVxAH4AkgAAAABzcQB+AJQAcHNxAH4AmXEAfgCec3EAfgCUAHBzcQB+AJlzcQB+AKFzcQB+AJQAcHNxAH4AmXVxAH4AeAAAAABzcQB+AJQAcHNxAH4AmXVxAH4AeAAAAABzcQB+AJQAcHNxAH4AmXVxAH4AqwAAAAZzcQB+AK1xAH4AsHNxAH4AsXNxAH4AtHVxAH4AtwAAAAJzcQB+ALlxAH4AvHEAfgC+c3EAfgCtcQB+ALBzcQB+ALFzcQB+ALR1cQB+ALcAAAADc3EAfgC5cQB+AMRzcQB+ALl0AAJpb3EAfgC+c3EAfgCtcQB+AFtxAH4A6HNxAH4ArXQABkVxdWFsc3EAfgDoc3EAfgCtcQB+AMtzcQB+ALFzcQB+ALR1cQB+ALcAAAADc3EAfgC5cQB+AMRzcQB+ALlxAH4A0XEAfgC+c3EAfgCtcQB+ANNxAH4A6HNxAH4AenEAfgCHdXEAfgCIAAAAAHNxAH4AigBxAH4AYXVxAH4AjAAAAABxAH4AkHVxAH4AkgAAAABzcQB+AJQAcHNxAH4AmXEAfgCec3EAfgCUAHBzcQB+AJlzcQB+AKFzcQB+AJQAcHNxAH4AmXVxAH4AeAAAAABzcQB+AJQAcHNxAH4AmXVxAH4AeAAAAABzcQB+AJQAcHNxAH4AmXVxAH4AqwAAAAZzcQB+AK1xAH4AsHNxAH4AsXNxAH4AtHVxAH4AtwAAAAJzcQB+ALlxAH4AvHEAfgC+c3EAfgCtcQB+ALBzcQB+ALFzcQB+ALR1cQB+ALcAAAADc3EAfgC5cQB+AMRzcQB+ALl0AAJpb3EAfgC+c3EAfgCtcQB+AFtxAH4BEXNxAH4ArXQABkVxdWFsc3EAfgERc3EAfgCtcQB+AMtzcQB+ALFzcQB+ALR1cQB+ALcAAAADc3EAfgC5cQB+AMRzcQB+ALlxAH4A0XEAfgC+c3EAfgCtcQB+ANNxAH4BEXNxAH4AenEAfgCHdXEAfgCIAAAAAHNxAH4AigBxAH4AZXVxAH4AjAAAAABxAH4AkHVxAH4AkgAAAABzcQB+AJQAcHNxAH4AmXEAfgCec3EAfgCUAHBzcQB+AJlzcQB+AKFzcQB+AJQAcHNxAH4AmXVxAH4AeAAAAABzcQB+AJQAcHNxAH4AmXVxAH4AeAAAAABzcQB+AJQAcHNxAH4AmXVxAH4AqwAAAAZzcQB+AK1xAH4AsHNxAH4AsXNxAH4AtHVxAH4AtwAAAAJzcQB+ALlxAH4AvHEAfgC+c3EAfgCtcQB+ALBzcQB+ALFzcQB+ALR1cQB+ALcAAAADc3EAfgC5cQB+AMRzcQB+ALl0AAJpb3EAfgC+c3EAfgCtcQB+AFtxAH4BOnNxAH4ArXQABkVxdWFsc3EAfgE6c3EAfgCtcQB+AMtzcQB+ALFzcQB+ALR1cQB+ALcAAAADc3EAfgC5cQB+AMRzcQB+ALlxAH4A0XEAfgC+c3EAfgCtcQB+ANNxAH4BOnNxAH4AenEAfgCHdXEAfgCIAAAAAHNxAH4AigBxAH4AJXVxAH4AjAAAAABxAH4AkHVxAH4AkgAAAABzcQB+AJQAcHNxAH4AmXEAfgCec3EAfgCUAHBzcQB+AJlzcQB+AKFzcQB+AJQAcHNxAH4AmXVxAH4AeAAAAABzcQB+AJQAcHNxAH4AmXVxAH4AeAAAAABzcQB+AJQAcHNxAH4AmXVxAH4AqwAAAAZzcQB+AK1xAH4AsHNxAH4AsXNxAH4AtHVxAH4AtwAAAAJzcQB+ALlxAH4AvHEAfgC+c3EAfgCtcQB+ALBzcQB+ALFzcQB+ALR1cQB+ALcAAAADc3EAfgC5cQB+AMRzcQB+ALl0AAJpb3EAfgC+c3EAfgCtcQB+AFtxAH4BY3NxAH4ArXQABkVxdWFsc3EAfgFjc3EAfgCtcQB+AMtzcQB+ALFzcQB+ALR1cQB+ALcAAAADc3EAfgC5cQB+AMRzcQB+ALlxAH4A0XEAfgC+c3EAfgCtcQB+ANNxAH4BY3NxAH4AenEAfgCHdXEAfgCIAAAAAHNxAH4AigBxAH4AXXVxAH4AjAAAAABxAH4AkHVxAH4AkgAAAABzcQB+AJQAcHNxAH4AmXEAfgCec3EAfgCUAHBzcQB+AJlzcQB+AKFzcQB+AJQAcHNxAH4AmXVxAH4AeAAAAABzcQB+AJQAcHNxAH4AmXVxAH4AeAAAAABzcQB+AJQAcHNxAH4AmXVxAH4AqwAAAAZzcQB+AK1xAH4AsHNxAH4AsXNxAH4AtHVxAH4AtwAAAAJzcQB+ALlxAH4AvHEAfgC+c3EAfgCtcQB+ALBzcQB+ALFzcQB+ALR1cQB+ALcAAAADc3EAfgC5cQB+AMRzcQB+ALl0AAJpb3EAfgC+c3EAfgCtcQB+AFtxAH4BjHNxAH4ArXQABkVxdWFsc3EAfgGMc3EAfgCtcQB+AMtzcQB+ALFzcQB+ALR1cQB+ALcAAAADc3EAfgC5cQB+AMRzcQB+ALlxAH4A0XEAfgC+c3EAfgCtcQB+ANNxAH4BjHNxAH4AenEAfgCHdXEAfgCIAAAAAHNxAH4AigBxAH4AO3VxAH4AjAAAAAB+cQB+AI50AAZNb2R1bGV1cQB+AJIAAAAAc3EAfgCUAHBzcQB+AJlxAH4AnnNxAH4AlABwc3EAfgCZc3EAfgChc3EAfgCUAHBzcQB+AJl1cQB+AHgAAAABc3IADXhzYnRpLmFwaS5EZWZSvp/ifLQ2aQIAAkwACnJldHVyblR5cGV0ABBMeHNidGkvYXBpL1R5cGU7WwAPdmFsdWVQYXJhbWV0ZXJzdAAaW0x4c2J0aS9hcGkvUGFyYW1ldGVyTGlzdDt4cQB+AH5xAH4Ah3VxAH4AiAAAAABzcQB+AIoAcQB+ADd1cQB+AIwAAAAAc3EAfgCtdAAEVW5pdHNxAH4AsXNxAH4AtHVxAH4AtwAAAAJzcQB+ALlxAH4AvHEAfgC+dXIAGltMeHNidGkuYXBpLlBhcmFtZXRlckxpc3Q79dM6HfKzcO4CAAB4cAAAAAFzcgAXeHNidGkuYXBpLlBhcmFtZXRlckxpc3TWxbwcZEl04wIAAloACmlzSW1wbGljaXRbAApwYXJhbWV0ZXJzdAAcW0x4c2J0aS9hcGkvTWV0aG9kUGFyYW1ldGVyO3hwAHVyABxbTHhzYnRpLmFwaS5NZXRob2RQYXJhbWV0ZXI7z7jFXaXdtW0CAAB4cAAAAAFzcgAZeHNidGkuYXBpLk1ldGhvZFBhcmFtZXRlch9FrhfTSbDqAgAEWgAKaGFzRGVmYXVsdEwACG1vZGlmaWVydAAdTHhzYnRpL2FwaS9QYXJhbWV0ZXJNb2RpZmllcjtMAARuYW1lcQB+AA1MAAN0cGVxAH4BsXhwAH5yABt4c2J0aS5hcGkuUGFyYW1ldGVyTW9kaWZpZXIAAAAAAAAAABIAAHhxAH4Aj3QABVBsYWludAAEYXJnc3NyABd4c2J0aS5hcGkuUGFyYW1ldGVyaXplZBZs7mkDybt/AgACTAAIYmFzZVR5cGVxAH4ArlsADXR5cGVBcmd1bWVudHN0ABFbTHhzYnRpL2FwaS9UeXBlO3hxAH4AnHNxAH4ArXQABUFycmF5cQB+Abl1cQB+AKsAAAABc3EAfgCtdAAGU3RyaW5nc3EAfgCxc3EAfgC0dXEAfgC3AAAAA3NxAH4AuXEAfgDEc3EAfgC5cQB+ANFxAH4AvnNxAH4AlABwc3EAfgCZdXEAfgB4AAAAAHNxAH4AlABwc3EAfgCZdXEAfgCrAAAAAnNxAH4ArXEAfgDLcQB+AdNzcQB+AK1xAH4A03EAfgG5dXIAFFtMeHNidGkuYXBpLlBhY2thZ2U7WxMZN3CnJ6ECAAB4cAAAAABzcgAVeHNidGkuYXBpLkNvbXBpbGF0aW9u7frgw2rooEICAAJKAAlzdGFydFRpbWVbAAdvdXRwdXRzdAAaW0x4c2J0aS9hcGkvT3V0cHV0U2V0dGluZzt4cAAAAVF7VYUCdXIAGltMeHNidGkuYXBpLk91dHB1dFNldHRpbmc7f2rC86eHpUICAAB4cAAAAAFzcgAXeHNidGkuYXBpLk91dHB1dFNldHRpbmd62ZpHdPsdewIAAkwAD291dHB1dERpcmVjdG9yeXEAfgANTAAPc291cmNlRGlyZWN0b3J5cQB+AA14cHQAUS9ob21lL2xhdmFsYW1wL0RvY3VtZW50cy9sZWFybi1zY2FsYS9TaW1wbGVTcGFya1Byb2plY3QvdGFyZ2V0L3NjYWxhLTIuMTAvY2xhc3Nlc3QAAS91cgACW0Ks8xf4BghU4AIAAHhwAAAAFPYpQWW32fT6qclu91UXAOFaU95n
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/LogHandling.scala -> 
+rO0ABXNyABB4c2J0aS5hcGkuU291cmNlFlpwRASfbtoCAAZJAAdhcGlIYXNoWgAIaGFzTWFjcm9MABhfaW50ZXJuYWxPbmx5X25hbWVIYXNoZXN0ACRMeHNidGkvYXBpL19pbnRlcm5hbE9ubHlfTmFtZUhhc2hlcztMAANhcGl0ABVMeHNidGkvYXBpL1NvdXJjZUFQSTtMAAtjb21waWxhdGlvbnQAF0x4c2J0aS9hcGkvQ29tcGlsYXRpb247WwAEaGFzaHQAAltCeHC4IVHqAHNyACJ4c2J0aS5hcGkuX2ludGVybmFsT25seV9OYW1lSGFzaGVzVNq+mfrU7EwCAAJbAA9pbXBsaWNpdE1lbWJlcnN0ACNbTHhzYnRpL2FwaS9faW50ZXJuYWxPbmx5X05hbWVIYXNoO1sADnJlZ3VsYXJNZW1iZXJzcQB+AAd4cHVyACNbTHhzYnRpLmFwaS5faW50ZXJuYWxPbmx5X05hbWVIYXNoO0lagLbdlov0AgAAeHAAAAAAdXEAfgAJAAAAAHNyABN4c2J0aS5hcGkuU291cmNlQVBJuV6n+SkjOKQCAAJbAAtkZWZpbml0aW9uc3QAF1tMeHNidGkvYXBpL0RlZmluaXRpb247WwAIcGFja2FnZXN0ABRbTHhzYnRpL2FwaS9QYWNrYWdlO3hwdXIAF1tMeHNidGkuYXBpLkRlZmluaXRpb247iMlc57TjXg4CAAB4cAAAAAB1cgAUW0x4c2J0aS5hcGkuUGFja2FnZTtbExk3cKcnoQIAAHhwAAAAAHNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABUXtVhQJ1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+ABp4cHQAUS9ob21lL2xhdmFsYW1wL0RvY3VtZW50cy9sZWFybi1zY2FsYS9TaW1wbGVTcGFya1Byb2plY3QvdGFyZ2V0L3NjYWxhLTIuMTAvY2xhc3Nlc3QAAS91cgACW0Ks8xf4BghU4AIAAHhwAAAAFGFxR2HqI6a3TQ2mzstUkxBLNG8W
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/RawLogEntry.scala -> 
+rO0ABXNyABB4c2J0aS5hcGkuU291cmNlFlpwRASfbtoCAAZJAAdhcGlIYXNoWgAIaGFzTWFjcm9MABhfaW50ZXJuYWxPbmx5X25hbWVIYXNoZXN0ACRMeHNidGkvYXBpL19pbnRlcm5hbE9ubHlfTmFtZUhhc2hlcztMAANhcGl0ABVMeHNidGkvYXBpL1NvdXJjZUFQSTtMAAtjb21waWxhdGlvbnQAF0x4c2J0aS9hcGkvQ29tcGlsYXRpb247WwAEaGFzaHQAAltCeHBpwG3EAHNyACJ4c2J0aS5hcGkuX2ludGVybmFsT25seV9OYW1lSGFzaGVzVNq+mfrU7EwCAAJbAA9pbXBsaWNpdE1lbWJlcnN0ACNbTHhzYnRpL2FwaS9faW50ZXJuYWxPbmx5X05hbWVIYXNoO1sADnJlZ3VsYXJNZW1iZXJzcQB+AAd4cHVyACNbTHhzYnRpLmFwaS5faW50ZXJuYWxPbmx5X05hbWVIYXNoO0lagLbdlov0AgAAeHAAAAAAdXEAfgAJAAAAJXNyACB4c2J0aS5hcGkuX2ludGVybmFsT25seV9OYW1lSGFzaFsO9SJ2OFfPAgACSQAEaGFzaEwABG5hbWV0ABJMamF2YS9sYW5nL1N0cmluZzt4cPMF8ix0AAZub3RpZnlzcQB+AAww1U7ydAAEd2FpdHNxAH4ADEbotoR0AA5jb3B5JGRlZmF1bHQkMnNxAH4ADEElmCR0AA0kYXNJbnN0YW5jZU9mc3EAfgAMVRExyHQACXRpbWVzdGFtcHNxAH4ADLzubSl0AA5jb3B5JGRlZmF1bHQkNXNxAH4ADKZNICp0AAxwcm9kdWN0QXJpdHlzcQB+AAwyM/lgdAAGZXF1YWxzc3EAfgAMY9qy6XQABWV2ZW50c3EAfgAMrtlIIHQADGFzSW5zdGFuY2VPZnNxAH4ADHOqgZt0AAxzeW5jaHJvbml6ZWRzcQB+AAxmodicdAANJGlzSW5zdGFuY2VPZnNxAH4ADOlIvLR0AAhjYW5FcXVhbHNxAH4ADBFl9eh0AA5jb3B5JGRlZmF1bHQkNHNxAH4ADGt6CTV0AA1wcm9kdWN0UHJlZml4c3EAfgAMMm/vf3QAC2xpc3RQcm9kdWN0c3EAfgAM2fKqGXQACW5vdGlmeUFsbHNxAH4ADJukdi90AAxpc0luc3RhbmNlT2ZzcQB+AAwp3YsUdAAGPGluaXQ+c3EAfgAMHGouunQACmVudGl0eVR5cGVzcQB+AAyqb945dAACPT1zcQB+AAwbsZXNdAAFY2xvbmVzcQB+AAxxvdVadAAOY29weSRkZWZhdWx0JDNzcQB+AAx9Sr5hdAAEY29weXNxAH4ADDATUAd0AAh0b1N0cmluZ3NxAH4ADNw7iD50AAlwcm9kdWN0SURzcQB+AAzmd6u0dAACIT1zcQB+AAzm7vkpdAAIZ2V0Q2xhc3NzcQB+AAxVxLFldAAOY29weSRkZWZhdWx0JDFzcQB+AAwkyu+GdAALUmF3TG9nRW50cnlzcQB+AAzaeYq8dAACbmVzcQB+AAzomWERdAACZXFzcQB+AAx9FghbdAAPcHJvZHVjdEl0ZXJhdG9yc3EAfgAM4Q9L9HQAAiMjc3EAfgAMSystOHQACGZpbmFsaXplc3EAfgAMqhc1C3QADnByb2R1Y3RFbGVtZW50c3EAfgAMzyLoQHQACGhhc2hDb2Rlc3IAE3hzYnRpLmFwaS5Tb3VyY2VBUEm5Xqf5KSM4pAIAAlsAC2RlZmluaXRpb25zdAAXW0x4c2J0aS9hcGkvRGVmaW5pdGlvbjtbAAhwYWNrYWdlc3QAFFtMeHNidGkvYXBpL1BhY2thZ2U7eHB1cgAXW0x4c2J0aS5hcGkuRGVmaW5pdGlvbjuIyVzntONeDgIAAHhwAAAAAXNyABN4c2J0aS5hcGkuQ2xhc3NMaWtlgzQcod+wl2wCAARMAA5kZWZpbml0aW9uVHlwZXQAGkx4c2J0aS9hcGkvRGVmaW5pdGlvblR5cGU7WwAQc2F2ZWRBbm5vdGF0aW9uc3QAE1tMamF2YS9sYW5nL1N0cmluZztMAAhzZWxmVHlwZXQAEEx4c2J0aS9hcGkvTGF6eTtMAAlzdHJ1Y3R1cmVxAH4AYXhyACF4c2J0aS5hcGkuUGFyYW1ldGVyaXplZERlZmluaXRpb275EW6x1VA84gIAAVsADnR5cGVQYXJhbWV0ZXJzdAAaW0x4c2J0aS9hcGkvVHlwZVBhcmFtZXRlcjt4cgAUeHNidGkuYXBpLkRlZmluaXRpb26HKhvocULjRgIABEwABmFjY2Vzc3QAEkx4c2J0aS9hcGkvQWNjZXNzO1sAC2Fubm90YXRpb25zdAAXW0x4c2J0aS9hcGkvQW5ub3RhdGlvbjtMAAltb2RpZmllcnN0ABVMeHNidGkvYXBpL01vZGlmaWVycztMAARuYW1lcQB+AA14cHNyABB4c2J0aS5hcGkuUHVibGljulg9rmwtYEICAAB4cgAQeHNidGkuYXBpLkFjY2Vzc91imvgdYzFIAgAAeHB1cgAXW0x4c2J0aS5hcGkuQW5ub3RhdGlvbjvrl+sZEPaNSAIAAHhwAAAAAHNyABN4c2J0aS5hcGkuTW9kaWZpZXJzxxETIWmc3CQCAAFCAAVmbGFnc3hwAHEAfgBJdXIAGltMeHNidGkuYXBpLlR5cGVQYXJhbWV0ZXI72W0mDyid8rYCAAB4cAAAAAB+cgAYeHNidGkuYXBpLkRlZmluaXRpb25UeXBlAAAAAAAAAAASAAB4cgAOamF2YS5sYW5nLkVudW0AAAAAAAAAABIAAHhwdAAIQ2xhc3NEZWZ1cgATW0xqYXZhLmxhbmcuU3RyaW5nO63SVufpHXtHAgAAeHAAAAAAc3IAE3hzYnRpLlNhZmVMYXp5JEltcGxQAi6Tl5dAPwIAA1oACGJpdG1hcCQwTAACX3R0ABJMamF2YS9sYW5nL09iamVjdDtMAARldmFsdAARTHNjYWxhL0Z1bmN0aW9uMDt4cgAWeHNidGkuYXBpLkFic3RyYWN0TGF6edN3tQFfu+egAgAAeHAAcHNyACB4c2J0aS5TYWZlTGF6eSQkYW5vbmZ1biRzdHJpY3QkMQAAAAAAAAAAAgABTAAHdmFsdWUkMXEAfgB5eHBzcgATeHNidGkuYXBpLkVtcHR5VHlwZbz9nkZJO4kkAgAAeHIAFHhzYnRpLmFwaS5TaW1wbGVUeXBlcnhiiCEjv0ACAAB4cgAOeHNidGkuYXBpLlR5cGU/atkhFkmqygIAAHhwc3EAfgB4AHBzcQB+AH1zcgATeHNidGkuYXBpLlN0cnVjdHVyZamq+YCTb9gAAgADTAAIZGVjbGFyZWRxAH4AYUwACWluaGVyaXRlZHEAfgBhTAAHcGFyZW50c3EAfgBheHEAfgCBc3EAfgB4AHBzcQB+AH11cQB+AFwAAAAAc3EAfgB4AHBzcQB+AH11cQB+AFwAAAAAc3EAfgB4AHBzcQB+AH11cgARW0x4c2J0aS5hcGkuVHlwZTt0/6Vae/npQQIAAHhwAAAABnNyABR4c2J0aS5hcGkuUHJvamVjdGlvbvPSjVTpRaQtAgACTAACaWRxAH4ADUwABnByZWZpeHQAFkx4c2J0aS9hcGkvU2ltcGxlVHlwZTt4cQB+AIB0AAxTZXJpYWxpemFibGVzcgATeHNidGkuYXBpLlNpbmdsZXRvbvynX/jPVuRGAgABTAAEcGF0aHQAEEx4c2J0aS9hcGkvUGF0aDt4cQB+AIBzcgAOeHNidGkuYXBpLlBhdGibPVwIzqUnhAIAAVsACmNvbXBvbmVudHN0ABpbTHhzYnRpL2FwaS9QYXRoQ29tcG9uZW50O3hwdXIAGltMeHNidGkuYXBpLlBhdGhDb21wb25lbnQ7Q9oJdC1nFnQCAAB4cAAAAAJzcgAMeHNidGkuYXBpLklkmDJsizdTxEACAAFMAAJpZHEAfgANeHIAF3hzYnRpLmFwaS5QYXRoQ29tcG9uZW50X5oiWy6Gn7wCAAB4cHQABXNjYWxhc3IADnhzYnRpLmFwaS5UaGlz2wntpsxaQFwCAAB4cQB+AJ5zcQB+AJFxAH4AlHNxAH4AlXNxAH4AmHVxAH4AmwAAAANzcQB+AJ10AARqYXZhc3EAfgCddAACaW9xAH4AonNxAH4AkXQAB1Byb2R1Y3RxAH4Al3NxAH4AkXQABkVxdWFsc3EAfgCXc3EAfgCRdAAGT2JqZWN0c3EAfgCVc3EAfgCYdXEAfgCbAAAAA3NxAH4AnXEAfgCoc3EAfgCddAAEbGFuZ3EAfgCic3EAfgCRdAADQW55cQB+AJd1cgAUW0x4c2J0aS5hcGkuUGFja2FnZTtbExk3cKcnoQIAAHhwAAAAAHNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABUXtVhQJ1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5cQB+AA1MAA9zb3VyY2VEaXJlY3RvcnlxAH4ADXhwdABRL2hvbWUvbGF2YWxhbXAvRG9jdW1lbnRzL2xlYXJuLXNjYWxhL1NpbXBsZVNwYXJrUHJvamVjdC90YXJnZXQvc2NhbGEtMi4xMC9jbGFzc2VzdAABL3VyAAJbQqzzF/gGCFTgAgAAeHAAAAAU+d7p36yfEYLlFXSvrGSyVIgdYf8=
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/SimpleApp.scala -> 
+rO0ABXNyABB4c2J0aS5hcGkuU291cmNlFlpwRASfbtoCAAZJAAdhcGlIYXNoWgAIaGFzTWFjcm9MABhfaW50ZXJuYWxPbmx5X25hbWVIYXNoZXN0ACRMeHNidGkvYXBpL19pbnRlcm5hbE9ubHlfTmFtZUhhc2hlcztMAANhcGl0ABVMeHNidGkvYXBpL1NvdXJjZUFQSTtMAAtjb21waWxhdGlvbnQAF0x4c2J0aS9hcGkvQ29tcGlsYXRpb247WwAEaGFzaHQAAltCeHC4IVHqAHNyACJ4c2J0aS5hcGkuX2ludGVybmFsT25seV9OYW1lSGFzaGVzVNq+mfrU7EwCAAJbAA9pbXBsaWNpdE1lbWJlcnN0ACNbTHhzYnRpL2FwaS9faW50ZXJuYWxPbmx5X05hbWVIYXNoO1sADnJlZ3VsYXJNZW1iZXJzcQB+AAd4cHVyACNbTHhzYnRpLmFwaS5faW50ZXJuYWxPbmx5X05hbWVIYXNoO0lagLbdlov0AgAAeHAAAAAAdXEAfgAJAAAAAHNyABN4c2J0aS5hcGkuU291cmNlQVBJuV6n+SkjOKQCAAJbAAtkZWZpbml0aW9uc3QAF1tMeHNidGkvYXBpL0RlZmluaXRpb247WwAIcGFja2FnZXN0ABRbTHhzYnRpL2FwaS9QYWNrYWdlO3hwdXIAF1tMeHNidGkuYXBpLkRlZmluaXRpb247iMlc57TjXg4CAAB4cAAAAAB1cgAUW0x4c2J0aS5hcGkuUGFja2FnZTtbExk3cKcnoQIAAHhwAAAAAHNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABUXtVhQJ1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+ABp4cHQAUS9ob21lL2xhdmFsYW1wL0RvY3VtZW50cy9sZWFybi1zY2FsYS9TaW1wbGVTcGFya1Byb2plY3QvdGFyZ2V0L3NjYWxhLTIuMTAvY2xhc3Nlc3QAAS91cgACW0Ks8xf4BghU4AIAAHhwAAAAFMPz91iwZejQg3NjQjsc7XPyyOZx
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/WordCount.scala -> 
+rO0ABXNyABB4c2J0aS5hcGkuU291cmNlFlpwRASfbtoCAAZJAAdhcGlIYXNoWgAIaGFzTWFjcm9MABhfaW50ZXJuYWxPbmx5X25hbWVIYXNoZXN0ACRMeHNidGkvYXBpL19pbnRlcm5hbE9ubHlfTmFtZUhhc2hlcztMAANhcGl0ABVMeHNidGkvYXBpL1NvdXJjZUFQSTtMAAtjb21waWxhdGlvbnQAF0x4c2J0aS9hcGkvQ29tcGlsYXRpb247WwAEaGFzaHQAAltCeHC4IVHqAHNyACJ4c2J0aS5hcGkuX2ludGVybmFsT25seV9OYW1lSGFzaGVzVNq+mfrU7EwCAAJbAA9pbXBsaWNpdE1lbWJlcnN0ACNbTHhzYnRpL2FwaS9faW50ZXJuYWxPbmx5X05hbWVIYXNoO1sADnJlZ3VsYXJNZW1iZXJzcQB+AAd4cHVyACNbTHhzYnRpLmFwaS5faW50ZXJuYWxPbmx5X05hbWVIYXNoO0lagLbdlov0AgAAeHAAAAAAdXEAfgAJAAAAAHNyABN4c2J0aS5hcGkuU291cmNlQVBJuV6n+SkjOKQCAAJbAAtkZWZpbml0aW9uc3QAF1tMeHNidGkvYXBpL0RlZmluaXRpb247WwAIcGFja2FnZXN0ABRbTHhzYnRpL2FwaS9QYWNrYWdlO3hwdXIAF1tMeHNidGkuYXBpLkRlZmluaXRpb247iMlc57TjXg4CAAB4cAAAAAB1cgAUW0x4c2J0aS5hcGkuUGFja2FnZTtbExk3cKcnoQIAAHhwAAAAAHNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABUXtVhQJ1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+ABp4cHQAUS9ob21lL2xhdmFsYW1wL0RvY3VtZW50cy9sZWFybi1zY2FsYS9TaW1wbGVTcGFya1Byb2plY3QvdGFyZ2V0L3NjYWxhLTIuMTAvY2xhc3Nlc3QAAS91cgACW0Ks8xf4BghU4AIAAHhwAAAAFAtIy3fxcIEgRVKa/kZJFl4oYlG1
 external apis:
 0 items
 source infos:
-4 items
-/home/loc/Documents/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> 
-AAAAAAAAAAEAAAEAAAATACwJCXZhbCBjb21taXRzID0gc3FsQ29udGV4dC5sb2FkKCJqZGJjIiwgTWFwKAEAAALpAQAAABsBABsJCSAgICAgICAgICAgICAgICAgICAgICAgICABAEYvaG9tZS9sb2MvRG9jdW1lbnRzL1NpbXBsZVNwYXJrUHJvamVjdC9zcmMvbWFpbi9zY2FsYS9Db25uZWN0U1FMLnNjYWxhAQBGL2hvbWUvbG9jL0RvY3VtZW50cy9TaW1wbGVTcGFya1Byb2plY3Qvc3JjL21haW4vc2NhbGEvQ29ubmVjdFNRTC5zY2FsYQBebWV0aG9kIGxvYWQgaW4gY2xhc3MgU1FMQ29udGV4dCBpcyBkZXByZWNhdGVkOiBVc2UgcmVhZC5mb3JtYXQoc291cmNlKS5vcHRpb25zKG9wdGlvbnMpLmxvYWQoKQE=
-/home/loc/Documents/SimpleSparkProject/src/main/scala/LogHandling.scala -> 
+5 items
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/ConnectSQL.scala -> 
+AAAAAwAAAQAAADIAEQkJCQljYXNlIGUgPT4gTmlsAQAABk4BAAAACQEACQkJCQkgICAgIAEAVy9ob21lL2xhdmFsYW1wL0RvY3VtZW50cy9sZWFybi1zY2FsYS9TaW1wbGVTcGFya1Byb2plY3Qvc3JjL21haW4vc2NhbGEvQ29ubmVjdFNRTC5zY2FsYQEAVy9ob21lL2xhdmFsYW1wL0RvY3VtZW50cy9sZWFybi1zY2FsYS9TaW1wbGVTcGFya1Byb2plY3Qvc3JjL21haW4vc2NhbGEvQ29ubmVjdFNRTC5zY2FsYQBoVGhpcyBjYXRjaGVzIGFsbCBUaHJvd2FibGVzLiBJZiB0aGlzIGlzIHJlYWxseSBpbnRlbmRlZCwgdXNlIGBjYXNlIGUgOiBUaHJvd2FibGVgIHRvIGNsZWFyIHRoaXMgd2FybmluZy4BAAABAAAAPAASCQkJCQljYXNlIGUgPT4gTmlsAQAABykBAAAACgEACgkJCQkJICAgICABAFcvaG9tZS9sYXZhbGFtcC9Eb2N1bWVudHMvbGVhcm4tc2NhbGEvU2ltcGxlU3BhcmtQcm9qZWN0L3NyYy9tYWluL3NjYWxhL0Nvbm5lY3RTUUwuc2NhbGEBAFcvaG9tZS9sYXZhbGFtcC9Eb2N1bWVudHMvbGVhcm4tc2NhbGEvU2ltcGxlU3BhcmtQcm9qZWN0L3NyYy9tYWluL3NjYWxhL0Nvbm5lY3RTUUwuc2NhbGEAaFRoaXMgY2F0Y2hlcyBhbGwgVGhyb3dhYmxlcy4gSWYgdGhpcyBpcyByZWFsbHkgaW50ZW5kZWQsIHVzZSBgY2FzZSBlIDogVGhyb3dhYmxlYCB0byBjbGVhciB0aGlzIHdhcm5pbmcuAQAAAQAAAGcAEwkJCWlmKHguXzIgIT0gTmlsKXsBAAAMSgEAAAALAQALCQkJICAgICAgICABAFcvaG9tZS9sYXZhbGFtcC9Eb2N1bWVudHMvbGVhcm4tc2NhbGEvU2ltcGxlU3BhcmtQcm9qZWN0L3NyYy9tYWluL3NjYWxhL0Nvbm5lY3RTUUwuc2NhbGEBAFcvaG9tZS9sYXZhbGFtcC9Eb2N1bWVudHMvbGVhcm4tc2NhbGEvU2ltcGxlU3BhcmtQcm9qZWN0L3NyYy9tYWluL3NjYWxhL0Nvbm5lY3RTUUwuc2NhbGEAemNvbXBhcmluZyBjYXNlIGNsYXNzIHZhbHVlcyBvZiB0eXBlcyBSYXdMb2dFbnRyeSBhbmQgc2NhbGEuY29sbGVjdGlvbi5pbW11dGFibGUuTmlsLnR5cGUgdXNpbmcgYCE9JyB3aWxsIGFsd2F5cyB5aWVsZCB0cnVlAQAAAAEAAAEAAAB6ADogICAgICAgICAgICAgICAgdmFsIGsgPSAoaXRlbSwgeC5fMi5ldmVudCwgeC5fMi50aW1lc3RhbXApAQAADlgBAAAAFgEAFiAgICAgICAgICAgICAgICAgICAgICABAFcvaG9tZS9sYXZhbGFtcC9Eb2N1bWVudHMvbGVhcm4tc2NhbGEvU2ltcGxlU3BhcmtQcm9qZWN0L3NyYy9tYWluL3NjYWxhL0Nvbm5lY3RTUUwuc2NhbGEBAFcvaG9tZS9sYXZhbGFtcC9Eb2N1bWVudHMvbGVhcm4tc2NhbGEvU2ltcGxlU3BhcmtQcm9qZWN0L3NyYy9tYWluL3NjYWxhL0Nvbm5lY3RTUUwuc2NhbGEALnZhbCBrZXl3b3JkIGluIGZvciBjb21wcmVoZW5zaW9uIGlzIGRlcHJlY2F0ZWQB
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/LogHandling.scala -> 
 AAAAAAAAAAA=
-/home/loc/Documents/SimpleSparkProject/src/main/scala/SimpleApp.scala -> 
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/RawLogEntry.scala -> 
 AAAAAAAAAAA=
-/home/loc/Documents/SimpleSparkProject/src/main/scala/WordCount.scala -> 
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/SimpleApp.scala -> 
+AAAAAAAAAAA=
+/home/lavalamp/Documents/learn-scala/SimpleSparkProject/src/main/scala/WordCount.scala -> 
 AAAAAAAAAAA=
 compilations:
-51 items
+52 items
 00 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABUThJ1o51cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAQC9ob21lL2xvYy9Eb2N1bWVudHMvU2ltcGxlU3BhcmtQcm9qZWN0L3RhcmdldC9zY2FsYS0yLjEwL2NsYXNzZXN0AAEv
 01 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABUThLiup1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAQC9ob21lL2xvYy9Eb2N1bWVudHMvU2ltcGxlU3BhcmtQcm9qZWN0L3RhcmdldC9zY2FsYS0yLjEwL2NsYXNzZXN0AAEv
 02 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABUThaFB11cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAQC9ob21lL2xvYy9Eb2N1bWVudHMvU2ltcGxlU3BhcmtQcm9qZWN0L3RhcmdldC9zY2FsYS0yLjEwL2NsYXNzZXN0AAEv
@@ -264,3 +495,4 @@ compilations:
 48 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABUT33xhx1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAQC9ob21lL2xvYy9Eb2N1bWVudHMvU2ltcGxlU3BhcmtQcm9qZWN0L3RhcmdldC9zY2FsYS0yLjEwL2NsYXNzZXN0AAEv
 49 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABUT4U67x1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAQC9ob21lL2xvYy9Eb2N1bWVudHMvU2ltcGxlU3BhcmtQcm9qZWN0L3RhcmdldC9zY2FsYS0yLjEwL2NsYXNzZXN0AAEv
 50 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABUT4lIXB1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAQC9ob21lL2xvYy9Eb2N1bWVudHMvU2ltcGxlU3BhcmtQcm9qZWN0L3RhcmdldC9zY2FsYS0yLjEwL2NsYXNzZXN0AAEv
+51 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABUXtVhQJ1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAUS9ob21lL2xhdmFsYW1wL0RvY3VtZW50cy9sZWFybi1zY2FsYS9TaW1wbGVTcGFya1Byb2plY3QvdGFyZ2V0L3NjYWxhLTIuMTAvY2xhc3Nlc3QAAS8=
