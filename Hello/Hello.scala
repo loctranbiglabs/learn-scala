@@ -18,62 +18,103 @@ object HelloWorld {
         )
         r._2
      }
-      def main(args: Array[String]) {
-          case class RawLogEntry(
-          	event: String,
-          	entityType: String,
-          	timestamp: Long,
-          	productID: Int,
-          	listProduct: List[Int]
-      	)
-      val lst = List(("8cv5o85exdoi7b22jxjyzykr",RawLogEntry("VIEW","GUEST",65464863,10005,List())),
-        ("8cv5o85exdoi7b22jxjyzykr",RawLogEntry("VIEW","GUEST",65791353,10007,List())),
-        ("8cv5o85exdoi7b22jxjyzykr",RawLogEntry("VIEW","GUEST",65806194,10003,List())),
-        ("8cv5o85exdoi7b22jxjyzykr",RawLogEntry("VIEW","GUEST",65809183,10005,List())),
-        ("8cv5o85exdoi7b22jxjyzykr",RawLogEntry("VIEW","GUEST",65966921,10004,List())),
-        ("8cv5o85exdoi7b22jxjyzykr",RawLogEntry("VIEW","GUEST",66211931,10004,List())),
-        ("8cv5o85exdoi7b22jxjyzykr",RawLogEntry("VIEW","GUEST",66231838,10004,List())),
-        ("8cv5o85exdoi7b22jxjyzykr",RawLogEntry("VIEW","GUEST",66257151,10004,List())),
-        ("8cv5o85exdoi7b22jxjyzykr",RawLogEntry("VIEW","GUEST",66552338,10004,List())),
-        ("8cv5o85exdoi7b22jxjyzykr",RawLogEntry("VIEW","GUEST",66565848,10007,List())),
-        ("14411ycunamxvqg90he7y0ntk",RawLogEntry("VIEW","GUEST",66689777,10013,List())),
-        ("14411ycunamxvqg90he7y0ntk",RawLogEntry("VIEW","GUEST",66692688,9950,List())),
-        ("14411ycunamxvqg90he7y0ntk",RawLogEntry("VIEW","GUEST",66695259,10004,List())),
-        ("14411ycunamxvqg90he7y0ntk",RawLogEntry("VIEW","GUEST",66697642,10010,List())),
-        ("14411ycunamxvqg90he7y0ntk",RawLogEntry("VIEW","GUEST",66702908,9951,List())),
-        ("1grhkkdftd8wdtibou9m2c97p",RawLogEntry("VIEW","GUEST",67183241,10035,List())),
-        ("1grhkkdftd8wdtibou9m2c97p",RawLogEntry("VIEW","GUEST",67301223,10035,List())),
-        ("1grhkkdftd8wdtibou9m2c97p",RawLogEntry("VIEW","GUEST",67308431,10035,List())),
-        ("1grhkkdftd8wdtibou9m2c97p",RawLogEntry("VIEW","GUEST",67314414,10004,List())),
-        ("1ls4end5iay22a2b6rf5fl4m4",RawLogEntry("VIEW","GUEST",67897201,9950,List())),
-        ("1ls4end5iay22a2b6rf5fl4m4",RawLogEntry("VIEW","GUEST",67907735,9950,List())),
-        ("1ls4end5iay22a2b6rf5fl4m4",RawLogEntry("VIEW","GUEST",67912239,9950,List())),
-        ("a4egocu0gfrenio8mjkbjks9",RawLogEntry("VIEW","GUEST",69698417,10003,List())),
-        ("1h3cair5b22zt1bw4vtu6alwcb",RawLogEntry("VIEW","GUEST",69726542,10004,List())),
-        ("1h3cair5b22zt1bw4vtu6alwcb",RawLogEntry("VIEW","GUEST",69831460,10007,List())),
-        ("wfw2sqac0ziwinb557secbi7",RawLogEntry("VIEW","GUEST",75281640,9950,List())),
-        ("wfw2sqac0ziwinb557secbi7",RawLogEntry("VIEW","GUEST",75287014,10007,List())),
-        ("wfw2sqac0ziwinb557secbi7",RawLogEntry("VIEW","GUEST",75358940,10007,List())),
-        ("1181k1vhsk1bg6u8bumyiefvb",RawLogEntry("VIEW","GUEST",75610357,10007,List())),
-        ("1f5rrorze7ejdsp6btjt4v2oy",RawLogEntry("VIEW","GUEST",76193840,10007,List())),
-        ("fscwbh0rlocfwrkn2kvp8wlz",RawLogEntry("VIEW","GUEST",77263667,1234,List())),
-        ("fscwbh0rlocfwrkn2kvp8wlz",RawLogEntry("ADD_CARD","GUEST",77392965,10007,List())),
-        ("ZZzezu6i0u1241get692r3aesz",RawLogEntry("REC","GUEST",77723653,234,List(10003, 10005, 10004))),
-        ("ZZzezu6i0u1241get692r3aesz",RawLogEntry("REC","GUEST",77723653,234,List(10003, 10005, 10004))),
-        ("fscwbh0rlocfwrkn2kvp8wlz",RawLogEntry("VIEW","GUEST",77477058,10002,List())),
-        ("fscwbh0rlocfwrkn2kvp8wlz",RawLogEntry("VIEW","GUEST",77481565,9952,List())),
-        ("fscwbh0rlocfwrkn2kvp8wlz",RawLogEntry("VIEW","GUEST",77484391,10013,List())),
-        ("fscwbh0rlocfwrkn2kvp8wlz",RawLogEntry("VIEW","GUEST",77487264,9950,List())),
-        ("fscwbh0rlocfwrkn2kvp8wlz",RawLogEntry("VIEW","GUEST",77490324,10004,List())),
-        ("fscwbh0rlocfwrkn2kvp8wlz",RawLogEntry("VIEW","GUEST",77491381,324,List())),
-        ("fscwbh0rlocfwrkn2kvp8wlz",RawLogEntry("VIEW","GUEST",77494205,10007,List())),
-        ("fscwbh0rlocfwrkn2kvp8wlz",RawLogEntry("VIEW","GUEST",77495076,2345,List())),
-        ("czezu6i0u1241get692r3aesz",RawLogEntry("VIEW","GUEST",77718630,10007,List())),
-        ("czezu6i0u1241get692r3aesz",RawLogEntry("REC","GUEST",77723653,234,List(10003, 10005, 10004))),
-        ("czezu6i0u1241get692r3aesz",RawLogEntry("VIEW","GUEST",77729942,10005,List())),
-        ("czezu6i0u1241get692r3aesz",RawLogEntry("REC","GUEST",77731305,12312,List(10003, 10007, 10004)))
+        case class RawLogEntry(
+          event: String,
+          entityType: String,
+          timestamp: Long,
+          productID: Int,
+          listProduct: List[Int],
+          algorithm: String
+      )
+     def groupBySession(lst: List[(String, RawLogEntry)]) : List[(String, List[RawLogEntry])] = {
+        lst.groupBy(_._1).toList.map(x => 
+          (x._1, x._2.map(y => y._2))
         )
-        val rst = lst.groupBy( _._1 ).map( kv => (kv._1, kv._2.map( x=> {
+     }
+     def groupByAction(lst: List[(String, Long, String, String)]) : List[(String, Int)] = {
+      lst.groupBy(_._1).map(x => (x._1, x._2.size)).toList
+     }
+     def groupByAlgorithm(lst: List[RawLogEntry]) : List[(String, List[(String, Long, String, String)])] = {
+        lst.groupBy(_.algorithm).toList.map(x => {
+        val a= (x._1, x._2.map( y => {
+              if("REC" == y.event){
+                for{
+                  item <- y.listProduct
+                  val k = (y.event, y.timestamp, item.toString, y.algorithm)
+                } yield k
+              }else List((y.event, y.timestamp, y.productID.toString, y.algorithm))
+            }).flatten
+          )
+        a
+        })
+     }
+     def mergeSessions(lst: List[(String, List[(String, List[(String, Int)])])]): Map[String, Map[String, Int]] ={
+      val x = lst.map(x => x._2)
+      var y = x.flatten.groupBy(_._1).map(x => {
+        (x._1, x._2.map(y => {
+          y._2.map(z =>{
+            (z._1, z._2)
+            })
+          }).flatten.groupBy(_._1).map(x => {
+            (x._1,x._2.map( y =>{
+              y._2
+              }).sum)
+            })
+          )
+        })
+      // y.foreach(println)
+      List(("topviw", 1))
+      y
+     }
+      def main(args: Array[String]) {
+
+      val lst = List(
+            ("3yjqyv5ox0fre0rjx6eqabev",RawLogEntry("VIEW","GUEST",1449556227184L,10004,List(),"")),
+            ("3yjqyv5ox0fre0rjx6eqabev",RawLogEntry("REC","GUEST",1449556239864L,0,List(10004, 10005),"topview")),
+            ("3yjqyv5ox0fre0rjx6eqabev",RawLogEntry("REC","GUEST",1449556239864L,0,List(10004, 9952, 10005),"topviewall")),
+            ("3yjqyv5ox0fre0rjx6eqabev",RawLogEntry("VIEW","GUEST",1449556258989L,9952,List(),"topviewall")),
+            ("3yjqyv5ox0fre0rjx6eqabev",RawLogEntry("REC","GUEST",1449556260255L,0,List(9952),"topview")),
+            ("3yjqyv5ox0fre0rjx6eqabev",RawLogEntry("REC","GUEST",1449556260342L,0,List(10004, 9952, 10005),"topviewall")),
+            ("3yjqyv5ox0fre0rjx6eqabev",RawLogEntry("VIEW","USER",1449556297116L,9952,List(),"topviewall")),
+            ("3yjqyv5ox0fre0rjx6eqabev",RawLogEntry("REC","USER",1449556299893L,0,List(9952),"topview")),
+            ("3yjqyv5ox0fre0rjx6eqabev",RawLogEntry("REC","USER",1449556300097L,0,List(10004, 9952, 10005),"topviewall")),
+            ("3yjqyv5ox0fre0rjx6eqabev",RawLogEntry("ADD_WISHLIST","USER",1449556301079L,0,List(),"")),
+            ("3yjqyv5ox0fre0rjx6eqabev",RawLogEntry("VIEW","USER",1449556320821L,10001,List(),"")),
+            ("3yjqyv5ox0fre0rjx6eqabev",RawLogEntry("REC","USER",1449556325011L,0,List(10004, 9952, 10005),"topviewall")),
+            ("3yjqyv5ox0fre0rjx6eqabev",RawLogEntry("ADD_WISHLIST","USER",1449556333161L,0,List(),"")),
+            ("3yjqyv5ox0fre0rjx6eqabev",RawLogEntry("REC","USER",1449556341498L,0,List(10004, 10005),"topview")),
+            ("3yjqyv5ox0fre0rjx6eqabev",RawLogEntry("VIEW","USER",1449556339055L,10005,List(),"topviewall")),
+            ("3yjqyv5ox0fre0rjx6eqabev",RawLogEntry("REC","USER",1449556341636L,0,List(10004, 9952, 10005),"topviewall")),
+            ("3yjqyv5ox0fre0rjx6eqabev",RawLogEntry("REC","USER",1449556422953L,0,List(10004, 9952),"topviewall")),
+            ("3yjqyv5ox0fre0rjx6eqabev",RawLogEntry("VIEW","USER",1449556425701L,10004,List(),"topviewall")),
+            ("3yjqyv5ox0fre0rjx6eqabev",RawLogEntry("REC","USER",1449556426665L,0,List(10004),"topview")),
+            ("3yjqyv5ox0fre0rjx6eqabev",RawLogEntry("VIEW","USER",1449556418369L,10005,List(),"topviewall")),
+            ("3yjqyv5ox0fre0rjx6eqabev",RawLogEntry("REC","USER",1449556422945L,0,List(10004),"topview")),
+            ("3yjqyv5ox0fre0rjx6eqabev",RawLogEntry("REC","USER",1449556426843L,0,List(10004, 9952),"topviewall")),
+            ("3yjqyv5ox0fre0rjx6eqabev",RawLogEntry("VIEW","USER",1449556443455L,10004,List(),"topviewall")),
+            ("3yjqyv5ox0fre0rjx6eqabev",RawLogEntry("VIEW","USER",1449556446862L,10004,List(),"topviewall")),
+            ("3yjqyv5ox0fre0rjx6eqabev",RawLogEntry("REC","USER",1449556448972L,0,List(10004),"topview")),
+            ("3yjqyv5ox0fre0rjx6eqabev",RawLogEntry("REC","USER",1449556449117L,0,List(10004, 9952),"topviewall")),
+            ("3yjqyv5ox0fre0rjx6eqabev",RawLogEntry("VIEW","USER",1449556452219L,10003,List(),"crosssales")),
+            ("3yjqyv5ox0fre0rjx6eqabev",RawLogEntry("REC","USER",1449556453483L,0,List(10004),"topview")),
+            ("3yjqyv5ox0fre0rjx6eqabev",RawLogEntry("REC","USER",1449556453629L,0,List(10004, 9952),"topviewall")),
+            ("3yjqyv5ox0fre0rjx6eqabev",RawLogEntry("VIEW","USER",1449556507221L,10004,List(),"topview")),
+            ("3yjqyv5ox0fre0rjx6eqabev",RawLogEntry("VIEW","USER",1449556507221L,10004,List(),"crosssales")),
+            ("1mybh0a25lts1vji4ddnbx618",RawLogEntry("REC","GUEST",1449556942780L,0,List(10004, 10005, 9952, 10003, 10001),"topviewall")),
+            ("1mybh0a25lts1vji4ddnbx618",RawLogEntry("VIEW","GUEST",1449556934239L,10021,List(),"")),
+            ("1mybh0a25lts1vji4ddnbx618",RawLogEntry("REC","GUEST",1449556938689L,0,List(10004, 10005, 9952, 10003, 10001),"topviewall")),
+            ("1mybh0a25lts1vji4ddnbx618",RawLogEntry("VIEW","GUEST",1449556941560L,10004,List(),"topviewall")),
+            ("1mybh0a25lts1vji4ddnbx618",RawLogEntry("REC","GUEST",1449556942702L,0,List(10004, 10005, 10003),"topview"))
+        )
+
+
+       val r1 = groupBySession(lst)
+       val r2 = r1.map(x => (x._1, groupByAlgorithm(x._2)))
+       val r3 = r2.map(x => (x._1, x._2.map(y => (y._1, groupByAction(y._2)))))
+       val r4 = mergeSessions(r3)
+       r4.foreach(println)
+
+/*        val rst = lst.groupBy( _._1 ).map( kv => (kv._1, kv._2.map( x=> {
             if(x._2.listProduct.isEmpty) List((x._2.productID,x._2.event, x._2.timestamp))
             else
             for{
@@ -94,16 +135,7 @@ object HelloWorld {
                   (t._1, t._2.map(x => x._2).sum)
                   }))
               })
-        rst.foreach(println)
-         // val m = for{
-         //  item <- rst
-         //  val res = item._2.filter(x => (x._2 !="REC") && (x._1 == 10007))
-         // } yield res
-         // m.foreach(println)
-         // println(rst)
-
-        // val a = List(List(1003,1004), List(1005, 1006))
-        // println(a.flatten)
+        rst.foreach(println)*/
      }
 }
 

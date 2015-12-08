@@ -56,7 +56,7 @@ object RecCount {
 
 		// rst1.foreach(println)
 
-        val rst2 = sm.groupBy( _._1 ).map( kv => (kv._1, kv._2.map( x=> {
+        /*val rst2 = sm.groupBy( _._1 ).map( kv => (kv._1, kv._2.map( x=> {
             (x._2.algorithm,x._2.event, x._2.timestamp)
             
           }).groupBy(_._1).map(k =>(k._1, k._2.map(x => {
@@ -71,8 +71,8 @@ object RecCount {
                   }))
               })
 
-		rst2.foreach(println)
-
+		rst2.foreach(println)*/
+sm.foreach(println)
 
 	}
 }
