@@ -73,8 +73,7 @@ object ConnectDB {
 				algorithm)
 			entry
 	}
-	def loadDB() = {
-		val sc = new SparkContext("local", "Rec count", "/opt/spark", List("target/scala-2.10/simple-project_2.10-1.0.jar"))
+	def loadDB(sc : SparkContext) = {
 		val sqlContext = new SQLContext(sc)
 		import sqlContext.implicits._
 		val url = "jdbc:postgresql://192.168.1.21/?user=postgres&password=123456"
