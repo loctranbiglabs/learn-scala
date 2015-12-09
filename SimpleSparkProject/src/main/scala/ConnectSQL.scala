@@ -11,7 +11,8 @@ import org.apache.spark.sql.Row
 case class Properties(data: String)
 case class Product(productID: String)
 case class Data(timestamp: Long, sessionId: String,action: String)
-case class OtherData(timestamp: Long, sessionId: String,action: String, product:Product, algorithm: String)
+case class OtherData(timestamp: Long, sessionId: String,action: String, product:Product)
+case class OtherDataFromRec(timestamp: Long, sessionId: String,action: String, product:Product, algorithm: String)
 case class RecData(timestamp: Long, sessionId: String,action: String, listProduct:List[String], algorithm: String)
 
 case class Result(productID: String, totalView: Int,totalRec: Int)

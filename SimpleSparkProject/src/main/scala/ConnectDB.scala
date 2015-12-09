@@ -34,19 +34,11 @@ object ConnectDB {
 			var data = jData.extract[Data]
 			var productId = ""
 			var algorithm = ""
-			try{
-				val data2 = jData.extract[OtherData]
-				val product = data2.product
-				productId = product.productID
-				algorithm = data2.algorithm
-			}catch{
-				case e: Throwable => Nil
-			}
-			
+
 			val timestamp = data.timestamp
 			
 			var listProduct = List[String]()
-			if(event == "REC"){
+			if("REC" == event){
 				try{
 					val data3 = jData.extract[RecData]
 					listProduct = data3.listProduct
@@ -54,7 +46,23 @@ object ConnectDB {
 				}catch{ 
 					case e: Throwable => Nil
 				}
+			}else if ("VIEW" == event){
+				try{
+					val data2 = jData.extract[OtherDataFromRec]
+					val product = data2.product
+					productId = product.productID
+					algorithm = data2.algorithm
+				}catch{
+					case e: Throwable => println(e); Nil
+				}
 			}else{
+				try{
+					val data2 = jData.extract[OtherData]
+					val product = data2.product
+					productId = product.productID
+				}catch{
+					case e: Throwable => println(e); Nil
+				}
 				
 			}
 			lazy val entry = RawLogEntry(event,

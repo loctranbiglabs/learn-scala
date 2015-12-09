@@ -31,6 +31,24 @@ object HelloWorld {
           (x._1, x._2.map(y => y._2))
         )
      }
+     def findRelativeAlg(product: String, timestamp: Long, lst: List[RawLogEntry]): String = {
+        val tmp = lst.filter(x => ("VIEW".equals(x.event) 
+                                && product.equals(x.productID.toString) 
+                                && x.timestamp < timestamp
+                                && !x.algorithm.equals("")))
+        if(tmp.size > 0) 
+            tmp(0).algorithm
+        else ""
+     }
+     def assignRelativeAction(lst: List[RawLogEntry]) : List[RawLogEntry] = {
+        lst.map(x => {
+          if("REC" != x.event && "VIEW" != x.event)
+              RawLogEntry(x.event, x.entityType, x.timestamp, x.productID, x.listProduct, 
+                findRelativeAlg(x.productID.toString, x.timestamp, lst))
+          else
+              RawLogEntry(x.event, x.entityType, x.timestamp, x.productID, x.listProduct, x.algorithm)              
+        })
+     }
      def groupByAction(lst: List[(String, Long, String, String)]) : List[(String, Int)] = {
       lst.groupBy(_._1).map(x => (x._1, x._2.size)).toList
      }
@@ -48,7 +66,7 @@ object HelloWorld {
         a
         })
      }
-     def mergeSessions(lst: List[(String, List[(String, List[(String, Int)])])]): Map[String, Map[String, Int]] ={
+     def mergeSessions(lst: List[(String, List[(String, List[(String, Int)])])]): Map[String, Map[String, Int]] = {
       val x = lst.map(x => x._2)
       var y = x.flatten.groupBy(_._1).map(x => {
         (x._1, x._2.map(y => {
@@ -62,8 +80,6 @@ object HelloWorld {
             })
           )
         })
-      // y.foreach(println)
-      List(("topviw", 1))
       y
      }
       def main(args: Array[String]) {
@@ -78,10 +94,10 @@ object HelloWorld {
             ("3yjqyv5ox0fre0rjx6eqabev",RawLogEntry("VIEW","USER",1449556297116L,9952,List(),"topviewall")),
             ("3yjqyv5ox0fre0rjx6eqabev",RawLogEntry("REC","USER",1449556299893L,0,List(9952),"topview")),
             ("3yjqyv5ox0fre0rjx6eqabev",RawLogEntry("REC","USER",1449556300097L,0,List(10004, 9952, 10005),"topviewall")),
-            ("3yjqyv5ox0fre0rjx6eqabev",RawLogEntry("ADD_WISHLIST","USER",1449556301079L,0,List(),"")),
+            ("3yjqyv5ox0fre0rjx6eqabev",RawLogEntry("ADD_WISHLIST","USER",1449556301079L,9952,List(),"")),
             ("3yjqyv5ox0fre0rjx6eqabev",RawLogEntry("VIEW","USER",1449556320821L,10001,List(),"")),
             ("3yjqyv5ox0fre0rjx6eqabev",RawLogEntry("REC","USER",1449556325011L,0,List(10004, 9952, 10005),"topviewall")),
-            ("3yjqyv5ox0fre0rjx6eqabev",RawLogEntry("ADD_WISHLIST","USER",1449556333161L,0,List(),"")),
+            ("3yjqyv5ox0fre0rjx6eqabev",RawLogEntry("ADD_WISHLIST","USER",1449556333161L,10001,List(),"")),
             ("3yjqyv5ox0fre0rjx6eqabev",RawLogEntry("REC","USER",1449556341498L,0,List(10004, 10005),"topview")),
             ("3yjqyv5ox0fre0rjx6eqabev",RawLogEntry("VIEW","USER",1449556339055L,10005,List(),"topviewall")),
             ("3yjqyv5ox0fre0rjx6eqabev",RawLogEntry("REC","USER",1449556341636L,0,List(10004, 9952, 10005),"topviewall")),
@@ -109,10 +125,11 @@ object HelloWorld {
 
 
        val r1 = groupBySession(lst)
-       val r2 = r1.map(x => (x._1, groupByAlgorithm(x._2)))
-       val r3 = r2.map(x => (x._1, x._2.map(y => (y._1, groupByAction(y._2)))))
-       val r4 = mergeSessions(r3)
-       r4.foreach(println)
+       val r2 = r1.map(x => (x._1, assignRelativeAction(x._2)))
+       val r3 = r2.map(x => (x._1, groupByAlgorithm(x._2)))
+       val r4 = r3.map(x => (x._1, x._2.map(y => (y._1, groupByAction(y._2)))))
+       val r5 = mergeSessions(r4)
+       r5.foreach(println)
 
 /*        val rst = lst.groupBy( _._1 ).map( kv => (kv._1, kv._2.map( x=> {
             if(x._2.listProduct.isEmpty) List((x._2.productID,x._2.event, x._2.timestamp))
