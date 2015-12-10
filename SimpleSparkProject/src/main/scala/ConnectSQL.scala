@@ -11,6 +11,7 @@ import org.apache.spark.sql.Row
 case class Properties(data: String)
 case class Product(productID: String)
 case class Data(timestamp: Long, sessionId: String,action: String)
+case class BuyData(timestamp: Long, sessionId: String,action: String, products:List[Product])
 case class OtherData(timestamp: Long, sessionId: String,action: String, product:Product)
 case class OtherDataFromRec(timestamp: Long, sessionId: String,action: String, product:Product, algorithm: String)
 case class RecData(timestamp: Long, sessionId: String,action: String, listProduct:List[String], algorithm: String)
@@ -39,25 +40,24 @@ object RecCount {
               RawLogEntry(x.event, x.entityType, x.timestamp, x.productID, x.listProduct, 
                 findRelativeAlg(x.productID.toString, x.timestamp, lst))
           else
-              RawLogEntry(x.event, x.entityType, x.timestamp, x.productID, x.listProduct, x.algorithm)              
+              RawLogEntry(x.event, x.entityType, x.timestamp, x.productID, x.listProduct, x.algorithm)
         })
      }
      def groupByAction(lst: List[(String, Long, String, String)]) : List[(String, Int)] = {
       lst.groupBy(_._1).map(x => (x._1, x._2.size)).toList
      }
-     def groupByAlgorithm(lst: List[RawLogEntry]) : List[(String, List[(String, Long, String, String)])] = {
-        lst.groupBy(_.algorithm).toList.map(x => {
-        val a= (x._1, x._2.map( y => {
-              if("REC" == y.event){
+     def splitComplexRows(lst: List[RawLogEntry]) : List[RawLogEntry] = {
+        lst.map(x => {
+            if("REC" == x.event || "BUY" == x.event){
                 for{
-                  item <- y.listProduct
-                  val k = (y.event, y.timestamp, item.toString, y.algorithm)
+                  item <- x.listProduct
+                  val k = RawLogEntry(x.event, x.entityType, x.timestamp, item, List(), x.algorithm)
                 } yield k
-              }else List((y.event, y.timestamp, y.productID.toString, y.algorithm))
-            }).flatten
-          )
-        a
-        })
+              }else List(RawLogEntry(x.event, x.entityType, x.timestamp, x.productID, List(), x.algorithm))
+          }).flatten
+     }
+     def groupByAlgorithm(lst: List[RawLogEntry]) : List[(String, List[(String, Long, String, String)])] = {
+        lst.groupBy(_.algorithm).toList.map(x => (x._1, x._2.map( y => (y.event, y.timestamp, y.productID, y.algorithm))))
      }
      def mergeSessions(lst: List[(String, List[(String, List[(String, Int)])])]): Map[String, Map[String, Int]] = {
       val x = lst.map(x => x._2)
@@ -79,12 +79,13 @@ object RecCount {
     val sc = new SparkContext("local", "Rec count", "/opt/spark", List("target/scala-2.10/simple-project_2.10-1.0.jar"))
 
 		val sm = ConnectDB.loadDB(sc)
-       val r1 = groupBySession(sm)
-       val r2 = r1.map(x => (x._1, assignRelativeAction(x._2)))
-       val r3 = r2.map(x => (x._1, groupByAlgorithm(x._2)))
-       val r4 = r3.map(x => (x._1, x._2.map(y => (y._1, groupByAction(y._2)))))
-       val r5 = mergeSessions(r4)
-       r5.foreach(println)
+    val r1 = groupBySession(sm)
+    val r2 = r1.map(x => (x._1,splitComplexRows(x._2)))
+    val r3 = r2.map(x => (x._1, assignRelativeAction(x._2)))
+    val r4 = r3.map(x => (x._1, groupByAlgorithm(x._2)))
+    val r5 = r4.map(x => (x._1, x._2.map(y => (y._1, groupByAction(y._2)))))
+    val r6 = mergeSessions(r5)
+    r6.foreach(println)
       sc.stop
 	}
 }

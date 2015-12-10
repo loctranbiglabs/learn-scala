@@ -46,6 +46,13 @@ object ConnectDB {
 				}catch{ 
 					case e: Throwable => Nil
 				}
+			}else if ("BUY" == event){
+				try{
+					val data2 = jData.extract[BuyData]
+					listProduct = data2.products.map(x => x.productID)
+				}catch{
+					case e: Throwable => println(e); Nil
+				}
 			}else if ("VIEW" == event){
 				try{
 					val data2 = jData.extract[OtherDataFromRec]
