@@ -16,9 +16,6 @@ case class OtherData(timestamp: Long, sessionId: String,action: String, product:
 case class OtherDataFromRec(timestamp: Long, sessionId: String,action: String, product:Product, algorithm: String)
 case class RecData(timestamp: Long, sessionId: String,action: String, listProduct:List[String], algorithm: String)
 
-case class Result(productID: String, totalView: Int,totalRec: Int)
-
-
 object RecCount {
      def groupBySession(lst: List[(String, RawLogEntry)]) : List[(String, List[RawLogEntry])] = {
         lst.groupBy(_._1).toList.map(x => 
@@ -76,28 +73,30 @@ object RecCount {
       y
      }
 	def main(args: Array[String]){
-    val sc = new SparkContext("local", "Rec count", "/opt/spark", List("target/scala-2.10/simple-project_2.10-1.0.jar"))
 
-		val sm = ConnectDB.loadDB(sc)
+    val tsFromInSecond = 0L
+    val tsToInSecond = 1449725538L
+
+    val sc = new SparkContext("local", "Rec count", "/opt/spark", List("target/scala-2.10/simple-project_2.10-1.0.jar"))
+		val sm = ConnectDB.loadDB(sc, tsFromInSecond, tsToInSecond)
     val r1 = groupBySession(sm)
     val r2 = r1.map(x => (x._1,splitComplexRows(x._2)))
     val r3 = r2.map(x => (x._1, assignRelativeAction(x._2)))
     val r4 = r3.map(x => (x._1, groupByAlgorithm(x._2)))
     val r5 = r4.map(x => (x._1, x._2.map(y => (y._1, groupByAction(y._2)))))
     val r6 = mergeSessions(r5).toList
-    // r6.foreach(println)
     val r7 = r6.map(x => {
       (x._1,
         x._2.getOrElse("REC", 0),
         x._2.getOrElse("VIEW", 0),
         x._2.getOrElse("ADD_WISHLIST", 0),
         x._2.getOrElse("ADD_CART", 0),
-        x._2.getOrElse("BUY", 0)
+        x._2.getOrElse("BUY", 0),
+        new java.sql.Timestamp(tsFromInSecond * 1000L),
+        new java.sql.Timestamp(tsToInSecond * 1000L)
        )
       })
-    r7.foreach(println)
     ConnectDB.saveDB(sc, r7);
-       // println(distData)
-      sc.stop
+    sc.stop
 	}
 }

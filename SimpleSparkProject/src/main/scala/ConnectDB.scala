@@ -10,6 +10,8 @@ import org.apache.spark.sql.Row
 import org.apache.spark.sql.DataFrame
 
 object ConnectDB {
+	val CONNECTION_URL = "jdbc:postgresql://192.168.1.21/postgres?user=postgres&password=123456";
+
 	def genKey(x: Row) ={
 			implicit val formats = DefaultFormats
 			val item = x.getString(6)
@@ -20,10 +22,6 @@ object ConnectDB {
 			data.sessionId
 	}
 	def genValue(x: Row) ={
-		//can tinh:
-		//so lan moi san pham duoc recommended
-		//so lan moi san pham duoc VIEW sau lan recommend dau tien
-		//so lan moi san pham duoc BUY sau lan recommend dau tien
 			implicit val formats = DefaultFormats
 			val item = x.getString(6)
 			val jValue = parse(item)
@@ -81,29 +79,29 @@ object ConnectDB {
 				algorithm)
 			entry
 	}
-	def loadDB(sc : SparkContext) = {
+	def loadDB(sc : SparkContext, tsFromInSecond: Long, tsToInSecond: Long) = {
 		val sqlContext = new SQLContext(sc)
 		import sqlContext.implicits._
-		val url = "jdbc:postgresql://192.168.1.21/?user=postgres&password=123456"
+		// val url = "jdbc:postgresql://192.168.1.21/?user=postgres&password=123456"
+
 		val people = sqlContext.read.format("jdbc").options(Map(
-		 	"url" -> url,
+		 	"url" -> CONNECTION_URL,
 		 	"dbtable" -> "pio_event_1",
-		 	"driver" -> "org.postgresql.Driver")).load()
-		val lst = people.rdd
+		 	"driver" -> "org.postgresql.Driver")).load();
+		val kz = people.filter(people.col("eventtime").cast("long").geq(tsFromInSecond))
+						.filter(people.col("eventtime").cast("long").leq(tsToInSecond))
+		val lst = kz.rdd
 		val rest = lst.map(
 			x =>(genKey(x), genValue(x))
 		)
 		rest.collect().toList
 	}
-	def saveDB(sc : SparkContext, r6: List[(String, Int, Int, Int, Int, Int)]) ={
+	def saveDB(sc : SparkContext, r7: List[(String, Int, Int, Int, Int, Int, java.sql.Timestamp, java.sql.Timestamp)]) ={
 		val sqlContext = new SQLContext(sc)
 		import sqlContext.implicits._
-		// val usersDf = sqlContext.jsonFile("src/main/resources/users.json");
-		val MYSQL_CONNECTION_URL = "jdbc:postgresql://192.168.1.21/postgres?user=postgres&password=123456";
-		val distData = sc.parallelize(r6)
+		val distData = sc.parallelize(r7)
 		val res = sqlContext.createDataFrame(distData)
     	val rows = res.collect()
-    	rows.foreach(println)
-		res.insertIntoJDBC(MYSQL_CONNECTION_URL, "metric_result", false);
+		res.insertIntoJDBC(CONNECTION_URL, "metric_result", false);
 	}
 }
