@@ -84,8 +84,20 @@ object RecCount {
     val r3 = r2.map(x => (x._1, assignRelativeAction(x._2)))
     val r4 = r3.map(x => (x._1, groupByAlgorithm(x._2)))
     val r5 = r4.map(x => (x._1, x._2.map(y => (y._1, groupByAction(y._2)))))
-    val r6 = mergeSessions(r5)
-    r6.foreach(println)
+    val r6 = mergeSessions(r5).toList
+    // r6.foreach(println)
+    val r7 = r6.map(x => {
+      (x._1,
+        x._2.getOrElse("REC", 0),
+        x._2.getOrElse("VIEW", 0),
+        x._2.getOrElse("ADD_WISHLIST", 0),
+        x._2.getOrElse("ADD_CART", 0),
+        x._2.getOrElse("BUY", 0)
+       )
+      })
+    r7.foreach(println)
+    ConnectDB.saveDB(sc, r7);
+       // println(distData)
       sc.stop
 	}
 }

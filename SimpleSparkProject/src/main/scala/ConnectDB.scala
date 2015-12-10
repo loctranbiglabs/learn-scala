@@ -7,6 +7,7 @@ import net.liftweb.json._
 import scala.collection.mutable.ListBuffer
 import org.apache.spark.rdd.RDD
 import org.apache.spark.sql.Row
+import org.apache.spark.sql.DataFrame
 
 object ConnectDB {
 	def genKey(x: Row) ={
@@ -93,5 +94,16 @@ object ConnectDB {
 			x =>(genKey(x), genValue(x))
 		)
 		rest.collect().toList
+	}
+	def saveDB(sc : SparkContext, r6: List[(String, Int, Int, Int, Int, Int)]) ={
+		val sqlContext = new SQLContext(sc)
+		import sqlContext.implicits._
+		// val usersDf = sqlContext.jsonFile("src/main/resources/users.json");
+		val MYSQL_CONNECTION_URL = "jdbc:postgresql://192.168.1.21/postgres?user=postgres&password=123456";
+		val distData = sc.parallelize(r6)
+		val res = sqlContext.createDataFrame(distData)
+    	val rows = res.collect()
+    	rows.foreach(println)
+		res.insertIntoJDBC(MYSQL_CONNECTION_URL, "metric_result", false);
 	}
 }
