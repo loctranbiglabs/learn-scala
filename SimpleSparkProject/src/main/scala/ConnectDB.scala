@@ -94,7 +94,8 @@ object ConnectDB {
 		val rest = lst.map(
 			x =>(genKey(x), genValue(x))
 		)
-		rest.collect().toList
+		// rest.collect().toList
+		rest
 	}
 	def saveDB(sc : SparkContext, r7: List[(String, Int, Int, Int, Int, Int, java.sql.Timestamp, java.sql.Timestamp)]) ={
 		val sqlContext = new SQLContext(sc)

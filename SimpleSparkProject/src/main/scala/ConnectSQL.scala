@@ -17,9 +17,9 @@ case class OtherDataFromRec(timestamp: Long, sessionId: String,action: String, p
 case class RecData(timestamp: Long, sessionId: String,action: String, listProduct:List[String], algorithm: String)
 
 object RecCount {
-     def groupBySession(lst: List[(String, RawLogEntry)]) : List[(String, List[RawLogEntry])] = {
-        lst.groupBy(_._1).toList.map(x => 
-          (x._1, x._2.map(y => y._2))
+     def groupBySession(lst: RDD[(String, RawLogEntry)]) : RDD[(String, List[RawLogEntry])] = {
+        lst.groupBy(_._1).map(x => 
+          (x._1, x._2.map(y => y._2).toList)
         )
      }
      def findRelativeAlg(product: String, timestamp: Long, lst: List[RawLogEntry]): String = {
@@ -51,14 +51,14 @@ object RecCount {
                   val k = RawLogEntry(x.event, x.entityType, x.timestamp, item, List(), x.algorithm)
                 } yield k
               }else List(RawLogEntry(x.event, x.entityType, x.timestamp, x.productID, List(), x.algorithm))
-          }).flatten
+          }).flatMap( y => y)
      }
      def groupByAlgorithm(lst: List[RawLogEntry]) : List[(String, List[(String, Long, String, String)])] = {
         lst.groupBy(_.algorithm).toList.map(x => (x._1, x._2.map( y => (y.event, y.timestamp, y.productID, y.algorithm))))
      }
-     def mergeSessions(lst: List[(String, List[(String, List[(String, Int)])])]): Map[String, Map[String, Int]] = {
+     def mergeSessions(lst: RDD[(String, List[(String, List[(String, Int)])])]): RDD[(String, Map[String, Int])] = {
       val x = lst.map(x => x._2)
-      var y = x.flatten.groupBy(_._1).map(x => {
+      var y = x.flatMap(y => y).groupBy(_._1).map(x => {
         (x._1, x._2.map(y => {
           y._2.map(z =>{
             (z._1, z._2)
@@ -84,7 +84,7 @@ object RecCount {
     val r3 = r2.map(x => (x._1, assignRelativeAction(x._2)))
     val r4 = r3.map(x => (x._1, groupByAlgorithm(x._2)))
     val r5 = r4.map(x => (x._1, x._2.map(y => (y._1, groupByAction(y._2)))))
-    val r6 = mergeSessions(r5).toList
+    val r6 = mergeSessions(r5)
     val r7 = r6.map(x => {
       (x._1,
         x._2.getOrElse("REC", 0),
@@ -96,7 +96,8 @@ object RecCount {
         new java.sql.Timestamp(tsToInSecond * 1000L)
        )
       })
-    ConnectDB.saveDB(sc, r7);
+    // ConnectDB.saveDB(sc, r7);
+    r7.foreach(println)
     sc.stop
 	}
 }
